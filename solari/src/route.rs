@@ -750,7 +750,7 @@ where
         let mut marked_stops_count = 0usize;
         let marked_routes = self.marked_routes.clone();
         for (route_id, departure) in marked_routes.borrow_mut().iter().enumerate() {
-            if departure.trip_index == usize::MAX {
+            if departure.trip_index() == TripStopTime::trip_index_max() {
                 continue;
             }
             let route = self.timetable.route(route_id);
@@ -887,7 +887,7 @@ where
     ) {
         for stop_route in marked_stop.stop_routes(self.timetable) {
             let route = stop_route.route(self.timetable);
-            if marked_routes[route.id()].trip_index == usize::MAX {
+            if marked_routes[route.id()].trip_index() == TripStopTime::trip_index_max() {
                 for trip in route.route_trips(self.timetable) {
                     let trip_stop_time = &trip.stop_times(self.timetable)[stop_route.stop_seq()];
                     if &trip_stop_time.departure() < &not_before {
@@ -903,7 +903,7 @@ where
                 }
             } else {
                 for trip in route.route_trips(self.timetable)
-                    [0..(marked_routes[route.id()].trip_index - route.first_route_trip)]
+                    [0..(marked_routes[route.id()].trip_index() - route.first_route_trip)]
                     .iter()
                     .rev()
                 {

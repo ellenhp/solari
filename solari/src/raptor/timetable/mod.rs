@@ -208,10 +208,9 @@ impl<'a> StopRoute {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash, Copy, Pod, Zeroable)]
-#[repr(C)]
+#[repr(C, align(16))]
 pub struct TripStopTime {
-    pub(crate) trip_index: usize,
-    pub(crate) route_stop_seq: usize,
+    pub(crate) data: u64,
     arrival_time: u32,
     departure_time: u32,
 }
@@ -237,9 +236,10 @@ impl<'a> TripStopTime {
         arrival_time: DateTime<Tz>,
         departure_time: DateTime<Tz>,
     ) -> TripStopTime {
+        assert!(route_stop_seq < Self::route_stop_seq_max());
+        assert!(trip_index < Self::trip_index_max());
         TripStopTime {
-            trip_index,
-            route_stop_seq,
+            data: (trip_index as u64 & 0xFFFF_FFFF_FFFF) | ((route_stop_seq as u64 & 0xFFFF) << 48),
             arrival_time: arrival_time.timestamp() as u32,
             departure_time: departure_time.timestamp() as u32,
         }
@@ -247,17 +247,46 @@ impl<'a> TripStopTime {
 
     pub(crate) fn marked() -> TripStopTime {
         TripStopTime {
-            trip_index: usize::MAX,
-            route_stop_seq: usize::MAX,
+            data: u64::MAX,
             arrival_time: u32::MAX,
             departure_time: u32::MAX,
         }
     }
 
     #[inline]
+    pub fn trip_index_max() -> usize {
+        0xFFFF_FFFF_FFFF
+    }
+
+    #[inline]
+    pub fn route_stop_seq_max() -> usize {
+        0xFFFF
+    }
+
+    #[inline]
+    pub fn trip_index(&self) -> usize {
+        self.data as usize & Self::trip_index_max()
+    }
+
+    pub fn set_trip_index(&mut self, trip_index: usize) {
+        self.data = (trip_index as u64 & 0xFFFF_FFFF_FFFF)
+            | ((self.route_stop_seq() as u64 & 0xFFFF) << 48);
+    }
+
+    #[inline]
+    pub fn route_stop_seq(&self) -> usize {
+        (self.data >> 48) as usize
+    }
+
+    pub fn set_route_stop_seq(&mut self, route_stop_seq: usize) {
+        self.data = (self.trip_index() as u64 & 0xFFFF_FFFF_FFFF)
+            | ((route_stop_seq as u64 & 0xFFFF) << 48);
+    }
+
+    #[inline]
     pub fn route_stop(&self, timetable: &'a dyn Timetable<'a>) -> &'a RouteStop {
-        let route = &timetable.route_trips()[self.trip_index].route(timetable);
-        &timetable.route_stops()[route.first_route_stop + self.route_stop_seq]
+        let route = &timetable.route_trips()[self.trip_index()].route(timetable);
+        &timetable.route_stops()[route.first_route_stop + self.route_stop_seq()]
     }
 }
 

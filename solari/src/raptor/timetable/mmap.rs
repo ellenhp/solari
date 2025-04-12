@@ -581,7 +581,8 @@ impl<'a> MmapTimetable<'a> {
                         stop_route.route_index += route_cursor;
                     }
                     for trip_stop_time in trip_stop_time_slice {
-                        trip_stop_time.trip_index += route_trip_cursor;
+                        trip_stop_time
+                            .set_trip_index(trip_stop_time.trip_index() + route_trip_cursor);
                     }
 
                     route_cursor += tt.routes().len();
