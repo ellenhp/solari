@@ -351,7 +351,10 @@ impl<'a> InMemoryTimetableBuilder {
             .iter()
             .map(|agency| (agency.id.clone().unwrap_or(String::new()), agency))
             .collect();
-        let start_date = Local::now().date_naive().pred_opt().unwrap();
+        let start_date = Local::now()
+            .date_naive()
+            .checked_sub_days(Days::new(7))
+            .unwrap();
 
         // First things first, go through every trip in the feed.
         for (gtfs_trip_id, trip) in &gtfs.trips {
@@ -372,7 +375,7 @@ impl<'a> InMemoryTimetableBuilder {
                 let route_data = self.lookup_route_data(gtfs, trip);
                 let trip_days = gtfs.trip_days(&trip.service_id, start_date.clone());
                 for day in trip_days {
-                    if day <= 14 {
+                    if day <= 21 {
                         let date_time_offset = start_date
                             .checked_add_days(Days::new(day as u64))
                             .expect(&format!(
