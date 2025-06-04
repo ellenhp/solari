@@ -406,7 +406,9 @@ impl<'a, T: Timetable<'a>> Router<'a, T> {
             }
         }
 
-        itineraries.into_iter().collect()
+        let mut itineraries: Vec<_> = itineraries.into_iter().collect();
+        itineraries.sort_by_key(|it| it.final_time);
+        itineraries
     }
 
     fn clip_shape(&'a self, step: &InternalStep) -> Option<String> {

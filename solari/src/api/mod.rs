@@ -12,7 +12,16 @@ pub struct LatLng {
     pub stop: Option<String>,
 }
 
-#[derive(Debug, Clone, Deserialize, Serialize)]
+impl PartialEq for LatLng {
+    fn eq(&self, other: &Self) -> bool {
+        let angle_epsiolon = 0.00000001;
+        f64::abs(self.lat - other.lat) < angle_epsiolon
+            && f64::abs(self.lon - other.lon) < angle_epsiolon
+            && self.stop == other.stop
+    }
+}
+
+#[derive(Debug, Clone, PartialEq, Deserialize, Serialize)]
 pub enum SolariLeg {
     #[serde(rename = "transit")]
     Transit {
@@ -51,7 +60,7 @@ pub enum SolariLeg {
     },
 }
 
-#[derive(Debug, Clone, Deserialize, Serialize)]
+#[derive(Debug, Clone, PartialEq, Deserialize, Serialize)]
 pub struct SolariItinerary {
     pub start_location: LatLng,
     pub end_location: LatLng,

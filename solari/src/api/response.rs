@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 
 use super::SolariItinerary;
 
-#[derive(Debug, Clone, Deserialize, Serialize)]
+#[derive(Debug, Clone, PartialEq, Deserialize, Serialize)]
 pub enum ResponseStatus {
     #[serde(rename = "ok")]
     Ok,
@@ -14,7 +14,7 @@ pub enum ResponseStatus {
     TooLate,
 }
 
-#[derive(Debug, Clone, Deserialize, Serialize)]
+#[derive(Debug, Clone, PartialEq, Deserialize, Serialize)]
 pub struct SolariResponse {
     pub status: ResponseStatus,
     pub itineraries: Vec<SolariItinerary>,

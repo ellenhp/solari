@@ -1,0 +1,159 @@
+{
+  "from_location": {
+    "lat": 47.66829,
+    "lon": -122.39156199999998
+  },
+  "to_location": {
+    "lat": 47.667658,
+    "lon": -122.312813
+  },
+  "start_time": [
+    2025,
+    155,
+    12,
+    0,
+    0,
+    0
+  ],
+  "route": {
+    "status": "ok",
+    "itineraries": [
+      {
+        "start_location": {
+          "lat": 47.66829,
+          "lon": -122.39156199999998
+        },
+        "end_location": {
+          "lat": 47.667658,
+          "lon": -122.312813
+        },
+        "start_time": 1749038400000,
+        "end_time": 1749040978000,
+        "legs": [
+          {
+            "transit": {
+              "start_time": 1749038874000,
+              "end_time": 1749039851000,
+              "start_location": {
+                "lat": 47.668591005454,
+                "lon": -122.39308898765528,
+                "stop": "NW Market St & 28th Ave NW"
+              },
+              "end_location": {
+                "lat": 47.661236030355994,
+                "lon": -122.31729099212963,
+                "stop": "NE 45th St & Roosevelt Way NE"
+              },
+              "route_shape": "ch}aHx{_jV?m@AoO?MA_O?sF?kE?yB?o@?e@?mF?eE?mA?yA?yD@gH?eG?]?aF?M?iABqL?U?OCeF@yH?_A?oJAeN?_C?yAAwE?qC?o@AU@e@?]?_@@QDMDIDMFKJGHIfBuAXSb@[dA{@LGHGr@e@`@Sv@_@rBgAhB}@RM^[b@_@BCZ_@t@y@X_@lC_D`@i@DERULOZe@\\m@~@qBRa@N]Vu@DMBMDSBQDUB]@M@S@a@?{@?aD?cA?sD?yF?aH?{A?kA?UJk@B]D]?WBe@?k@?q@Gg@?[?U@{@@kA?]CSAM?SEq@Cs@Ag@A}D@MBMFQJYl@yARa@N_@Pe@Ri@@qD?W?iA?gE?{G?M?_B?W?mD?aA?yD?[?W?uC?u@?O?Q?{F@kF@mF?aA?kD?oF@mC?iE@sD?a@?sE?wE?qD@u@?aA?]?m@@o@?c@@yD@cCAkA@i@?sB@i@?gA?{C",
+              "transit_route": "44",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transfer": {
+              "start_time": 1749039851000,
+              "end_time": 1749040000000,
+              "start_location": {
+                "lat": 47.661236030355994,
+                "lon": -122.31729099212963,
+                "stop": "NE 45th St & Roosevelt Way NE"
+              },
+              "end_location": {
+                "lat": 47.66459697564245,
+                "lon": -122.31750501306065,
+                "stop": "Roosevelt Way NE & NE 50th St"
+              },
+              "route_shape": "_`|aHjbqiVK?s@A??U?e@?c@???C???????I???O??P?Q?`@?O?R?C?D?A?@W???K???U???W???E????E"
+            }
+          }
+        ]
+      },
+      {
+        "start_location": {
+          "lat": 47.66829,
+          "lon": -122.39156199999998
+        },
+        "end_location": {
+          "lat": 47.667658,
+          "lon": -122.312813
+        },
+        "start_time": 1749038400000,
+        "end_time": 1749040414000,
+        "legs": [
+          {
+            "transit": {
+              "start_time": 1749038874000,
+              "end_time": 1749039900000,
+              "start_location": {
+                "lat": 47.668591005454,
+                "lon": -122.39308898765528,
+                "stop": "NW Market St & 28th Ave NW"
+              },
+              "end_location": {
+                "lat": 47.66120497385643,
+                "lon": -122.3134769706212,
+                "stop": "U District Station - Bay 3"
+              },
+              "route_shape": "ch}aHx{_jV?m@AoO?MA_O?sF?kE?yB?o@?e@?mF?eE?mA?yA?yD@gH?eG?]?aF?M?iABqL?U?OCeF@yH?_A?oJAeN?_C?yAAwE?qC?o@AU@e@?]?_@@QDMDIDMFKJGHIfBuAXSb@[dA{@LGHGr@e@`@Sv@_@rBgAhB}@RM^[b@_@BCZ_@t@y@X_@lC_D`@i@DERULOZe@\\m@~@qBRa@N]Vu@DMBMDSBQDUB]@M@S@a@?{@?aD?cA?sD?yF?aH?{A?kA?UJk@B]D]?WBe@?k@?q@Gg@?[?U@{@@kA?]CSAM?SEq@Cs@Ag@A}D@MBMFQJYl@yARa@N_@Pe@Ri@@qD?W?iA?gE?{G?M?_B?W?mD?aA?yD?[?W?uC?u@?O?Q?{F@kF@mF?aA?kD?oF@mC?iE@sD?a@?sE?wE?qD@u@?aA?]?m@@o@?c@@yD@cCAkA@i@?sB@i@?gA?{C?cA?_@?i@?eABoB?qB?uB?qB@uB",
+              "transit_route": "44",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transfer": {
+              "start_time": 1749039900000,
+              "end_time": 1749039976000,
+              "start_location": {
+                "lat": 47.66120497385643,
+                "lon": -122.3134769706212,
+                "stop": "U District Station - Bay 3"
+              },
+              "end_location": {
+                "lat": 47.65968300952708,
+                "lon": -122.31306497970957,
+                "stop": "U District Station - Bay 5"
+              },
+              "route_shape": ""
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749040080000,
+              "end_time": 1749040168000,
+              "start_location": {
+                "lat": 47.65968300952708,
+                "lon": -122.31306497970957,
+                "stop": "U District Station - Bay 5"
+              },
+              "end_location": {
+                "lat": 47.66482897699618,
+                "lon": -122.31265994187059,
+                "stop": "NE 50th St & University Way NE"
+              },
+              "route_shape": "ap{aHjhpiVU?eHIaD?iECiJE?O",
+              "transit_route": "79",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transfer": {
+              "start_time": 1749040168000,
+              "end_time": 1749040261000,
+              "start_location": {
+                "lat": 47.66482897699618,
+                "lon": -122.31265994187059,
+                "stop": "NE 50th St & University Way NE"
+              },
+              "end_location": {
+                "lat": 47.66831599381276,
+                "lon": -122.31312605968303,
+                "stop": "University Way NE & NE 55th St"
+              },
+              "route_shape": "yy|aH`dpiVK???M?AtA@uA"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

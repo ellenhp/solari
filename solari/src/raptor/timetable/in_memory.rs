@@ -4,7 +4,9 @@ use std::{
 };
 
 use anyhow::bail;
-use chrono::{offset::LocalResult, DateTime, Days, Local, NaiveTime, TimeDelta, TimeZone};
+use chrono::{
+    offset::LocalResult, DateTime, Days, Local, NaiveDate, NaiveTime, TimeDelta, TimeZone,
+};
 use chrono_tz::Tz;
 use gtfs_structures::{Agency, Gtfs, StopTime};
 use log::{debug, warn};
@@ -215,7 +217,11 @@ struct StopData {
 }
 
 impl<'a> InMemoryTimetableBuilder {
-    pub fn new(gtfs: &Gtfs) -> Result<Self, anyhow::Error> {
+    pub fn new(
+        gtfs: &Gtfs,
+        start_date: Option<NaiveDate>,
+        num_days: Option<u16>,
+    ) -> Result<Self, anyhow::Error> {
         let mut builder = InMemoryTimetableBuilder {
             next_stop_id: 0,
             next_stop_route_id: 0,
@@ -228,7 +234,7 @@ impl<'a> InMemoryTimetableBuilder {
             route_index: BTreeMap::new(),
             route_table: BTreeMap::new(),
         };
-        builder.preprocess_gtfs(gtfs)?;
+        builder.preprocess_gtfs(gtfs, start_date, num_days)?;
         Ok(builder)
     }
 
@@ -345,16 +351,24 @@ impl<'a> InMemoryTimetableBuilder {
         }
     }
 
-    fn preprocess_gtfs(&mut self, gtfs: &Gtfs) -> Result<(), anyhow::Error> {
+    fn preprocess_gtfs(
+        &mut self,
+        gtfs: &Gtfs,
+        start_date: Option<NaiveDate>,
+        num_days: Option<u16>,
+    ) -> Result<(), anyhow::Error> {
         let agencies: HashMap<String, &Agency> = gtfs
             .agencies
             .iter()
             .map(|agency| (agency.id.clone().unwrap_or(String::new()), agency))
             .collect();
-        let start_date = Local::now()
-            .date_naive()
-            .checked_sub_days(Days::new(7))
-            .unwrap();
+        let start_date = start_date.unwrap_or(
+            Local::now()
+                .date_naive()
+                .checked_sub_days(Days::new(7))
+                .unwrap(),
+        );
+        let num_days = num_days.unwrap_or(21);
 
         // First things first, go through every trip in the feed.
         for (gtfs_trip_id, trip) in &gtfs.trips {
@@ -375,7 +389,7 @@ impl<'a> InMemoryTimetableBuilder {
                 let route_data = self.lookup_route_data(gtfs, trip);
                 let trip_days = gtfs.trip_days(&trip.service_id, start_date.clone());
                 for day in trip_days {
-                    if day <= 21 {
+                    if day <= num_days {
                         let date_time_offset = start_date
                             .checked_add_days(Days::new(day as u64))
                             .expect(&format!(

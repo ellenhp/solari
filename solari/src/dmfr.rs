@@ -1,3 +1,5 @@
+// Automatically generated, do not edit.
+
 #![allow(clippy::redundant_closure_call)]
 #![allow(clippy::needless_lifetimes)]
 #![allow(clippy::match_single_binding)]
