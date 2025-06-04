@@ -1,0 +1,81 @@
+use crate::raptor::timetable::in_memory::InMemoryTimetableBuilder;
+use crate::raptor::timetable::mmap::MmapTimetable;
+use anyhow::{bail, Result};
+use chrono::NaiveDate;
+use gtfs_structures::GtfsReader;
+use log::debug;
+use rayon::prelude::*;
+use std::fs;
+use std::hash::{DefaultHasher, Hasher};
+use std::path::PathBuf;
+
+fn process_gtfs<'a>(
+    path: &PathBuf,
+    base_path: &PathBuf,
+    start_date: Option<NaiveDate>,
+    num_days: Option<u16>,
+) -> Result<MmapTimetable<'a>, anyhow::Error> {
+    let feed = if let Ok(feed) = GtfsReader::default().read_from_path(path.to_str().unwrap()) {
+        feed
+    } else {
+        bail!(format!("Failed to load feed: {:?}", path));
+    };
+    debug!("Processing feed: {:?}", path);
+    let in_memory_timetable_builder = InMemoryTimetableBuilder::new(&feed, start_date, num_days)?;
+    let hash = {
+        let mut hasher = DefaultHasher::new();
+        hasher.write(path.to_str().unwrap().as_bytes());
+        format!("{:x}", hasher.finish())
+    };
+
+    let timetable_dir = base_path.join(hash);
+    fs::create_dir_all(&timetable_dir).unwrap();
+    Ok(MmapTimetable::from_in_memory(
+        &in_memory_timetable_builder,
+        &timetable_dir,
+    )?)
+}
+
+pub async fn concat_timetables<'a>(
+    paths: &[PathBuf],
+    base_path: &PathBuf,
+    valhalla_tile_path: &PathBuf,
+) -> Result<MmapTimetable<'a>, anyhow::Error> {
+    let paths = paths.to_vec();
+
+    let timetables: Vec<MmapTimetable<'_>> = paths
+        .par_iter()
+        .filter_map(|path| MmapTimetable::open(path).ok())
+        .collect();
+
+    // Combine all timetables into one.
+    let timetable = MmapTimetable::concatenate(&timetables, base_path, valhalla_tile_path).await;
+    Ok(timetable)
+}
+
+pub async fn timetable_from_feeds<'a>(
+    paths: &[PathBuf],
+    base_path: &PathBuf,
+    valhalla_tile_path: &PathBuf,
+    start_date: Option<NaiveDate>,
+    num_days: Option<u16>,
+) -> Result<MmapTimetable<'a>, anyhow::Error> {
+    let paths = paths.to_vec();
+
+    let timetables: Vec<MmapTimetable<'_>> = paths
+        .par_iter()
+        .filter(|path| path.extension().map(|ext| ext == "zip") == Some(true))
+        .filter_map(|path| {
+            process_gtfs(&path, base_path, start_date, num_days)
+                .map_err(|err| {
+                    log::error!("Failed to process GTFS feed: {}", err);
+                    err
+                })
+                .ok()
+        })
+        .collect();
+
+    // Combine all timetables into one.
+    let timetable = MmapTimetable::concatenate(&timetables, base_path, valhalla_tile_path).await;
+    Ok(timetable)
+}

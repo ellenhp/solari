@@ -14,7 +14,7 @@ solari-transfers = { path = "../solari-transfers" }
 solari-spatial = { path = "../solari-spatial" }
 
 anyhow = "1.0"
-chrono = "0.4.24"
+chrono = { version = "0.4.24", features = ["serde"] }
 chrono-tz = "0.10.0"
 clap = { version = "4.3.0", features = ["derive"] }
 env_logger = "0.10.0"
@@ -41,6 +41,7 @@ polyline = "0.11.0"
 geo-types = "0.7"
 geo = "0.29"
 regress = "0.10.3"
+similar = "2.7.0"
 
 [build-dependencies]
 flatdata = "0.5.3"

@@ -1,0 +1,86 @@
+{
+  "from_location": {
+    "lat": 47.622951,
+    "lon": -122.322326
+  },
+  "to_location": {
+    "lat": 47.613373,
+    "lon": -122.320971
+  },
+  "start_time": [
+    2025,
+    155,
+    12,
+    0,
+    0,
+    0
+  ],
+  "route": {
+    "status": "ok",
+    "itineraries": [
+      {
+        "start_location": {
+          "lat": 47.622951,
+          "lon": -122.322326
+        },
+        "end_location": {
+          "lat": 47.613373,
+          "lon": -122.320971
+        },
+        "start_time": 1749038400000,
+        "end_time": 1749040570000,
+        "legs": []
+      },
+      {
+        "start_location": {
+          "lat": 47.622951,
+          "lon": -122.322326
+        },
+        "end_location": {
+          "lat": 47.613373,
+          "lon": -122.320971
+        },
+        "start_time": 1749038400000,
+        "end_time": 1749039684000,
+        "legs": [
+          {
+            "transit": {
+              "start_time": 1749039249000,
+              "end_time": 1749039480000,
+              "start_location": {
+                "lat": 47.62289402201313,
+                "lon": -122.32101398927571,
+                "stop": "Broadway  E & E Republican St"
+              },
+              "end_location": {
+                "lat": 47.6153030307299,
+                "lon": -122.32149503163632,
+                "stop": "E Pine St & Broadway"
+              },
+              "route_shape": "ajtaHvxqiVrDAtDCr@?tD?hFGd@?jA?vBAbACrC?P?f@?~DC@\\?hB",
+              "transit_route": "49",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transfer": {
+              "start_time": 1749039480000,
+              "end_time": 1749039513000,
+              "start_location": {
+                "lat": 47.6153030307299,
+                "lon": -122.32149503163632,
+                "stop": "E Pine St & Broadway"
+              },
+              "end_location": {
+                "lat": 47.614139982504014,
+                "lon": -122.3208849808754,
+                "stop": "Broadway & Pike-Pine"
+              },
+              "route_shape": ""
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
