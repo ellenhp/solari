@@ -1,11 +1,11 @@
 {
   "from_location": {
-    "lat": 47.622951,
-    "lon": -122.322326
+    "lat": 47.708347,
+    "lon": -122.32819499999998
   },
   "to_location": {
-    "lat": 47.613373,
-    "lon": -122.320971
+    "lat": 47.622951,
+    "lon": -122.322326
   },
   "start_time": [
     2025,
@@ -20,63 +20,119 @@
     "itineraries": [
       {
         "start_location": {
+          "lat": 47.708347,
+          "lon": -122.32819499999998
+        },
+        "end_location": {
           "lat": 47.622951,
           "lon": -122.322326
         },
-        "end_location": {
-          "lat": 47.613373,
-          "lon": -122.320971
-        },
         "start_time": 1749038400000,
-        "end_time": 1749040570000,
-        "legs": []
-      },
-      {
-        "start_location": {
-          "lat": 47.622951,
-          "lon": -122.322326
-        },
-        "end_location": {
-          "lat": 47.613373,
-          "lon": -122.320971
-        },
-        "start_time": 1749038400000,
-        "end_time": 1749039684000,
+        "end_time": 1749040900000,
         "legs": [
           {
             "transit": {
-              "start_time": 1749039249000,
-              "end_time": 1749039480000,
+              "start_time": 1749039720000,
+              "end_time": 1749040470000,
               "start_location": {
-                "lat": 47.62289402201313,
-                "lon": -122.32101398927571,
-                "stop": "Broadway  E & E Republican St"
+                "lat": 47.70266199407909,
+                "lon": -122.3283200486305,
+                "stop": "Northgate"
               },
               "end_location": {
-                "lat": 47.6153030307299,
-                "lon": -122.32149503163632,
-                "stop": "E Pine St & Broadway"
+                "lat": 47.61955998803569,
+                "lon": -122.32038900504264,
+                "stop": "Capitol Hill"
               },
-              "route_shape": "ajtaHvxqiVrDAtDCr@?tD?hFGd@?jA?vBAbACrC?P?f@?~DC@\\?hB",
-              "transit_route": "49",
-              "transit_agency": "Metro Transit"
+              "route_shape": "s|cbHhgsiVfDAdA@b@@r@FfKfAt@Fl@Bl@?n@?l@Al@CpGe@lAGj@Af@?rSLj@Al@Cj@Ej@Ej@Ij@Kh@Mj@Oh@Qh@Sh@Sh@Wh@Yf@Yf@]d@]f@a@d@a@b@c@b@e@b@e@f@o@ni@gr@p@{@p@u@^]\\[^Y`@Y`@U`@U`@Q`@Qb@Ob@Mb@Kb@Ib@Gb@Eh@Cp@CxJEnAEf@Chy@yHvBQ~AI~AG~AG~AC~AC~A?bPLXAVAVCVGVGVIVKTMTORQTSRSPUPWPYNYN]L[L]J_@J_@Ha@Fa@Fe@Fm@fAoNH_AHq@Hq@Jo@Jm@Lo@Nk@Nm@Pi@Pk@Rg@Tg@Tg@Te@Xc@Va@X_@Z_@Z]Z[\\Y\\Y\\U^U\\Q`@Q^O`@K^K`@I`@Ej@Gr@CxSQjJIfB?hA@hABjABhAHjAHhAJhALhANhAPhAThATfAVhAZfAZfA^fA^dAb@fAb@dAd@dAh@bAh@dAl@bAl@bAn@`Ap@nA`A~vA`gAdAt@l@\\l@\\l@Xn@Vn@Tn@Pn@Np@Lp@Jn@HjAFbA@bBA",
+              "transit_route": "1 Line",
+              "transit_agency": "Sound Transit"
             }
           },
           {
             "transfer": {
-              "start_time": 1749039480000,
-              "end_time": 1749039513000,
+              "start_time": 1749040470000,
+              "end_time": 1749040703000,
               "start_location": {
-                "lat": 47.6153030307299,
-                "lon": -122.32149503163632,
-                "stop": "E Pine St & Broadway"
+                "lat": 47.61955998803569,
+                "lon": -122.32038900504264,
+                "stop": "Capitol Hill"
               },
               "end_location": {
-                "lat": 47.614139982504014,
-                "lon": -122.3208849808754,
-                "stop": "Broadway & Pike-Pine"
+                "lat": 47.62289402201313,
+                "lon": -122.32101398927571,
+                "stop": "Broadway  E & E Republican St"
               },
-              "route_shape": ""
+              "route_shape": "q}saHnxqiVW???M???O@??Y???i@@??q@B??G???[???K???S???Q@??G???M?"
+            }
+          }
+        ]
+      },
+      {
+        "start_location": {
+          "lat": 47.708347,
+          "lon": -122.32819499999998
+        },
+        "end_location": {
+          "lat": 47.622951,
+          "lon": -122.322326
+        },
+        "start_time": 1749038400000,
+        "end_time": 1749042929000,
+        "legs": [
+          {
+            "transit": {
+              "start_time": 1749039720000,
+              "end_time": 1749040050000,
+              "start_location": {
+                "lat": 47.70266199407909,
+                "lon": -122.3283200486305,
+                "stop": "Northgate"
+              },
+              "end_location": {
+                "lat": 47.65987501225337,
+                "lon": -122.3141940796584,
+                "stop": "U District"
+              },
+              "route_shape": "s|cbHhgsiVfDAdA@b@@r@FfKfAt@Fl@Bl@?n@?l@Al@CpGe@lAGj@Af@?rSLj@Al@Cj@Ej@Ej@Ij@Kh@Mj@Oh@Qh@Sh@Sh@Wh@Yf@Yf@]d@]f@a@d@a@b@c@b@e@b@e@f@o@ni@gr@p@{@p@u@^]\\[^Y`@Y`@U`@U`@Q`@Qb@Ob@Mb@Kb@Ib@Gb@Eh@Cp@CxJEnAEf@Chy@yHvBQ~AI~AG~AG~AC~AC~A?hMJ",
+              "transit_route": "1 Line",
+              "transit_agency": "Sound Transit"
+            }
+          },
+          {
+            "transfer": {
+              "start_time": 1749040050000,
+              "end_time": 1749040113000,
+              "start_location": {
+                "lat": 47.65987501225337,
+                "lon": -122.3141940796584,
+                "stop": "U District"
+              },
+              "end_location": {
+                "lat": 47.66120497385643,
+                "lon": -122.3134769706212,
+                "stop": "U District Station - Bay 3"
+              },
+              "route_shape": "gq{aHxkpiVw@?"
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749040200000,
+              "end_time": 1749040867000,
+              "start_location": {
+                "lat": 47.66120497385643,
+                "lon": -122.3134769706212,
+                "stop": "U District Station - Bay 3"
+              },
+              "end_location": {
+                "lat": 47.632125999970924,
+                "lon": -122.32030502548886,
+                "stop": "10th Ave E & E Galer St"
+              },
+              "route_shape": "}y{aHfjpiV?eA@qB?wBz@?fC?bBDpA@rEBhHFlA@j@??|EANAfF?tB?`AAn@?`FAdD@^@TBNBRDPFTFPLJHFJDJ?L?@?TER?N?HBH@F@NBFDl@d@dBlAHDHFf@\\LLb@XTPx@j@RNDD`@V~@r@HDlBrAFD`Ar@PHTPZVXRzDpCb@?p@?|A?tD?vA?xA?|A@dA?N?N?rF?`F?bGA?{B?}BAgC@Ul@?Z?B?H?J?T?P?B?J?T?zD?f@?`I?dFBdF@j@?xE?D?nD@pC@n@AhAYZEbB?ZDt@Xj@RZ@",
+              "transit_route": "49",
+              "transit_agency": "Metro Transit"
             }
           }
         ]
