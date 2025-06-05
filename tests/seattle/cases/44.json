@@ -28,57 +28,7 @@
           "lon": -122.312813
         },
         "start_time": 1749038400000,
-        "end_time": 1749040978000,
-        "legs": [
-          {
-            "transit": {
-              "start_time": 1749038874000,
-              "end_time": 1749039851000,
-              "start_location": {
-                "lat": 47.668591005454,
-                "lon": -122.39308898765528,
-                "stop": "NW Market St & 28th Ave NW"
-              },
-              "end_location": {
-                "lat": 47.661236030355994,
-                "lon": -122.31729099212963,
-                "stop": "NE 45th St & Roosevelt Way NE"
-              },
-              "route_shape": "ch}aHx{_jV?m@AoO?MA_O?sF?kE?yB?o@?e@?mF?eE?mA?yA?yD@gH?eG?]?aF?M?iABqL?U?OCeF@yH?_A?oJAeN?_C?yAAwE?qC?o@AU@e@?]?_@@QDMDIDMFKJGHIfBuAXSb@[dA{@LGHGr@e@`@Sv@_@rBgAhB}@RM^[b@_@BCZ_@t@y@X_@lC_D`@i@DERULOZe@\\m@~@qBRa@N]Vu@DMBMDSBQDUB]@M@S@a@?{@?aD?cA?sD?yF?aH?{A?kA?UJk@B]D]?WBe@?k@?q@Gg@?[?U@{@@kA?]CSAM?SEq@Cs@Ag@A}D@MBMFQJYl@yARa@N_@Pe@Ri@@qD?W?iA?gE?{G?M?_B?W?mD?aA?yD?[?W?uC?u@?O?Q?{F@kF@mF?aA?kD?oF@mC?iE@sD?a@?sE?wE?qD@u@?aA?]?m@@o@?c@@yD@cCAkA@i@?sB@i@?gA?{C",
-              "transit_route": "44",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transfer": {
-              "start_time": 1749039851000,
-              "end_time": 1749040000000,
-              "start_location": {
-                "lat": 47.661236030355994,
-                "lon": -122.31729099212963,
-                "stop": "NE 45th St & Roosevelt Way NE"
-              },
-              "end_location": {
-                "lat": 47.66459697564245,
-                "lon": -122.31750501306065,
-                "stop": "Roosevelt Way NE & NE 50th St"
-              },
-              "route_shape": "_`|aHjbqiVK?s@A??U?e@?c@???C???????I???O??P?Q?`@?O?R?C?D?A?@W???K???U???W???E????E"
-            }
-          }
-        ]
-      },
-      {
-        "start_location": {
-          "lat": 47.66829,
-          "lon": -122.39156199999998
-        },
-        "end_location": {
-          "lat": 47.667658,
-          "lon": -122.312813
-        },
-        "start_time": 1749038400000,
-        "end_time": 1749040414000,
+        "end_time": 1749041338000,
         "legs": [
           {
             "transit": {
@@ -98,58 +48,76 @@
               "transit_route": "44",
               "transit_agency": "Metro Transit"
             }
-          },
-          {
-            "transfer": {
-              "start_time": 1749039900000,
-              "end_time": 1749039976000,
-              "start_location": {
-                "lat": 47.66120497385643,
-                "lon": -122.3134769706212,
-                "stop": "U District Station - Bay 3"
-              },
-              "end_location": {
-                "lat": 47.65968300952708,
-                "lon": -122.31306497970957,
-                "stop": "U District Station - Bay 5"
-              },
-              "route_shape": ""
-            }
-          },
+          }
+        ]
+      },
+      {
+        "start_location": {
+          "lat": 47.66829,
+          "lon": -122.39156199999998
+        },
+        "end_location": {
+          "lat": 47.667658,
+          "lon": -122.312813
+        },
+        "start_time": 1749038400000,
+        "end_time": 1749041980000,
+        "legs": [
           {
             "transit": {
-              "start_time": 1749040080000,
-              "end_time": 1749040168000,
+              "start_time": 1749038874000,
+              "end_time": 1749040118000,
               "start_location": {
-                "lat": 47.65968300952708,
-                "lon": -122.31306497970957,
-                "stop": "U District Station - Bay 5"
+                "lat": 47.668591005454,
+                "lon": -122.39308898765528,
+                "stop": "NW Market St & 28th Ave NW"
               },
               "end_location": {
-                "lat": 47.66482897699618,
-                "lon": -122.31265994187059,
-                "stop": "NE 50th St & University Way NE"
+                "lat": 47.65481998432604,
+                "lon": -122.31221002148196,
+                "stop": "15th Ave NE & NE 40th St"
               },
-              "route_shape": "ap{aHjhpiVU?eHIaD?iECiJE?O",
-              "transit_route": "79",
+              "route_shape": "ch}aHx{_jV?m@AoO?MA_O?sF?kE?yB?o@?e@?mF?eE?mA?yA?yD@gH?eG?]?aF?M?iABqL?U?OCeF@yH?_A?oJAeN?_C?yAAwE?qC?o@AU@e@?]?_@@QDMDIDMFKJGHIfBuAXSb@[dA{@LGHGr@e@`@Sv@_@rBgAhB}@RM^[b@_@BCZ_@t@y@X_@lC_D`@i@DERULOZe@\\m@~@qBRa@N]Vu@DMBMDSBQDUB]@M@S@a@?{@?aD?cA?sD?yF?aH?{A?kA?UJk@B]D]?WBe@?k@?q@Gg@?[?U@{@@kA?]CSAM?SEq@Cs@Ag@A}D@MBMFQJYl@yARa@N_@Pe@Ri@@qD?W?iA?gE?{G?M?_B?W?mD?aA?yD?[?W?uC?u@?O?Q?{F@kF@mF?aA?kD?oF@mC?iE@sD?a@?sE?wE?qD@u@?aA?]?m@@o@?c@@yD@cCAkA@i@?sB@i@?gA?{C?cA?_@?i@?eABoB?qB?uB?qB@uB?k@?eA@qB?wBz@?fC?bBDpA@rEBhHFlA@j@?l@@~B?",
+              "transit_route": "44",
               "transit_agency": "Metro Transit"
             }
           },
           {
-            "transfer": {
-              "start_time": 1749040168000,
-              "end_time": 1749040261000,
+            "transit": {
+              "start_time": 1749040244000,
+              "end_time": 1749040837000,
               "start_location": {
-                "lat": 47.66482897699618,
-                "lon": -122.31265994187059,
-                "stop": "NE 50th St & University Way NE"
+                "lat": 47.65481998432604,
+                "lon": -122.31221002148196,
+                "stop": "15th Ave NE & NE 40th St"
               },
               "end_location": {
-                "lat": 47.66831599381276,
-                "lon": -122.31312605968303,
-                "stop": "University Way NE & NE 55th St"
+                "lat": 47.66857900544179,
+                "lon": -122.28566696881732,
+                "stop": "NE 55th St & 39th Ave NE"
               },
-              "route_shape": "yy|aH`dpiVK???M?AtA@uA"
+              "route_shape": "sqzaHrapiVJ?fCDjB@\\?NBLH??JHLJX\\`B}DbAgC@AHStCiH|@eC^gA`AaCGQCMAM@OBo@?W@O@]?c@?_@Ai@Cg@Ei@Ei@Ik@K_@Ie@Oe@KYKc@E[CS?W?MBQiB}@QIUMeAa@YIe@So@OKEK?ICwB_@o@KmCm@sBa@eCi@cAQYGE?YGwBc@gFaAEAE?i@QYIi@OcA[mBcAu@e@i@g@aAoAIe@We@GMWs@ESQm@WcAEWQgAKw@Gs@Cw@AgA?KAUE[?oCAiR@kA?KN{R@i@?ECcBEw@Gq@MeAQuAN_@D[AgLaC?C?yEBuB@}BA_C@g@?oEBoD?U@I?M?G?e@?g@?gD@",
+              "transit_route": "65",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749040877000,
+              "end_time": 1749041332000,
+              "start_location": {
+                "lat": 47.66857900544179,
+                "lon": -122.28566696881732,
+                "stop": "NE 55th St & 39th Ave NE"
+              },
+              "end_location": {
+                "lat": 47.664959009778734,
+                "lon": -122.31117206122632,
+                "stop": "NE 50th St & 16th Ave NE"
+              },
+              "route_shape": "eg}aHl|jiV?L?bB?H?nB?~A?P?lB?`A?L?`@?jB?|@?r@?lB?|@?d@?X?xB?tB?zB?hA?R?V?zBAvB?xB?jA@d@ApB?pE?xF?dAAlC?zD?T?jA?^FbAHl@x@nFBd@NnA@L@NCJCLMBG@IBq@Bm@DU?mAFWBG@IBGHGHCJAHAN?X?lB@\\BXBXBLTjBB`@@d@?XV?dC?t@@t@BzH?Z?lG@L??vB?N?pBApB?pB?pBAh@?nBAnB",
+              "transit_route": "79",
+              "transit_agency": "Metro Transit"
             }
           }
         ]

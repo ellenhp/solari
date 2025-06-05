@@ -634,6 +634,7 @@ where
         previous_step: usize,
     ) -> bool {
         if let InternalStepLocation::Stop(stop) = to {
+            // There's no sense in marking a stop if the arrival time is after our worst-case scenario arrival time.
             let is_better_than_destination_global =
                 if let Some(best_time) = self.best_time_to_target() {
                     arrival_time < best_time
@@ -645,6 +646,8 @@ where
             }
             let is_best_global = if let Some(previous_best) = &self.best_times_global[stop.id()] {
                 &arrival_time < &previous_best.final_time
+                    || (&arrival_time <= &previous_best.final_time
+                        && self.step_log[previous_best.last_step].departure > departure_time)
             } else {
                 true
             };
@@ -729,101 +732,111 @@ where
     }
 
     async fn do_round(&mut self) -> bool {
-        {
-            let mut marked_routes = self.marked_routes.borrow_mut();
-            for val in &mut (*marked_routes) {
-                *val = TripStopTime::marked();
-            }
-            for (stop_id, stop_marked) in self.marked_stops.iter().enumerate() {
-                if !*stop_marked {
-                    continue;
-                }
-                self.explore_routes_for_marked_stop(
-                    &mut *marked_routes,
-                    self.timetable.stop(stop_id),
-                    &self.best_times_global[stop_id].as_ref().unwrap().final_time,
-                );
-            }
-        }
-        for stop_marked in &mut self.marked_stops {
-            *stop_marked = false;
-        }
+        let mut marked_stops_total = 0usize;
 
-        let mut marked_stops_count = 0usize;
-        let marked_routes = self.marked_routes.clone();
-        for (route_id, departure) in marked_routes.borrow_mut().iter().enumerate() {
-            if departure.trip_index == usize::MAX {
-                continue;
-            }
-            let route = self.timetable.route(route_id);
-            let mut current_trip: Option<(Trip, RouteStop)> = None;
-            let mut found_first_stop = false;
-            let mut departure_stop_seq = 0usize;
-
-            for route_stop in route.route_stops(self.timetable) {
-                if route_stop.id() == departure.route_stop(self.timetable).id() {
-                    found_first_stop = true;
+        // Modification from the RAPTOR paper: we use "sub-rounds" to prioritize trips that don't contain a transfer from one stop to another.
+        for _ in 0..99 {
+            {
+                let mut marked_routes = self.marked_routes.borrow_mut();
+                for val in &mut (*marked_routes) {
+                    *val = TripStopTime::marked();
                 }
-                if !found_first_stop {
-                    departure_stop_seq += 1;
-                    continue;
-                }
-                if let Some((current_trip, current_trip_start)) = &mut current_trip {
-                    // TODO: local pruning, target pruning
-                    let departure_trip_stop_time =
-                        &current_trip.stop_times(self.timetable)[departure_stop_seq];
-                    let previous_step = if let Some(previous_step) = self.best_times_global
-                        [departure.route_stop(self.timetable).id()]
-                    .as_ref()
-                    .map(|step| step.last_step.clone())
-                    {
-                        previous_step
-                    } else {
-                        log::error!(
-                            "No best time for stop {:?}",
-                            departure.route_stop(self.timetable)
-                        );
+                for (stop_id, stop_marked) in self.marked_stops.iter().enumerate() {
+                    if !*stop_marked {
                         continue;
-                    };
-                    if self.maybe_update_arrival_time_and_route(
-                        self.round,
-                        &InternalStepLocation::Stop(current_trip_start.stop(self.timetable)),
-                        departure_trip_stop_time.departure(),
-                        &InternalStepLocation::Stop(route_stop.stop(self.timetable)),
-                        current_trip.stop_times(self.timetable)[route_stop.stop_seq()].arrival(),
-                        Some(current_trip.route(self.timetable)),
-                        Some(current_trip.clone()),
-                        previous_step,
-                    ) {
-                        marked_stops_count += 1;
+                    }
+                    self.explore_routes_for_marked_stop(
+                        &mut *marked_routes,
+                        self.timetable.stop(stop_id),
+                        &self.best_times_global[stop_id].as_ref().unwrap().final_time,
+                    );
+                }
+            }
+            for stop_marked in &mut self.marked_stops {
+                *stop_marked = false;
+            }
 
-                        if let Some(trip) = self.earliest_trip_from(
-                            departure.route_stop(self.timetable),
-                            &self.best_times_global[departure.route_stop(self.timetable).id()]
-                                .as_ref()
-                                .unwrap()
-                                .final_time,
+            let mut marked_stops_count = 0usize;
+            let marked_routes = self.marked_routes.clone();
+            for (route_id, departure) in marked_routes.borrow_mut().iter().enumerate() {
+                if departure.trip_index == usize::MAX {
+                    continue;
+                }
+                let route = self.timetable.route(route_id);
+                let mut current_trip: Option<(Trip, RouteStop)> = None;
+                let mut found_first_stop = false;
+                let mut departure_stop_seq = 0usize;
+
+                for route_stop in route.route_stops(self.timetable) {
+                    if route_stop.id() == departure.route_stop(self.timetable).id() {
+                        found_first_stop = true;
+                    }
+                    if !found_first_stop {
+                        departure_stop_seq += 1;
+                        continue;
+                    }
+                    if let Some((current_trip, current_trip_start)) = &mut current_trip {
+                        let departure_trip_stop_time =
+                            &current_trip.stop_times(self.timetable)[departure_stop_seq];
+                        let previous_step = if let Some(previous_step) = self.best_times_global
+                            [departure.route_stop(self.timetable).id()]
+                        .as_ref()
+                        .map(|step| step.last_step.clone())
+                        {
+                            previous_step
+                        } else {
+                            log::error!(
+                                "No best time for stop {:?}",
+                                departure.route_stop(self.timetable)
+                            );
+                            continue;
+                        };
+                        if self.maybe_update_arrival_time_and_route(
+                            self.round,
+                            &InternalStepLocation::Stop(current_trip_start.stop(self.timetable)),
+                            departure_trip_stop_time.departure(),
+                            &InternalStepLocation::Stop(route_stop.stop(self.timetable)),
+                            current_trip.stop_times(self.timetable)[route_stop.stop_seq()]
+                                .arrival(),
+                            Some(current_trip.route(self.timetable)),
+                            Some(current_trip.clone()),
+                            previous_step,
                         ) {
-                            if trip.stop_times(self.timetable)[route_stop.stop_seq()].arrival()
-                                < self.best_times_global[departure.route_stop(self.timetable).id()]
+                            marked_stops_count += 1;
+
+                            if let Some(trip) = self.earliest_trip_from(
+                                departure.route_stop(self.timetable),
+                                &self.best_times_global[departure.route_stop(self.timetable).id()]
+                                    .as_ref()
+                                    .unwrap()
+                                    .final_time,
+                            ) {
+                                if trip.stop_times(self.timetable)[route_stop.stop_seq()].arrival()
+                                    < self.best_times_global
+                                        [departure.route_stop(self.timetable).id()]
                                     .as_ref()
                                     .unwrap()
                                     .final_time
-                            {
-                                *current_trip = trip;
+                                {
+                                    *current_trip = trip;
+                                }
                             }
                         }
                     }
-                }
 
-                if current_trip.is_none() {
-                    current_trip = self
-                        .earliest_trip_from(route_stop, &departure.arrival())
-                        .map(|trip| (trip, route_stop.clone()));
+                    if current_trip.is_none() {
+                        current_trip = self
+                            .earliest_trip_from(route_stop, &departure.arrival())
+                            .map(|trip| (trip, route_stop.clone()));
+                    }
                 }
             }
+            debug!("Marked {} new stops", marked_stops_count);
+            marked_stops_total += marked_stops_count;
+            if marked_stops_count == 0 {
+                break;
+            }
         }
-
         let mut marked_transfers_count = 0usize;
         let mut total_transfers_count = 0usize;
         let marked_stops = self.marked_stops.clone();
@@ -870,15 +883,15 @@ where
                 }
             }
         }
-        debug!("Marked {} new stops", marked_stops_count);
         debug!(
             "Marked {} of {} transfers.",
             marked_transfers_count, total_transfers_count
         );
 
         self.best_times_per_round
-            .push(vec![None; self.timetable.stop_count()]);
-        marked_stops_count > 0 || marked_transfers_count > 0
+            .push(self.best_times_global.clone());
+
+        marked_stops_total > 0 || marked_transfers_count > 0
     }
 
     fn explore_routes_for_marked_stop(
