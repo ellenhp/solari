@@ -637,15 +637,15 @@ where
     ) -> bool {
         if let InternalStepLocation::Stop(stop) = to {
             // There's no sense in marking a stop if the arrival time is after our worst-case scenario arrival time.
-            // let is_better_than_destination_global =
-            //     if let Some(best_time) = self.best_time_to_target() {
-            //         arrival_time < best_time
-            //     } else {
-            //         true
-            //     };
-            // if !is_better_than_destination_global {
-            //     return false;
-            // }
+            let is_better_than_destination_global =
+                if let Some(best_time) = self.best_time_to_target() {
+                    arrival_time < best_time
+                } else {
+                    true
+                };
+            if !is_better_than_destination_global {
+                return false;
+            }
             let is_best_global = if let Some(previous_best) = &self.best_times_global[stop.id()] {
                 let fastest = &arrival_time < &previous_best.final_time;
                 let equal_and_shorter = {
