@@ -22,17 +22,22 @@ use crate::route::Router;
 use crate::test::integration::golden::Golden;
 
 mod build_timetable;
-mod fix_golden;
+pub mod fix_golden;
 mod geocode;
 mod golden;
 
 /// Convert an s2::latlng::LatLng to an api::LatLng
-fn latlng_to_api_latlng(latlng: &LatLng) -> crate::api::LatLng {
+fn s2_latlng_to_api_latlng(latlng: &LatLng) -> crate::api::LatLng {
     crate::api::LatLng {
         lat: latlng.lat.deg(),
         lon: latlng.lng.deg(),
         stop: None,
     }
+}
+
+/// Convert an s2::latlng::LatLng to an api::LatLng
+pub fn api_latlng_to_s2_latlng(latlng: &crate::api::LatLng) -> LatLng {
+    LatLng::from_degrees(latlng.lat, latlng.lon)
 }
 
 fn print_golden_diff(old: &SolariResponse, new: &SolariResponse) {
@@ -190,8 +195,8 @@ pub async fn expand_test_suite(goldens_dir: PathBuf) -> anyhow::Result<()> {
 
         // Create a Golden struct and write it to a file
         let golden = Golden {
-            from_location: latlng_to_api_latlng(&from_location.unwrap()),
-            to_location: latlng_to_api_latlng(&to_location.unwrap()),
+            from_location: s2_latlng_to_api_latlng(&from_location.unwrap()),
+            to_location: s2_latlng_to_api_latlng(&to_location.unwrap()),
             start_time,
             route: Some(route),
         };
