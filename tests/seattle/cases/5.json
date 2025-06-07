@@ -35,16 +35,16 @@
               "start_time": 1749038848000,
               "end_time": 1749039540000,
               "start_location": {
-                "lat": 47.658893965537324,
-                "lon": -122.35394298707078,
+                "lat": 47.65889362866101,
+                "lon": -122.35394299356375,
                 "stop": "N 43rd St & Phinney Ave N"
               },
               "end_location": {
-                "lat": 47.61750401164671,
-                "lon": -122.34526803130771,
+                "lat": 47.61750410394747,
+                "lon": -122.34526800382223,
                 "stop": "Wall St & 5th Ave"
               },
-              "route_shape": "ok{aHbgxiV?wB?}F?sE?sC?q@z@?~B?RAPCL?FAL?NAR?h@?vBCn@?jEAfACtA?|AA`@?NU|BcC`AgAZa@TOFKt@}@t@}@XW@CVWFEFGDCHANCZEn@ObM@lM?xLAv@CX?XA`@?j@E|@Gb@EVCVEd@Kj@IXIZIn@OhAYnA_@dA]bA[t@[jAe@hAi@rAo@BCbAm@rCeBbEiCPIJIVOVOPITMREVGTITCNCRAX?Z?lC?zFDbFBV?zH?~A?jA?dDB`@?lC?nDFt@@xBHtBBp@B^?`CDd@E^@b@Bb@Ht@Np@T\\HTFXBXCXG`@S\\QNGREPENCJARC\\?`@?n@Bv@?^@fABdCCZIHRnEAP[h@jA~@tA",
+              "route_shape": "ok{aHbgxiV?wB?}F@sE?sC?q@x@?~B?RAPCL?HAJ?NAR?h@?vBCn@?jEAfACtA?|AA`@?PUzBcC`AgAZa@TOFKt@}@t@}@XWBCTWFEFGDCHANC\\En@O`M@lM?xLAv@CX?XA`@?j@E|@Gb@EXCTEd@Kj@IXIZIn@OhAYnA_@dA]bA[t@[jAe@hAi@rAo@BCbAm@rCeBbEiCPIJIVOVORIRMTETGTITCNCRAX?Z?lC?zFDbFBV?zH?~A?jA?dDB`@?lC?nDFt@@xBHtBBp@B^?`CDd@E^@b@Bb@Ht@Nr@TZHTFXBXCXGb@SZQNGREPENCJARC\\?`@?n@Bv@?^@fABdCCZIJRlEAP[h@jA~@tA",
               "transit_route": "5",
               "transit_agency": "Metro Transit"
             }
@@ -54,16 +54,16 @@
               "start_time": 1749039540000,
               "end_time": 1749039840000,
               "start_location": {
-                "lat": 47.61750401164671,
-                "lon": -122.34526803130771,
+                "lat": 47.61750410394747,
+                "lon": -122.34526800382223,
                 "stop": "Wall St & 5th Ave"
               },
               "end_location": {
-                "lat": 47.60979099136209,
-                "lon": -122.33795895251276,
+                "lat": 47.60979080679347,
+                "lon": -122.3379590075018,
                 "stop": "3rd Ave & Pike St"
               },
-              "route_shape": "chsaHjpviVRZFFz@jA`AvA~@pAbAvAfBoDDIBIvCyFp@wAR_@pAiCxCgGfCeFP[~AaDPa@JUNWJUJOFIFIHGhCaCl@k@",
+              "route_shape": "ahsaHjpviVPZFFz@jA`AvA~@pAbAvAfBoDDIBIvCyFp@wAR_@pAiCxCgGfCeFP[~AaDPa@JUNWJUJOFIFIHGjCaCj@k@",
               "transit_route": "21",
               "transit_agency": "Metro Transit"
             }
@@ -87,16 +87,16 @@
               "start_time": 1749038848000,
               "end_time": 1749039540000,
               "start_location": {
-                "lat": 47.658893965537324,
-                "lon": -122.35394298707078,
+                "lat": 47.65889362866101,
+                "lon": -122.35394299356375,
                 "stop": "N 43rd St & Phinney Ave N"
               },
               "end_location": {
-                "lat": 47.61750401164671,
-                "lon": -122.34526803130771,
+                "lat": 47.61750410394747,
+                "lon": -122.34526800382223,
                 "stop": "Wall St & 5th Ave"
               },
-              "route_shape": "ok{aHbgxiV?wB?}F?sE?sC?q@z@?~B?RAPCL?FAL?NAR?h@?vBCn@?jEAfACtA?|AA`@?NU|BcC`AgAZa@TOFKt@}@t@}@XW@CVWFEFGDCHANCZEn@ObM@lM?xLAv@CX?XA`@?j@E|@Gb@EVCVEd@Kj@IXIZIn@OhAYnA_@dA]bA[t@[jAe@hAi@rAo@BCbAm@rCeBbEiCPIJIVOVOPITMREVGTITCNCRAX?Z?lC?zFDbFBV?zH?~A?jA?dDB`@?lC?nDFt@@xBHtBBp@B^?`CDd@E^@b@Bb@Ht@Np@T\\HTFXBXCXG`@S\\QNGREPENCJARC\\?`@?n@Bv@?^@fABdCCZIHRnEAP[h@jA~@tA",
+              "route_shape": "ok{aHbgxiV?wB?}F@sE?sC?q@x@?~B?RAPCL?HAJ?NAR?h@?vBCn@?jEAfACtA?|AA`@?PUzBcC`AgAZa@TOFKt@}@t@}@XWBCTWFEFGDCHANC\\En@O`M@lM?xLAv@CX?XA`@?j@E|@Gb@EXCTEd@Kj@IXIZIn@OhAYnA_@dA]bA[t@[jAe@hAi@rAo@BCbAm@rCeBbEiCPIJIVOVORIRMTETGTITCNCRAX?Z?lC?zFDbFBV?zH?~A?jA?dDB`@?lC?nDFt@@xBHtBBp@B^?`CDd@E^@b@Bb@Ht@Nr@TZHTFXBXCXGb@SZQNGREPENCJARC\\?`@?n@Bv@?^@fABdCCZIJRlEAP[h@jA~@tA",
               "transit_route": "5",
               "transit_agency": "Metro Transit"
             }
@@ -106,16 +106,16 @@
               "start_time": 1749039540000,
               "end_time": 1749039664000,
               "start_location": {
-                "lat": 47.61750401164671,
-                "lon": -122.34526803130771,
+                "lat": 47.61750410394747,
+                "lon": -122.34526800382223,
                 "stop": "Wall St & 5th Ave"
               },
               "end_location": {
-                "lat": 47.614299995241744,
-                "lon": -122.34426898645316,
+                "lat": 47.614299810652774,
+                "lon": -122.34426904142312,
                 "stop": "3rd Ave & Bell St"
               },
-              "route_shape": "chsaHjpviVRZFFz@jA`AvA~@pAbAvAfBoDDIBIvCyFp@wA",
+              "route_shape": "ahsaHjpviVPZFFz@jA`AvA~@pAbAvAfBoDDIBIvCyFp@wA",
               "transit_route": "21",
               "transit_agency": "Metro Transit"
             }
@@ -125,16 +125,16 @@
               "start_time": 1749039673000,
               "end_time": 1749039960000,
               "start_location": {
-                "lat": 47.614299995241744,
-                "lon": -122.34426898645316,
+                "lat": 47.614299810652774,
+                "lon": -122.34426904142312,
                 "stop": "3rd Ave & Bell St"
               },
               "end_location": {
-                "lat": 47.60825298803146,
-                "lon": -122.33654802711773,
+                "lat": 47.60825350912772,
+                "lon": -122.33654796552776,
                 "stop": "3rd Ave & Union St"
               },
-              "route_shape": "utraHfjviVpAiCxCgGfCeFP[~AaDPa@JUNWJUJOFIFIHGbB_Bd@a@l@k@xCkCfEsD",
+              "route_shape": "utraHfjviVpAiCxCgGfCeFP[~AaDPa@JUNWJUJOFIFIHGbB_Bf@a@j@k@xCkCfEsD",
               "transit_route": "2",
               "transit_agency": "Metro Transit"
             }
@@ -158,16 +158,16 @@
               "start_time": 1749040440000,
               "end_time": 1749041280000,
               "start_location": {
-                "lat": 47.661670991417566,
-                "lon": -122.3474879501663,
+                "lat": 47.66167071426583,
+                "lon": -122.34748803271692,
                 "stop": "Aurora Ave N & N 46th St"
               },
               "end_location": {
-                "lat": 47.60979099136209,
-                "lon": -122.33795895251276,
+                "lat": 47.60979080679347,
+                "lon": -122.3379590075018,
                 "stop": "3rd Ave & Pike St"
               },
-              "route_shape": "m|{aHf~viVj@?hC?lC?lCCfC?vD?vE?zF?|FA~C?tB?~DAnB?bM@lM?xLAv@CX?XA`@?j@E|@Gb@EVCVEd@Kj@IXIjAYhAYnA_@dA]bA[t@[jAe@hAi@rAo@BCbAm@rCeBbEiC\\SVOVOPITMREVGTITCNCRAX?Z?lC?zFDbFBV?zH?~A?jA?dDBnD?nDFt@@xBHtBBp@B^?`CDd@E^@b@Bb@Ht@Np@T\\HTFXBXCXG`@S\\QNGREPENCJARC\\?`@?n@Bv@?^@fABdCCZIHRnEAP[h@jA~@tAnBnCRZFFz@jA`AvA~@pAbAvAfBoDDIBIvCyFp@wAR_@pAiCxCgGfCeFP[~AaDPa@JUNWJUJOFIFIHGhCaCl@k@",
+              "route_shape": "m|{aHf~viVj@?hC?lC?lCCfC?vD?vE?zF?|FA~C?tB?~DApB?`M@lM?xLAv@CX?XA`@?j@E|@Gb@EXCTEd@Kj@IXIjAYhAYnA_@dA]bA[t@[jAe@hAi@rAo@BCbAm@rCeBbEiC\\SVOVORIRMTETGTITCNCRAX?Z?lC?zFDbFBV?zH?~A?jA?dDBnD?nDFt@@xBHtBBp@B^?`CDd@E^@b@Bb@Ht@Nr@TZHTFXBXCXGb@SZQNGREPENCJARC\\?`@?n@Bv@?^@fABdCCZIJRlEAP[h@jA~@tApBnCPZFFz@jA`AvA~@pAbAvAfBoDDIBIvCyFp@wAR_@pAiCxCgGfCeFP[~AaDPa@JUNWJUJOFIFIHGjCaCj@k@",
               "transit_route": "E Line",
               "transit_agency": "Metro Transit"
             }
@@ -191,16 +191,16 @@
               "start_time": 1749040302000,
               "end_time": 1749041460000,
               "start_location": {
-                "lat": 47.65870299593532,
-                "lon": -122.36460906070941,
+                "lat": 47.65870293621024,
+                "lon": -122.36460898468032,
                 "stop": "Leary Way NW & NW 43rd St"
               },
               "end_location": {
-                "lat": 47.60825298803146,
-                "lon": -122.33654802711773,
+                "lat": 47.60825350912772,
+                "lon": -122.33654796552776,
                 "stop": "3rd Ave & Union St"
               },
-              "route_shape": "cj{aHhiziVlBkBtAsAbDaDnDgDl@k@~B}BPO^]~C{CvBwBPUFMN]Ne@BSt@iFHq@b@aDn@sEBIj@mET}AZsBj@iE`@oCFYDOLW^e@rCmEd@s@JI~BKPAf@Ap@?nB?bA?n@?~@@\\?t@?V?B?F?F?^?H?t@?dA?TEl@_Bv@oBPk@tEsOfAqCPi@Xa@`@]pAaA\\[fA}@h@e@n@e@jDkBr@a@fBaAxDsBtAs@l@WdEmBNGr@]n@SjASv@?F?xB?fGE~@?|AC`AHB?f@JZJ^Fx@Rj@Pf@NRBLB@BN@VBf@?@?^?^?jJBH?bA?f@Cj@Mh@Qt@a@RMtBwAxAiANMPEL?bA?BWBODKDIHKlBqAjAw@XMTITETCjB?\\?pA?zDBhF@bC?bB?hFBjF@rBUZCD?hFs@p@EHL\\d@bAtA`AtA`AtA`ApA~@vAHHx@jA`AtAJLTZ`@l@`ArAfCeFP[~AaDPa@JUNWJUJOFIFIHGbB_Bd@a@l@k@xCkCfEsD",
+              "route_shape": "cj{aHhiziVlBkBtAsAbDaDnDgDl@k@~B}BPO^]~C{CvBwBPUFMN]Ne@DSr@iFHq@b@aDn@sEBIl@mER}AZsBj@iE`@oCFYDOLW^e@rCmEd@s@JI~BKPAf@Ap@?pB?`A?n@?~@@\\?t@?V?B?F?F?^?H?t@?dA?TEl@_Bv@oBPk@tEsOfAqCPi@Xa@`@]rAaAZ[fA}@h@e@n@e@jDkBr@a@fBaAxDsBtAs@l@WdEmBNGr@]p@ShASv@?F?xB?fGE~@?|AC`AHB?f@JZJ^Fx@Rj@Pf@NRBNB?BN@VBf@?@?^?`@?hJBH?bA?f@Cj@Mh@Qt@a@RMtBwAxAiANMPEL?bA?BWBODKDIHKlBqAjAw@XMTITETCjB?\\?pA?zDBhF@bC?bB?hFBjF@rBUZCD?hFs@p@EHL\\d@bAtA`AtA`AtA`ApA~@vAHHx@jA`AtAJLTZ`@l@`ArAfCeFP[~AaDPa@JUNWJUJOFIFIHGbB_Bf@a@j@k@xCkCfEsD",
               "transit_route": "40",
               "transit_agency": "Metro Transit"
             }
