@@ -102,6 +102,7 @@ pub async fn run_test_suite(goldens_dir: PathBuf) -> anyhow::Result<()> {
 
     let router = Router::new(timetable, goldens_dir.join("valhalla_tiles"))?;
 
+    let mut all_ok = true;
     // Read and parse all .json files in $goldens_dir/cases
     for entry in fs::read_dir(&goldens_dir.join("cases"))? {
         let entry = entry?;
@@ -117,13 +118,18 @@ pub async fn run_test_suite(goldens_dir: PathBuf) -> anyhow::Result<()> {
                     info!("Passed: {:?}", path)
                 }
                 Err(err) => {
+                    all_ok = false;
                     error!("Failed: {:?}", err)
                 }
             }
         }
     }
 
-    Ok(())
+    if all_ok {
+        Ok(())
+    } else {
+        bail!("Tests failed")
+    }
 }
 
 pub async fn expand_test_suite(goldens_dir: PathBuf) -> anyhow::Result<()> {
