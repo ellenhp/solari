@@ -1,0 +1,28 @@
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        BUILD_TARGET: [release] # refers to a cargo profile
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - name: Cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+      - name: Set up rust
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+      - name: Output rust version for educational purposes
+        run: rustup --version
+      - name: Build binaries in "${{ matrix.BUILD_TARGET }}" mode
+        run: cargo build --profile ${{ matrix.BUILD_TARGET }}
+      - name: Run tests in "${{ matrix.BUILD_TARGET }}" mode
+        run: RUST_LOG=debug cargo run --profile ${{ matrix.BUILD_TARGET }} --bin fix_goldens -- --tests-dir ${{ github.workspace }}/tests
