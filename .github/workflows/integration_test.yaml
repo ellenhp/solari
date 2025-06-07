@@ -25,4 +25,4 @@ jobs:
       - name: Build binaries in "${{ matrix.BUILD_TARGET }}" mode
         run: cargo build --profile ${{ matrix.BUILD_TARGET }}
       - name: Run tests in "${{ matrix.BUILD_TARGET }}" mode
-        run: RUST_LOG=debug cargo run --profile ${{ matrix.BUILD_TARGET }} --bin fix_goldens -- --tests-dir ${{ github.workspace }}/tests
+        run: RUST_LOG=debug cargo run --profile ${{ matrix.BUILD_TARGET }} --bin test_goldens -- --tests-dir ${{ github.workspace }}/tests
