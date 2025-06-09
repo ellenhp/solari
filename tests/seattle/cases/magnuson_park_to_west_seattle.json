@@ -1,0 +1,274 @@
+{
+  "from_location": {
+    "lat": 47.682088,
+    "lon": -122.263268
+  },
+  "to_location": {
+    "lat": 47.580894,
+    "lon": -122.386232
+  },
+  "start_time": [
+    2025,
+    155,
+    16,
+    0,
+    0,
+    0
+  ],
+  "route": {
+    "status": "ok",
+    "itineraries": [
+      {
+        "start_location": {
+          "lat": 47.682088,
+          "lon": -122.263268
+        },
+        "end_location": {
+          "lat": 47.580894,
+          "lon": -122.386232
+        },
+        "start_time": 1749052800000,
+        "end_time": 1749058686000,
+        "legs": [
+          {
+            "transit": {
+              "start_time": 1749052980000,
+              "end_time": 1749053520000,
+              "start_location": {
+                "lat": 47.68181988119028,
+                "lon": -122.26376296931525,
+                "stop": "Sand Point Way NE & NE 74th St"
+              },
+              "end_location": {
+                "lat": 47.662742604117796,
+                "lon": -122.28520199728476,
+                "stop": "Sand Point Way NE & 40th Ave NE"
+              },
+              "route_shape": "kz_bH|rfiV??jNIt@?|@CdLE|CEZ?^DPHTHDDPNNNTr@xCvEnBxCRZHLvCtEbBhC\\h@jAhB\\h@bBjC~@zAx@jAfBrC~ExHXl@Xv@JXRv@??Jt@Hj@Fx@@^Bd@?bAE|@E`AEjAI~BA|@?t@@`AFvAJlAPfAPt@Z`A??\\r@^p@l@n@h@j@VX|@~@n@p@bAbAbAdAVZpAtAFHzAxAj@p@?@b@^`BjBh@f@dBlB@?p@\\",
+              "transit_route": "75",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749053520000,
+              "end_time": 1749053612000,
+              "start_location": {
+                "lat": 47.662742604117796,
+                "lon": -122.28520199728476,
+                "stop": "Sand Point Way NE & 40th Ave NE"
+              },
+              "end_location": {
+                "lat": 47.66120528727149,
+                "lon": -122.28962701313021,
+                "stop": "NE 45th St & 36th Ave NE"
+              },
+              "route_shape": "{b|aH~xjiVr@r@h@l@d@j@h@z@Xr@Xv@V|@Nf@PtALdAFp@Dv@BbBAn@",
+              "transit_route": "45",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749053839000,
+              "end_time": 1749055020000,
+              "start_location": {
+                "lat": 47.66120528727149,
+                "lon": -122.28962701313021,
+                "stop": "NE 45th St & 36th Ave NE"
+              },
+              "end_location": {
+                "lat": 47.64967728684042,
+                "lon": -122.3498689909232,
+                "stop": "Fremont Ave N & N 34th St"
+              },
+              "route_shape": "ay{aHfukiVOhPAvA@lD?nI?jB?nCG^?\\?l@En@?`A@`D@nAB|@AfG?z@?fE?V?~A?j@@rBHfGCv@ElAC`@?tE?jA?`A?nB?pB?pB?pB?f@?nA?^?pB?rB?hB?vBApB?~A?PAtB?pB?tB?pBCnB?dA?h@?bBXLj@?zEDnABfEBN?jDDAdE?dE?rB?~Ah@AxG@NJFHBLFb@LfBDj@LhA@F?HB\\?LBlC?nACrAApAA|DAD?FAB?@ABA?A@GFP|A?bCAvB?xAAjF?`AAlD?lFAlFCfBAfCGtF?nE?`@hG?n@?zDDdF?h@B~F@bG@?~A?lCAlF?dA?|@AlDAdFW|CKxAARCPK`AO`BKjAUpCkAnNALAJ??iAnNJAD?TA",
+              "transit_route": "31",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749055260000,
+              "end_time": 1749056278000,
+              "start_location": {
+                "lat": 47.64967728684042,
+                "lon": -122.3498689909232,
+                "stop": "Fremont Ave N & N 34th St"
+              },
+              "end_location": {
+                "lat": 47.61243819406331,
+                "lon": -122.34110993540487,
+                "stop": "3rd Ave & Virginia St"
+              },
+              "route_shape": "oqyaH`mwiVPAf@Ap@?pB?`A?n@?~@@\\?t@?V?B?F?F?^?H?t@?dA?TEl@_Bv@oBPk@tEsOfAqCPi@Xa@`@]rAaAZ[fA}@h@e@n@e@jDkBr@a@fBaAxDsBtAs@l@WdEmBNGr@]p@ShASv@?F?xB?fGE~@?|AC`AHB?f@JZJ^Fx@Rj@Pf@NRBNB?BN@VBf@?@?^?`@?hJBH?bA?f@Cj@Mh@Qt@a@RMtBwAxAiANMPEL?bA?BWBODKDIHKlBqAjAw@XMTITETCjB?\\?pA?zDBhF@bC?bB?hFBjF@rBUZCD?hFs@p@EHL\\d@bAtA`AtA`AtA`ApA~@vAHHx@jA`AtAJLTZ`@l@`ArA",
+              "transit_route": "40",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749056400000,
+              "end_time": 1749057320000,
+              "start_location": {
+                "lat": 47.61243819406331,
+                "lon": -122.34110993540487,
+                "stop": "3rd Ave & Virginia St"
+              },
+              "end_location": {
+                "lat": 47.56756971856532,
+                "lon": -122.36339596781572,
+                "stop": "Delridge Way SW & SW Andover St"
+              },
+              "route_shape": "airaHnvuiVP[~AaDPa@JUNWJUJOFIFIHGjCaCj@k@xCkC`CuBdA}@dEuDlCcCpBgBZWlCcCnCaCxBoBTSDRd@xAn@pBj@lBl@nBn@vBTr@Rv@t@bCFNVRBAdCuBh@Ub@YXMf@KDANENCV?hB?D?^?`A?r@?^Al@?r@A`@CdA?^?v@Ad@CxAQt@Gh@A`@?v@Hx@B`BFxB@xA?jBBt@Dn@JfBf@jA^hBXvBp@bC|@lFtBr@Vr@\\`Ab@t@`@p@d@dDzBVPTPPHXNZLXJZH\\DXF\\@RBT?Z?f@Cd@Ax@Cv@Cd@Ad@C`AAz@A`EC`DBxC?bD?|C?f@?d@?vCBxABxG@lD?bA?vD?jALbAFnA?|A?N?J?H@L?JDJ@JHLFHDHJJLJNHLFRHRDVDXDZ@b@JnCDhABr@Hz@h@|GJbA`@`HH|ABnA?hB@rBAt@?jA?`A?r@?~@?~C?jB?tF?zC@hIAvBAlE?j@?L?R?JAXMdAKn@OhAMr@Y~Ae@rCQdAGn@C\\?l@@`@D\\FXFRDLFVLPDHNVJL`@d@`@d@TZ\\LZZXVb@Vp@b@pAz@xEdDXLZ?",
+              "transit_route": "H Line",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749057480000,
+              "end_time": 1749058560000,
+              "start_location": {
+                "lat": 47.56756971856532,
+                "lon": -122.36339596781572,
+                "stop": "Delridge Way SW & SW Andover St"
+              },
+              "end_location": {
+                "lat": 47.58126830149501,
+                "lon": -122.38687106929379,
+                "stop": "SW Admiral Way & California Ave SW"
+              },
+              "route_shape": "ipiaHraziVH?bE@jI?T?H??rE?zE?p^?x@BfF?dB@JDBf@`@X^Xx@Ln@HrA@tMpA?^?~BBdD?b@?zC@?fC?nBAfG?`G?vAA`DEh@DVBX@nEAbGAnF?X?pFEVEZ?N???tC?^?H?H?Vu@?aA?qF??sC?i@?y@HUA?M?{I?????Q?]?{HAsJ@g@?gCAuD?uE?{C?q@?qD?aC?gJ?{@CuEGcAAoACgHIQ?yJQ",
+              "transit_route": "50",
+              "transit_agency": "Metro Transit"
+            }
+          }
+        ]
+      },
+      {
+        "start_location": {
+          "lat": 47.682088,
+          "lon": -122.263268
+        },
+        "end_location": {
+          "lat": 47.580894,
+          "lon": -122.386232
+        },
+        "start_time": 1749052800000,
+        "end_time": 1749059886000,
+        "legs": [
+          {
+            "transit": {
+              "start_time": 1749053280000,
+              "end_time": 1749056567000,
+              "start_location": {
+                "lat": 47.68181988119028,
+                "lon": -122.26376296931525,
+                "stop": "Sand Point Way NE & NE 74th St"
+              },
+              "end_location": {
+                "lat": 47.61243819406331,
+                "lon": -122.34110993540487,
+                "stop": "3rd Ave & Virginia St"
+              },
+              "route_shape": "kz_bH|rfiV??jNIt@?|@CdLE|CEZ??bA?@?xC?vCA~E?|A@nD?x@AjC?D?xA?V?P?N?lA?p@AP?V?nA?~B?z@?jA?F@RBTLhAf@dE@JHn@JXRPb@LPLNZBN?T?x@AZCVOTIHMDq@?G@MDQHm@b@?pA???~B?zAArB?x@?n@?|A?xB?fE?dA?dA?dE?p@?p@?fD?x@?rE?vD?F?D?L?tA?hB?J?H?|@?x@?rA???j@?^?`@?`A?j@?~A?N?nB?h@?bC?~A?rB?xC?x@?L?jC?x@?vC@x@?n@?bC?\\?rD?^?b@?nC?^?xD?V?hB?rA?R?V?dA@lBAtE?vE?r@?bA?jB?`@?F?z@?hA?\\?jBGZ?vA?jB?fB@lB@z@?n@BhB?hBAhB@jBAlB?X?|A?tBArA?d@AxB?nBAvC?~@ArG?`CAhCAfC?dC?x@?P?B?n@AdA?V??AX?r@?x@cJhIe@`@_ErDk@j@RL^XRNZXXVJLLTXh@d@dANZFVh@vCD\\BTHnD?XAdACl@ClBAr@A|@C`A?N@N@NBHBLFLDHFHFBFDTFjFnAPDFBFDHJp@t@jAxAfCbDNNR\\TXJJHDvA?xB@^?tB?rABH?FCHAJGVM@A|G{DbFqC`AvE?@?`@?~BrCHl@?bBBnC?lCBrC?h@?hB?nC?nA?|@?n@?dBBb@ClB?@zF?PAN?nA?zB@V?ZAxD@`AAlD?vB?L?pA?hE?pG@V`@?hBDnCFxCFl@@fBDrABhFHh@@nCDjBDn@@~ADhBDzGLx@@vJP~EJCPK`AO`BKjAUpCkAnNALAJ??iAnNJAD?TA~BKPAf@Ap@?pB?`A?n@?~@@\\?t@?V?B?F?F?^?H?t@?dA?TEf@QNKJITYRWPUPWz@aBr@kBbByFTm@Vm@b@k@^_@??dEgDn@g@NIJERCvFa@VCTI|A[^KtBe@|D{@ZKZIVITKz@c@f@Wl@WpCuAdCkA^OREFApC?dE?lB?rA?V?rB?bA?lB?dD@jD?nNDR?nD@jD?n@?jC@??tFB~@?n@?xB?hF@hFB|C?jA@n@?V?VGXS\\_@tAwCxCaG`@}@vBeE`AtA`AtA`ApA~@vAHHx@jA`AtAJLTZ`@l@`ArA",
+              "transit_route": "62",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749057083000,
+              "end_time": 1749058021000,
+              "start_location": {
+                "lat": 47.61243819406331,
+                "lon": -122.34110993540487,
+                "stop": "3rd Ave & Virginia St"
+              },
+              "end_location": {
+                "lat": 47.57925031539363,
+                "lon": -122.33431207740371,
+                "stop": "1st Ave S & S Lander St"
+              },
+              "route_shape": "airaHnvuiVP[~AaDPa@JUNWJUJOFIFIHGjCaCj@k@hC}BNMfEsDdEuDlCcCpBgBZWlCcCnCaCnCcClBcBBCXWfC{BHGHIzBqBb@]FMFKFOL_@X?lC?~B@`@?D?d@?`CwBJKfBaB\\W|@?vABV?|@?~CBL?H?H?xA?~A?V?lD?b@?P?L?R?hF?H?B?D?L?D?L?F?D?F?V?X?R?^`@x@Hv@BrC?L?H?BBB@BDBJBLN~B?`C?lC?dA?dBBxB@`AAvDhA?lI?dE?nE?R?bA?bJ?`A?~I?bA?zI?D?",
+              "transit_route": "21",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749058316000,
+              "end_time": 1749059760000,
+              "start_location": {
+                "lat": 47.57925031539363,
+                "lon": -122.33431207740371,
+                "stop": "1st Ave S & S Lander St"
+              },
+              "end_location": {
+                "lat": 47.58126830149501,
+                "lon": -122.38687106929379,
+                "stop": "SW Admiral Way & California Ave SW"
+              },
+              "route_shape": "iykaHvktiVnH?jK?`@?lF?dK?^DVBVHNLNNJNFRFVF|@FnA?zG?`CJfH@~B?pC?`E?r@DlA^tGNjD`@`HH|ABnA?hB@rBAt@?jA?`A?r@?~@?~C?jB?tF?zC@hIAvBAlE?j@?L?R?JAXMdAKn@OhAMr@Y~Ae@rCQdAGn@C\\?l@@`@D\\FXFRDLFVLPDHNVJL`@d@`@d@TZ\\LZZXVb@Vp@b@pAz@xEdDXLZ?zCBH?bE@jI?T?H??rE?zE?p^?x@BfF?dB@JDBf@`@X^Xx@Ln@HrA@tMpA?^?~BBdD?b@?zC@?fC?nBAfG?`G?vAA`DEh@DVBX@nEAbGAnF?X?pFEVEZ?N???tC?^?H?H?Vu@?aA?qF??sC?i@?y@HUA?M?{I?????Q?]?{HAsJ@g@?gCAuD?uE?{C?q@?qD?aC?gJ?{@CuEGcAAoACgHIQ?yJQ",
+              "transit_route": "50",
+              "transit_agency": "Metro Transit"
+            }
+          }
+        ]
+      },
+      {
+        "start_location": {
+          "lat": 47.682088,
+          "lon": -122.263268
+        },
+        "end_location": {
+          "lat": 47.580894,
+          "lon": -122.386232
+        },
+        "start_time": 1749052800000,
+        "end_time": 1749077886000,
+        "legs": [
+          {
+            "transit": {
+              "start_time": 1749053280000,
+              "end_time": 1749056567000,
+              "start_location": {
+                "lat": 47.68181988119028,
+                "lon": -122.26376296931525,
+                "stop": "Sand Point Way NE & NE 74th St"
+              },
+              "end_location": {
+                "lat": 47.61243819406331,
+                "lon": -122.34110993540487,
+                "stop": "3rd Ave & Virginia St"
+              },
+              "route_shape": "kz_bH|rfiV??jNIt@?|@CdLE|CEZ??bA?@?xC?vCA~E?|A@nD?x@AjC?D?xA?V?P?N?lA?p@AP?V?nA?~B?z@?jA?F@RBTLhAf@dE@JHn@JXRPb@LPLNZBN?T?x@AZCVOTIHMDq@?G@MDQHm@b@?pA???~B?zAArB?x@?n@?|A?xB?fE?dA?dA?dE?p@?p@?fD?x@?rE?vD?F?D?L?tA?hB?J?H?|@?x@?rA???j@?^?`@?`A?j@?~A?N?nB?h@?bC?~A?rB?xC?x@?L?jC?x@?vC@x@?n@?bC?\\?rD?^?b@?nC?^?xD?V?hB?rA?R?V?dA@lBAtE?vE?r@?bA?jB?`@?F?z@?hA?\\?jBGZ?vA?jB?fB@lB@z@?n@BhB?hBAhB@jBAlB?X?|A?tBArA?d@AxB?nBAvC?~@ArG?`CAhCAfC?dC?x@?P?B?n@AdA?V??AX?r@?x@cJhIe@`@_ErDk@j@RL^XRNZXXVJLLTXh@d@dANZFVh@vCD\\BTHnD?XAdACl@ClBAr@A|@C`A?N@N@NBHBLFLDHFHFBFDTFjFnAPDFBFDHJp@t@jAxAfCbDNNR\\TXJJHDvA?xB@^?tB?rABH?FCHAJGVM@A|G{DbFqC`AvE?@?`@?~BrCHl@?bBBnC?lCBrC?h@?hB?nC?nA?|@?n@?dBBb@ClB?@zF?PAN?nA?zB@V?ZAxD@`AAlD?vB?L?pA?hE?pG@V`@?hBDnCFxCFl@@fBDrABhFHh@@nCDjBDn@@~ADhBDzGLx@@vJP~EJCPK`AO`BKjAUpCkAnNALAJ??iAnNJAD?TA~BKPAf@Ap@?pB?`A?n@?~@@\\?t@?V?B?F?F?^?H?t@?dA?TEf@QNKJITYRWPUPWz@aBr@kBbByFTm@Vm@b@k@^_@??dEgDn@g@NIJERCvFa@VCTI|A[^KtBe@|D{@ZKZIVITKz@c@f@Wl@WpCuAdCkA^OREFApC?dE?lB?rA?V?rB?bA?lB?dD@jD?nNDR?nD@jD?n@?jC@??tFB~@?n@?xB?hF@hFB|C?jA@n@?V?VGXS\\_@tAwCxCaG`@}@vBeE`AtA`AtA`ApA~@vAHHx@jA`AtAJLTZ`@l@`ArA",
+              "transit_route": "62",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749076341000,
+              "end_time": 1749077760000,
+              "start_location": {
+                "lat": 47.61243819406331,
+                "lon": -122.34110993540487,
+                "stop": "3rd Ave & Virginia St"
+              },
+              "end_location": {
+                "lat": 47.58126830149501,
+                "lon": -122.38687106929379,
+                "stop": "SW Admiral Way & California Ave SW"
+              },
+              "route_shape": "airaHnvuiVP[~AaDPa@JUNWJUJOFIFIHGjCaCj@k@hC}BNMfEsDdEuDlCcCpBgBZWlCcCnCaCxBoBTSDRd@xAn@pBj@lBl@nBn@vBTr@Rv@t@bCFNVRBAdCuBh@Ub@YXMf@KDANENCV?hB?D?^?`A?r@?^Al@?r@A`@CdA?^?v@Ad@CxAQt@Gh@A`@?v@Hx@B`BFxB@xA?jBBt@Dn@JfBf@jA^hBXvBp@bC|@lFtBr@Vr@\\`Ab@t@`@p@d@dDzBVPTPPHXNZLXJZH\\DXF\\@RBT?Z?f@Cd@Ax@Cv@Cd@Ad@C`AAz@A`EC`DBxC?bD?|C?f@?d@?vCBxABxG@lD?bA?vD?jALbAFnA?|A?N?J?H@L?JDJ@JHLFHDHJJLJNHLFRHRDVDXDZ@b@JnCDhABr@Hz@h@|GJbA`@`HH|ABnA?hB@rBAt@?jA?`A?r@?~@?~C?jB?tF?zC@hIAvBAlE?j@?L?R?JAXEvAEz@G~@IbAQfBK`AI|@?@Iz@KtBCt@Al@?v@?tA?pA?xA?pQ?tB?|A?lFEv@Ct@Cp@CzOA`@A\\CZEVGPEVQ\\KRGJIHa@^mApAkF~Di@b@eAv@qAbAaAr@uA`Ay@d@{@d@mAh@sCfAeBf@yEvAkCf@sBR]DU?SLYVSVQVEHKRKXAHEHIZETGf@CRCj@AR?|CApE?|A?nAA\\BlE?~DAH?F?tB?fD?vACnG",
+              "transit_route": "57",
+              "transit_agency": "Metro Transit"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
