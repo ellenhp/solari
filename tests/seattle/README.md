@@ -1,0 +1,1 @@
+git update-index --assume-unchanged tests/seattle/valhalla_tiles/graph_metadata.db

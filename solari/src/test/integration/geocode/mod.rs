@@ -6,7 +6,7 @@ use serde::Deserialize;
 /// Look up the provided text on the maps.earth pelias instance and return the response as a LatLng.
 pub async fn geocode_address(text: &str) -> Result<LatLng> {
     // Define the base URL
-    const BASE_URL: &str = "https://maps.earth/pelias/v1/search";
+    const BASE_URL: &str = "https://maps.earth/pelias/v1/autocomplete";
 
     let url = Url::parse_with_params(BASE_URL, &[("text", text)])?;
 
