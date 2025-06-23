@@ -42,6 +42,8 @@ async fn plan(
 struct ServeArgs {
     #[arg(long)]
     base_path: PathBuf,
+    #[arg(long)]
+    valhalla_tile_path: Option<PathBuf>,
     #[arg(short, long)]
     port: Option<u16>,
 }
@@ -54,7 +56,7 @@ fn rocket() -> _ {
     let args = ServeArgs::parse();
     let router = Router::new(
         MmapTimetable::open(&args.base_path).expect("Failed to open timetable"),
-        args.base_path.clone(),
+        args.valhalla_tile_path.unwrap_or(args.base_path),
     )
     .expect("Failed to build router");
 

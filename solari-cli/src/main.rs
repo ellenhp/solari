@@ -4,6 +4,7 @@ mod download_feeds;
 use crate::build_timetable::{BuildArgs, run_build_timetable};
 use crate::download_feeds::{DownloadFeedsArgs, run_download_feeds};
 use clap::{Parser, Subcommand};
+use tracing_subscriber::FmtSubscriber;
 
 #[derive(Parser)]
 #[command(name = "solari-cli")]

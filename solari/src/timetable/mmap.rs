@@ -270,7 +270,8 @@ impl<'a> MmapTimetable<'a> {
     }
 
     pub fn open(base_path: &PathBuf) -> Result<MmapTimetable<'a>, anyhow::Error> {
-        debug!("Creating a new memory-mapped timetable. Opening files");
+        info!("Opening a memory-mapped timetable.");
+        debug!("Opening files");
         debug!("Opening routes.");
         let routes = File::open(base_path.join("routes"))?;
         debug!("Opening route stops.");
