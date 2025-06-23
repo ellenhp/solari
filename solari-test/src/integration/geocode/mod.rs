@@ -1,4 +1,4 @@
-use anyhow::{bail, Result};
+use anyhow::{Result, bail};
 use reqwest::{Client, Url};
 use s2::latlng::LatLng;
 use serde::Deserialize;

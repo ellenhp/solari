@@ -1,28 +1,22 @@
+use clap::Parser;
+use solari::timetable::build::{concat_timetables, timetable_from_feeds};
 use std::{fs, path::PathBuf};
 
-use clap::Parser;
-use solari::build_timetable::{concat_timetables, timetable_from_feeds};
-
-extern crate solari;
-
 #[derive(Parser)]
-struct BuildArgs {
+pub struct BuildArgs {
     #[arg(long)]
-    base_path: PathBuf,
+    pub base_path: PathBuf,
     #[arg(long)]
-    gtfs_path: PathBuf,
+    pub gtfs_path: PathBuf,
     #[arg(long)]
-    valhalla_tiles: PathBuf,
+    pub valhalla_tiles: PathBuf,
     #[arg(short, long, default_value_t = 1)]
-    num_threads: usize,
+    pub num_threads: usize,
     #[arg(long, default_value_t = false)]
-    concat_only: bool,
+    pub concat_only: bool,
 }
 
-#[tokio::main(worker_threads = 64)]
-async fn main() {
-    env_logger::init();
-    let args = BuildArgs::parse();
+pub async fn run_build_timetable(args: BuildArgs) -> Result<(), anyhow::Error> {
     rayon::ThreadPoolBuilder::new()
         .num_threads(args.num_threads)
         .build_global()
@@ -62,4 +56,5 @@ async fn main() {
         .await
         .unwrap();
     }
+    Ok(())
 }

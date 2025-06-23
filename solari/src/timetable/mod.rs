@@ -1,3 +1,4 @@
+pub mod build;
 pub mod in_memory;
 pub mod mmap;
 

@@ -1,18 +1,18 @@
-use crate::raptor::timetable::mmap::MmapTimetable;
-use crate::raptor::timetable::Time;
-use crate::route::Router;
-use crate::test::integration::api_latlng_to_s2_latlng;
-use crate::test::integration::build_timetable::build_timetable;
-use crate::test::integration::golden::Golden;
-use crate::test::integration::test_golden;
+use crate::integration::api_latlng_to_s2_latlng;
+use crate::integration::build_timetable::build_timetable;
+use crate::integration::golden::Golden;
+use crate::integration::test_golden;
 use anyhow::Result;
-use log::{error, info};
 use serde_json;
+use solari::route::Router;
+use solari::timetable::Time;
+use solari::timetable::mmap::MmapTimetable;
 use std::fs;
 use std::fs::File;
 use std::io::BufReader;
 use std::path::PathBuf;
 use tempdir::TempDir;
+use tracing::{error, info};
 
 /// Fix all golden test cases by updating their responses.
 pub async fn fix_golden_test_cases(goldens_dir: PathBuf) -> Result<()> {

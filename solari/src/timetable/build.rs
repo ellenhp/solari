@@ -1,13 +1,13 @@
-use crate::raptor::timetable::in_memory::InMemoryTimetableBuilder;
-use crate::raptor::timetable::mmap::MmapTimetable;
+use crate::timetable::in_memory::InMemoryTimetableBuilder;
+use crate::timetable::mmap::MmapTimetable;
 use anyhow::{bail, Result};
 use chrono::NaiveDate;
 use gtfs_structures::GtfsReader;
-use log::debug;
 use rayon::prelude::*;
 use std::fs;
 use std::hash::{DefaultHasher, Hasher};
 use std::path::PathBuf;
+use tracing::{debug, error};
 
 fn process_gtfs<'a>(
     path: &PathBuf,
@@ -68,7 +68,7 @@ pub async fn timetable_from_feeds<'a>(
         .filter_map(|path| {
             process_gtfs(&path, base_path, start_date, num_days)
                 .map_err(|err| {
-                    log::error!("Failed to process GTFS feed: {}", err);
+                    error!("Failed to process GTFS feed: {}", err);
                     err
                 })
                 .ok()

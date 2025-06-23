@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 use time::UtcDateTime;
 
-use crate::api::{response::SolariResponse, LatLng};
+use solari::api::{LatLng, response::SolariResponse};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub(crate) struct Golden {

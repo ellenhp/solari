@@ -11,7 +11,6 @@ use std::{
 use anyhow::{Error, Ok};
 use bytemuck::{cast_slice_mut, checked::cast_slice};
 use geo::Coord;
-use log::{debug, info};
 use memmap2::{Mmap, MmapMut, MmapOptions};
 use rayon::iter::{IntoParallelRefIterator, ParallelIterator};
 use redb::Database;
@@ -23,6 +22,7 @@ use solari_transfers::{
     fast_paths::{FastGraph, FastGraphStatic},
     {TransferGraph, TransferGraphSearcher},
 };
+use tracing::{debug, info};
 
 use crate::spatial::{IndexedStop, WALK_SPEED_MM_PER_SECOND};
 

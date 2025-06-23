@@ -1,13 +1,14 @@
 use std::path::PathBuf;
 
 use clap::Parser;
-use rocket::{serde::json::Json, State};
+use rocket::{State, serde::json::Json};
 use s2::latlng::LatLng;
 use solari::{
     api::{request::SolariRequest, response::SolariResponse},
-    raptor::timetable::{mmap::MmapTimetable, Time},
     route::Router,
+    timetable::{Time, mmap::MmapTimetable},
 };
+use tracing_subscriber::FmtSubscriber;
 
 #[macro_use]
 extern crate rocket;
@@ -47,7 +48,9 @@ struct ServeArgs {
 
 #[launch]
 fn rocket() -> _ {
-    env_logger::init();
+    tracing::subscriber::set_global_default(FmtSubscriber::new())
+        .expect("setting tracing default failed");
+
     let args = ServeArgs::parse();
     let router = Router::new(
         MmapTimetable::open(&args.base_path).expect("Failed to open timetable"),

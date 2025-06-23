@@ -3,7 +3,6 @@ use build_timetable::load_timetable_params;
 use chrono::Days;
 use chrono_tz::Tz;
 use geocode::geocode_address;
-use log::{debug, error, info};
 use s2::latlng::LatLng;
 use serde_json;
 use similar::{ChangeTag, TextDiff};
@@ -12,14 +11,15 @@ use std::fs::File;
 use std::io::{BufReader, Write};
 use std::path::{Path, PathBuf};
 use time::UtcDateTime;
+use tracing::{debug, error, info};
 
 use tempdir::TempDir;
 
-use crate::api::response::SolariResponse;
-use crate::raptor::timetable::mmap::MmapTimetable;
-use crate::raptor::timetable::Time;
-use crate::route::Router;
-use crate::test::integration::golden::Golden;
+use crate::integration::golden::Golden;
+use solari::api::response::SolariResponse;
+use solari::route::Router;
+use solari::timetable::Time;
+use solari::timetable::mmap::MmapTimetable;
 
 mod build_timetable;
 pub mod fix_golden;
@@ -27,8 +27,8 @@ mod geocode;
 mod golden;
 
 /// Convert an s2::latlng::LatLng to an api::LatLng
-fn s2_latlng_to_api_latlng(latlng: &LatLng) -> crate::api::LatLng {
-    crate::api::LatLng {
+fn s2_latlng_to_api_latlng(latlng: &LatLng) -> solari::api::LatLng {
+    solari::api::LatLng {
         lat: latlng.lat.deg(),
         lon: latlng.lng.deg(),
         stop: None,
@@ -36,7 +36,7 @@ fn s2_latlng_to_api_latlng(latlng: &LatLng) -> crate::api::LatLng {
 }
 
 /// Convert an s2::latlng::LatLng to an api::LatLng
-pub fn api_latlng_to_s2_latlng(latlng: &crate::api::LatLng) -> LatLng {
+pub fn api_latlng_to_s2_latlng(latlng: &solari::api::LatLng) -> LatLng {
     LatLng::from_degrees(latlng.lat, latlng.lon)
 }
 
@@ -93,8 +93,7 @@ pub async fn run_test_suite(goldens_dir: PathBuf) -> anyhow::Result<()> {
 
     debug!("Building timetable at {:?}", test_dir.path());
 
-    crate::test::integration::build_timetable::build_timetable(test_dir.path(), &goldens_dir)
-        .await?;
+    crate::integration::build_timetable::build_timetable(test_dir.path(), &goldens_dir).await?;
 
     let timetable = MmapTimetable::open(&test_dir.path().join("timetable"))?;
 
@@ -137,8 +136,7 @@ pub async fn expand_test_suite(goldens_dir: PathBuf) -> anyhow::Result<()> {
 
     debug!("Building timetable at {:?}", test_dir.path());
 
-    crate::test::integration::build_timetable::build_timetable(test_dir.path(), &goldens_dir)
-        .await?;
+    crate::integration::build_timetable::build_timetable(test_dir.path(), &goldens_dir).await?;
 
     let timetable = MmapTimetable::open(&test_dir.path().join("timetable"))?;
 

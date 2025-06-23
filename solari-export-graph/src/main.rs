@@ -3,6 +3,7 @@ use std::{path::PathBuf, sync::Arc};
 use clap::Parser;
 use solari_spatial::SphereIndexVec;
 use solari_transfers::{TransferGraph, fast_paths::FastGraphVec};
+use tracing_subscriber::FmtSubscriber;
 
 #[derive(Parser)]
 struct Args {
@@ -13,7 +14,9 @@ struct Args {
 }
 
 fn main() -> Result<(), anyhow::Error> {
-    env_logger::init();
+    tracing::subscriber::set_global_default(FmtSubscriber::new())
+        .expect("setting tracing default failed");
+
     let args = Args::parse();
     let database = Arc::new(redb::Database::create(
         args.output.join("graph_metadata.db"),

@@ -7,24 +7,24 @@ use std::{
 
 use geo::ClosestPoint;
 use geo_types::{Coord, Line, LineString, Point};
-use log::{debug, info, trace};
 use s2::latlng::LatLng;
 use serde::Serialize;
 use solari_geomath::EARTH_RADIUS_APPROX;
 use solari_spatial::SphereIndexMmap;
 use solari_transfers::{fast_paths::FastGraphStatic, TransferGraph, TransferGraphSearcher};
 use time::OffsetDateTime;
+use tracing::{debug, error, info, trace};
 
 use crate::{
     api::{
         response::{ResponseStatus, SolariResponse},
         SolariItinerary, SolariLeg,
     },
-    raptor::timetable::TripStopTime,
     spatial::FAKE_WALK_SPEED_SECONDS_PER_METER,
+    timetable::TripStopTime,
 };
 
-use crate::raptor::timetable::{Route, RouteStop, Stop, Time, Timetable, Trip};
+use crate::timetable::{Route, RouteStop, Stop, Time, Timetable, Trip};
 
 pub struct Router<'a, T: Timetable<'a>> {
     timetable: T,
@@ -310,10 +310,9 @@ impl<'a, T: Timetable<'a>> Router<'a, T> {
                     ) {
                         Ok(transfer_path) => Some(transfer_path.shape),
                         Err(err) => {
-                            log::error!(
+                            error!(
                                 "Failed to calculate transfer path: {}, step: {:?}",
-                                err,
-                                transfer
+                                err, transfer
                             );
                             None
                         }
@@ -812,7 +811,7 @@ where
                         {
                             previous_step
                         } else {
-                            log::error!(
+                            error!(
                                 "No best time for stop {:?}",
                                 departure.route_stop(self.timetable)
                             );
@@ -885,7 +884,7 @@ where
                 {
                     last_step
                 } else {
-                    log::error!("No transfer for stop {:?}", stop);
+                    error!("No transfer for stop {:?}", stop);
                     continue;
                 };
                 // Don't transfer twice in a row.

@@ -9,13 +9,13 @@ use chrono::{
 };
 use chrono_tz::Tz;
 use gtfs_structures::{Agency, Gtfs, StopTime};
-use log::{debug, warn};
 use rstar::RTree;
 use s2::{cellid::CellID, latlng::LatLng};
+use tracing::{debug, warn};
 
 use crate::{
-    raptor::timetable::{Route, RouteStop, Stop, StopRoute, Transfer, Trip, TripStopTime},
     spatial::IndexedStop,
+    timetable::{Route, RouteStop, Stop, StopRoute, Transfer, Trip, TripStopTime},
 };
 
 use super::{ShapeCoordinate, Timetable, TripMetadata};

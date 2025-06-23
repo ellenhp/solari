@@ -1,7 +1,7 @@
-use crate::raptor::timetable::mmap::MmapTimetable;
 use chrono::NaiveDate;
 use serde::{Deserialize, Serialize};
 use serde_json;
+use solari::timetable::mmap::MmapTimetable;
 use std::fs;
 use std::path::Path;
 
@@ -39,7 +39,7 @@ pub(crate) async fn build_timetable<'a>(
     // Load parameters from params.json
     let params = load_timetable_params(goldens_dir)?;
 
-    crate::build_timetable::timetable_from_feeds(
+    solari::timetable::build::timetable_from_feeds(
         &zip_files,
         &timetable_path,
         &valhalla_path,
