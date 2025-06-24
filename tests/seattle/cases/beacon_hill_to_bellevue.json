@@ -28,31 +28,12 @@
           "lon": -122.170501
         },
         "start_time": 1749060000000,
-        "end_time": 1749066616000,
+        "end_time": 1749065460000,
         "legs": [
           {
             "transit": {
-              "start_time": 1749060264000,
-              "end_time": 1749060523000,
-              "start_location": {
-                "lat": 47.56748582825316,
-                "lon": -122.31335399191778,
-                "stop": "15th Ave S & S Dakota St"
-              },
-              "end_location": {
-                "lat": 47.57226560250087,
-                "lon": -122.32738501268707,
-                "stop": "SODO Busway & S Spokane St"
-              },
-              "route_shape": "yoiaHbjpiVmHA_@AmC`Au@VgH~BWFu@\\YN_A\\QLQLi@d@Yf@MR[j@Od@Qx@Mt@Gl@C|@?x@Bx@Fz@Lv@Nn@Lb@N^Vd@\\z@rAxC`AxBN`@Rh@HRPp@Jx@Dh@Db@Bb@@h@@p@?P@n@?pA@lA?^?d@?xABd@?j@?`@BZDd@CZ?NAZOjCEdA?~AM?Y?",
-              "transit_route": "50",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749060960000,
-              "end_time": 1749061500000,
+              "start_time": 1749062820000,
+              "end_time": 1749063300000,
               "start_location": {
                 "lat": 47.57226560250087,
                 "lon": -122.32738501268707,
@@ -64,283 +45,63 @@
                 "stop": "4th Ave S & S Jackson St"
               },
               "route_shape": "smjaHvasiVmSFwY?gA?y@?wb@DgCAmKKc@Em@Gi@Cq@GuC?Y?k@AaB?e@@_ABq@FI?M@g@BCpH?NG?E?G?M?E?M?E?C?I?mB?{B?S?M?Q?c@?mD?W?_B?yA?I?I?M?_DC}@?W?wAC}@?",
-              "transit_route": "150",
+              "transit_route": "101",
               "transit_agency": "Metro Transit"
             }
           },
           {
             "transit": {
               "start_time": 1749062160000,
-              "end_time": 1749063240000,
+              "end_time": 1749063720000,
               "start_location": {
                 "lat": 47.59881208855994,
                 "lon": -122.3289029750654,
                 "stop": "4th Ave S & S Jackson St"
               },
               "end_location": {
-                "lat": 47.63681029171754,
-                "lon": -122.23659493446118,
-                "stop": "Sr 520 & Evergreen Point Rd"
+                "lat": 47.644790583151774,
+                "lon": -122.13377392314698,
+                "stop": "State Route 520 & NE 40th St"
               },
-              "route_shape": "qsoaHfksiVmA?yACmA?eDBeC?Y?C@[FIDQLUN]X}@x@wApAe@b@KLIFcA~@cAv@kC`CoCbCsBlBYTmC~BmC`CoCbCeEvDgErDa@^iB~Ao@l@GDKHgD|COVk@gBm@kBIWMa@kAuDm@kBo@sBm@oB_@oAM]{A}EsAgEGS}A_Fo@iBo@oBCKQg@I[Qi@Oe@Yy@OSSSaAY_@Em@AqDM}@C??w@A[CeA?sKI}BVM?_D?aB?qCBM?K?M?mBCM?k@?M?Q?cAB}@?q@?oBCy@Gw@Im@Mq@Oq@U_A]c@Uw@c@aAs@aCcCaBcBuFyFk@g@k@e@kAi@kGuBWIk@QyAa@mCi@gBW}ASQCkAEiCG}FE{ASmAC}ESoAGWEWEUGWMi@]MKGE_@g@[g@[w@Uw@Ku@CGSmBAMCUOyBS_DMsAGcAOqBUyE?EIyAEuAAUEu@Aw@CeBImMAiC?CCiBE{BAMCYAYAIEs@Is@K{@cA_I]gCOiAKiAUmCK}@cAgQGsAG_CGaA?k@u@yLK}B?AMsCI}CEeGBoC@mA^aORmG\\sMHyEb@kQHaDJwCPoCXcD`@cElAqK~@uI`AaLj@yHf@yFr@yH~Ck`@vJ}jAbC{Yz@aKv@oIb@sD`@_Df@gDVgDf@{D~AkL",
+              "route_shape": "qsoaHfksiVmA?yACmA?eDBeC?Y?C@[FIDQLUN]X}@x@wApAe@b@KLIFcA~@cAv@kC`CoCbCsBlBYTmC~BmC`CoCbCeEvDgErDa@^iB~Ao@l@GDKHgD|COVk@gBm@kBIWMa@kAuDm@kBo@sBm@oB_@oAM]{A}EsAgEGS}A_Fo@iBo@oBCKQg@I[Qi@Oe@Yy@OSSSaAY_@Em@AqDM}@C??w@A[CeA?sKI}BVM?_D?aB?qCBM?K?M?mBCM?k@?M?Q?cAB}@?q@?oBCy@Gw@Im@Mq@Oq@U_A]c@Uw@c@aAs@aCcCaBcBuFyFk@g@k@e@kAi@kGuBWIk@QyAa@mCi@gBW}ASQCkAEiCG}FE{ASmAC}ESoAGWEWEUGWMi@]MKGE_@g@[g@[w@Uw@Ku@CGSmBAMCUOyBS_DMsAGcAOqBUyE?EIyAEuAAUEu@Aw@CeBImMAiC?CCiBE{BAMCYAYAIEs@Is@K{@cA_I]gCOiAKiAUmCK}@cAgQGsAG_CGaA?k@u@yLK}B?AMsCI}CEeGBoC@mA^aORmG\\sMHyEb@kQHaDJwCPoCXcD`@cElAqK~@uI`AaLj@yHf@yFr@yH~Ck`@vJ}jAbC{Yz@aKv@oIb@sD`@_Df@gDVgDf@{D~AkLJy@p@oGRyBr@aJf@eHr@uFF{A@oBA{BCcBGaBI}@KqAYqB[gB]gB_@sAg@{Ak@}Au@{Ay@yAiAeBmBwC}@{AaAkAs@yAg@oAc@mAc@wAYcAMm@Mk@ACkFqVgBeIm@aE_A_Ee@aCUaBMuAM_BKkBCqC@mBFqCLoCVgEVsDZsD^}Cd@_DP}@h@_Cp@eC`AwC~@cCz@kBhAmBjAeBxDkFvAoBRYbB}Bh@u@T[xAkBV]Z[b@e@l@g@~@w@d@[hAs@|@e@t@c@|A_At@a@n@c@h@a@d@i@b@i@\\e@`@k@Xi@Zo@Re@Vm@Vs@ZaARcATiANeARiCH{ABmBAuEGsECcE@qDFoBHeCF{@J}@PkBP{AZqBr@_DzAmIRaARgAfA_G`@_C`@yCPuBJmC?eCGkCAOKqDSiFCiACy@WiICmAAqA@yA@c@@]B_ADcAR{DtAqYHsB@m@?G@{DCuBCmAEiAIgBEo@CW?AAQG}@KaAOmAYmBOcA[cB_@eBa@_B]gAu@{Bo@_Bo@sAi@kAgCkFkAaCcDwGeBsDwA{CkByD}AeDaC}EeCiFeBqDmAaCaAyA_AgA_AgAkAiA_Au@y@i@_Ai@kAo@aAs@e@Y}@]}@WcAYu@KqASe@Oe@KeAOs@Ew@E}@?cADG?",
               "transit_route": "545",
               "transit_agency": "Sound Transit"
             }
           },
           {
-            "transit": {
-              "start_time": 1749063540000,
-              "end_time": 1749063900000,
+            "transfer": {
+              "start_time": 1749063720000,
+              "end_time": 1749063753000,
               "start_location": {
-                "lat": 47.63681029171754,
-                "lon": -122.23659493446118,
-                "stop": "Sr 520 & Evergreen Point Rd"
+                "lat": 47.644790583151774,
+                "lon": -122.13377392314698,
+                "stop": "State Route 520 & NE 40th St"
               },
               "end_location": {
-                "lat": 47.64385222262182,
-                "lon": -122.1966930199129,
-                "stop": "South Kirkland Park & Ride"
+                "lat": 47.64442400192446,
+                "lon": -122.1335560348702,
+                "stop": "Redmond Technology"
               },
-              "route_shape": "oawaHpiaiVp@oGRyBr@aJf@eHr@uFF{A@oBA{BCcBGaBI}@KqAYqB[gB]gB_@sAg@{Ak@}Au@{Ay@yAiAeBmBwC}@{AaAkAs@yAg@oAc@mAc@wAYcAMm@Mk@ACkFqVgBeIm@aE_A_Ee@aCUaBMuAM_BKkBCqC@mBFqCLoCVgEVsDZsD^}Cd@_DR{B^kB\\yAb@{A`@sAj@{At@aBj@iAl@eAZm@FW@SAYIe@{EE_EA{@C[G]KMQMOU_@",
-              "transit_route": "255",
-              "transit_agency": "Metro Transit"
+              "route_shape": ""
             }
           },
           {
             "transit": {
-              "start_time": 1749064080000,
-              "end_time": 1749064304000,
+              "start_time": 1749063960000,
+              "end_time": 1749064350000,
               "start_location": {
-                "lat": 47.64385222262182,
-                "lon": -122.1966930199129,
-                "stop": "South Kirkland Park & Ride"
+                "lat": 47.64442400192446,
+                "lon": -122.1335560348702,
+                "stop": "Redmond Technology"
               },
               "end_location": {
-                "lat": 47.63027950648063,
-                "lon": -122.18573794376341,
-                "stop": "116th Ave NE & NE 24th St"
+                "lat": 47.6244989765798,
+                "lon": -122.16636398533969,
+                "stop": "BelRed"
               },
-              "route_shape": "ylxaHzpyhVW^MRCH?HBJxAfC`AyAT_@HMFODODSDU@U?U@u@?O@O\\JZFz@B~D@VaBXmBNy@Jk@J_@BEPi@Pe@^w@Ze@^g@BCb@e@TQrCuBDA`@[`JmGFE@CHC~@o@dHaFROdCgBn@o@^c@NY\\i@L[L[Z_ALi@Je@L{@FW~@{FnB?pA?",
-              "transit_route": "250",
-              "transit_agency": "Metro Transit"
-            }
-          }
-        ]
-      },
-      {
-        "start_location": {
-          "lat": 47.568187,
-          "lon": -122.31273199999998
-        },
-        "end_location": {
-          "lat": 47.628641,
-          "lon": -122.170501
-        },
-        "start_time": 1749060000000,
-        "end_time": 1749067516000,
-        "legs": [
-          {
-            "transit": {
-              "start_time": 1749060264000,
-              "end_time": 1749060523000,
-              "start_location": {
-                "lat": 47.56748582825316,
-                "lon": -122.31335399191778,
-                "stop": "15th Ave S & S Dakota St"
-              },
-              "end_location": {
-                "lat": 47.57226560250087,
-                "lon": -122.32738501268707,
-                "stop": "SODO Busway & S Spokane St"
-              },
-              "route_shape": "yoiaHbjpiVmHA_@AmC`Au@VgH~BWFu@\\YN_A\\QLQLi@d@Yf@MR[j@Od@Qx@Mt@Gl@C|@?x@Bx@Fz@Lv@Nn@Lb@N^Vd@\\z@rAxC`AxBN`@Rh@HRPp@Jx@Dh@Db@Bb@@h@@p@?P@n@?pA@lA?^?d@?xABd@?j@?`@BZDd@CZ?NAZOjCEdA?~AM?Y?",
-              "transit_route": "50",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749060960000,
-              "end_time": 1749061500000,
-              "start_location": {
-                "lat": 47.57226560250087,
-                "lon": -122.32738501268707,
-                "stop": "SODO Busway & S Spokane St"
-              },
-              "end_location": {
-                "lat": 47.59881208855994,
-                "lon": -122.3289029750654,
-                "stop": "4th Ave S & S Jackson St"
-              },
-              "route_shape": "smjaHvasiVmSFwY?gA?y@?wb@DgCAmKKc@Em@Gi@Cq@GuC?Y?k@AaB?e@@_ABq@FI?M@g@BCpH?NG?E?G?M?E?M?E?C?I?mB?{B?S?M?Q?c@?mD?W?_B?yA?I?I?M?_DC}@?W?wAC}@?",
-              "transit_route": "150",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749062160000,
-              "end_time": 1749063240000,
-              "start_location": {
-                "lat": 47.59881208855994,
-                "lon": -122.3289029750654,
-                "stop": "4th Ave S & S Jackson St"
-              },
-              "end_location": {
-                "lat": 47.63681029171754,
-                "lon": -122.23659493446118,
-                "stop": "Sr 520 & Evergreen Point Rd"
-              },
-              "route_shape": "qsoaHfksiVmA?yACmA?eDBeC?Y?C@[FIDQLUN]X}@x@wApAe@b@KLIFcA~@cAv@kC`CoCbCsBlBYTmC~BmC`CoCbCeEvDgErDa@^iB~Ao@l@GDKHgD|COVk@gBm@kBIWMa@kAuDm@kBo@sBm@oB_@oAM]{A}EsAgEGS}A_Fo@iBo@oBCKQg@I[Qi@Oe@Yy@OSSSaAY_@Em@AqDM}@C??w@A[CeA?sKI}BVM?_D?aB?qCBM?K?M?mBCM?k@?M?Q?cAB}@?q@?oBCy@Gw@Im@Mq@Oq@U_A]c@Uw@c@aAs@aCcCaBcBuFyFk@g@k@e@kAi@kGuBWIk@QyAa@mCi@gBW}ASQCkAEiCG}FE{ASmAC}ESoAGWEWEUGWMi@]MKGE_@g@[g@[w@Uw@Ku@CGSmBAMCUOyBS_DMsAGcAOqBUyE?EIyAEuAAUEu@Aw@CeBImMAiC?CCiBE{BAMCYAYAIEs@Is@K{@cA_I]gCOiAKiAUmCK}@cAgQGsAG_CGaA?k@u@yLK}B?AMsCI}CEeGBoC@mA^aORmG\\sMHyEb@kQHaDJwCPoCXcD`@cElAqK~@uI`AaLj@yHf@yFr@yH~Ck`@vJ}jAbC{Yz@aKv@oIb@sD`@_Df@gDVgDf@{D~AkL",
-              "transit_route": "545",
+              "route_shape": "qpxaH~emhVnBUxB@rBb@pBf@rBf@pBh@lBt@fB|@bBfA|AlAtAtApAxAjA~AdAbBbAbBdAbBbAdBdAbBbAbBdAbBbAdBbAdB~@dB|@hBx@jBt@jBv@lBv@jBt@jBv@lBv@jBt@jBv@lBv@jBv@jBr@lBn@nBj@pBf@rB`@tBZtBXtBTvBNxBJvBLxBNxBb@rB~@dB~AhAjBz@hBx@hBz@jBz@hBx@`BfA`AdBb@rBJxBAxB?xBAxB?xBAxBAxB?xBAxB?xB?x@",
+              "transit_route": "2 Line",
               "transit_agency": "Sound Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749063540000,
-              "end_time": 1749063900000,
-              "start_location": {
-                "lat": 47.63681029171754,
-                "lon": -122.23659493446118,
-                "stop": "Sr 520 & Evergreen Point Rd"
-              },
-              "end_location": {
-                "lat": 47.64385222262182,
-                "lon": -122.1966930199129,
-                "stop": "South Kirkland Park & Ride"
-              },
-              "route_shape": "oawaHpiaiVp@oGRyBr@aJf@eHr@uFF{A@oBA{BCcBGaBI}@KqAYqB[gB]gB_@sAg@{Ak@}Au@{Ay@yAiAeBmBwC}@{AaAkAs@yAg@oAc@mAc@wAYcAMm@Mk@ACkFqVgBeIm@aE_A_Ee@aCUaBMuAM_BKkBCqC@mBFqCLoCVgEVsDZsD^}Cd@_DR{B^kB\\yAb@{A`@sAj@{At@aBj@iAl@eAZm@FW@SAYIe@{EE_EA{@C[G]KMQMOU_@",
-              "transit_route": "255",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749064920000,
-              "end_time": 1749065204000,
-              "start_location": {
-                "lat": 47.64385222262182,
-                "lon": -122.1966930199129,
-                "stop": "South Kirkland Park & Ride"
-              },
-              "end_location": {
-                "lat": 47.63027950648063,
-                "lon": -122.18573794376341,
-                "stop": "116th Ave NE & NE 24th St"
-              },
-              "route_shape": "ylxaHzpyhVW^MRCH?HBJxAfC`AyAT_@HMFODODSDU@U?U@u@?O@O\\JZFz@B~D@VaBXmBNy@Jk@J_@BEPi@Pe@^w@Ze@^g@BCb@e@TQrCuBDA`@[`JmGFE@CHC~@o@dHaFROdCgBn@o@^c@NY\\i@L[L[Z_ALi@Je@L{@FW~@{FnB?pA?",
-              "transit_route": "250",
-              "transit_agency": "Metro Transit"
-            }
-          }
-        ]
-      },
-      {
-        "start_location": {
-          "lat": 47.568187,
-          "lon": -122.31273199999998
-        },
-        "end_location": {
-          "lat": 47.628641,
-          "lon": -122.170501
-        },
-        "start_time": 1749060000000,
-        "end_time": 1749066821000,
-        "legs": [
-          {
-            "transit": {
-              "start_time": 1749060264000,
-              "end_time": 1749060523000,
-              "start_location": {
-                "lat": 47.56748582825316,
-                "lon": -122.31335399191778,
-                "stop": "15th Ave S & S Dakota St"
-              },
-              "end_location": {
-                "lat": 47.57226560250087,
-                "lon": -122.32738501268707,
-                "stop": "SODO Busway & S Spokane St"
-              },
-              "route_shape": "yoiaHbjpiVmHA_@AmC`Au@VgH~BWFu@\\YN_A\\QLQLi@d@Yf@MR[j@Od@Qx@Mt@Gl@C|@?x@Bx@Fz@Lv@Nn@Lb@N^Vd@\\z@rAxC`AxBN`@Rh@HRPp@Jx@Dh@Db@Bb@@h@@p@?P@n@?pA@lA?^?d@?xABd@?j@?`@BZDd@CZ?NAZOjCEdA?~AM?Y?",
-              "transit_route": "50",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749060960000,
-              "end_time": 1749061500000,
-              "start_location": {
-                "lat": 47.57226560250087,
-                "lon": -122.32738501268707,
-                "stop": "SODO Busway & S Spokane St"
-              },
-              "end_location": {
-                "lat": 47.59881208855994,
-                "lon": -122.3289029750654,
-                "stop": "4th Ave S & S Jackson St"
-              },
-              "route_shape": "smjaHvasiVmSFwY?gA?y@?wb@DgCAmKKc@Em@Gi@Cq@GuC?Y?k@AaB?e@@_ABq@FI?M@g@BCpH?NG?E?G?M?E?M?E?C?I?mB?{B?S?M?Q?c@?mD?W?_B?yA?I?I?M?_DC}@?W?wAC}@?",
-              "transit_route": "150",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749062160000,
-              "end_time": 1749063240000,
-              "start_location": {
-                "lat": 47.59881208855994,
-                "lon": -122.3289029750654,
-                "stop": "4th Ave S & S Jackson St"
-              },
-              "end_location": {
-                "lat": 47.63681029171754,
-                "lon": -122.23659493446118,
-                "stop": "Sr 520 & Evergreen Point Rd"
-              },
-              "route_shape": "qsoaHfksiVmA?yACmA?eDBeC?Y?C@[FIDQLUN]X}@x@wApAe@b@KLIFcA~@cAv@kC`CoCbCsBlBYTmC~BmC`CoCbCeEvDgErDa@^iB~Ao@l@GDKHgD|COVk@gBm@kBIWMa@kAuDm@kBo@sBm@oB_@oAM]{A}EsAgEGS}A_Fo@iBo@oBCKQg@I[Qi@Oe@Yy@OSSSaAY_@Em@AqDM}@C??w@A[CeA?sKI}BVM?_D?aB?qCBM?K?M?mBCM?k@?M?Q?cAB}@?q@?oBCy@Gw@Im@Mq@Oq@U_A]c@Uw@c@aAs@aCcCaBcBuFyFk@g@k@e@kAi@kGuBWIk@QyAa@mCi@gBW}ASQCkAEiCG}FE{ASmAC}ESoAGWEWEUGWMi@]MKGE_@g@[g@[w@Uw@Ku@CGSmBAMCUOyBS_DMsAGcAOqBUyE?EIyAEuAAUEu@Aw@CeBImMAiC?CCiBE{BAMCYAYAIEs@Is@K{@cA_I]gCOiAKiAUmCK}@cAgQGsAG_CGaA?k@u@yLK}B?AMsCI}CEeGBoC@mA^aORmG\\sMHyEb@kQHaDJwCPoCXcD`@cElAqK~@uI`AaLj@yHf@yFr@yH~Ck`@vJ}jAbC{Yz@aKv@oIb@sD`@_Df@gDVgDf@{D~AkL",
-              "transit_route": "545",
-              "transit_agency": "Sound Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749063540000,
-              "end_time": 1749063900000,
-              "start_location": {
-                "lat": 47.63681029171754,
-                "lon": -122.23659493446118,
-                "stop": "Sr 520 & Evergreen Point Rd"
-              },
-              "end_location": {
-                "lat": 47.64385222262182,
-                "lon": -122.1966930199129,
-                "stop": "South Kirkland Park & Ride"
-              },
-              "route_shape": "oawaHpiaiVp@oGRyBr@aJf@eHr@uFF{A@oBA{BCcBGaBI}@KqAYqB[gB]gB_@sAg@{Ak@}Au@{Ay@yAiAeBmBwC}@{AaAkAs@yAg@oAc@mAc@wAYcAMm@Mk@ACkFqVgBeIm@aE_A_Ee@aCUaBMuAM_BKkBCqC@mBFqCLoCVgEVsDZsD^}Cd@_DR{B^kB\\yAb@{A`@sAj@{At@aBj@iAl@eAZm@FW@SAYIe@{EE_EA{@C[G]KMQMOU_@",
-              "transit_route": "255",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749065880000,
-              "end_time": 1749066268000,
-              "start_location": {
-                "lat": 47.64385222262182,
-                "lon": -122.1966930199129,
-                "stop": "South Kirkland Park & Ride"
-              },
-              "end_location": {
-                "lat": 47.62936021339121,
-                "lon": -122.17403404839433,
-                "stop": "Northup Way & 124th Ave NE"
-              },
-              "route_shape": "ylxaHzpyhVW^MRCH?HBJxAfC`AyAT_@HMFODODSDU@U?U@u@?O@O\\JZFz@B~D@VaBXmBNy@Jk@J_@BEPi@Pe@^w@Ze@^g@BCb@e@TQrCuBDA`@[`JmGFE@CHC~@o@dHaFROdCgBn@o@^c@NY\\i@L[L[Z_ALi@Je@L{@FW~@{Fj@iDL{@@ILiABU@S@]J{DDmAD_@@WFUV}@BETk@Pe@|@uB|@_Ct@gBLWXk@`AoBtBaEr@{ANi@FUNo@@MDc@D]Bg@@SB{@FcB?EB_@@_@DmA",
-              "transit_route": "249",
-              "transit_agency": "Metro Transit"
             }
           }
         ]

@@ -3,6 +3,7 @@ use std::path::PathBuf;
 
 use anyhow::{Result, bail};
 use clap::Parser;
+use tracing_subscriber::FmtSubscriber;
 
 #[derive(Parser)]
 struct Args {
@@ -12,6 +13,8 @@ struct Args {
 
 #[tokio::main]
 async fn main() -> Result<()> {
+    tracing::subscriber::set_global_default(FmtSubscriber::new())
+        .expect("setting tracing default failed");
     let args = Args::parse();
 
     let mut all_ok = true;

@@ -84,6 +84,58 @@
         "legs": [
           {
             "transit": {
+              "start_time": 1749040440000,
+              "end_time": 1749041186000,
+              "start_location": {
+                "lat": 47.66167071426583,
+                "lon": -122.34748803271692,
+                "stop": "Aurora Ave N & N 46th St"
+              },
+              "end_location": {
+                "lat": 47.614299810652774,
+                "lon": -122.34426904142312,
+                "stop": "3rd Ave & Bell St"
+              },
+              "route_shape": "m|{aHf~viVj@?hC?lC?lCCfC?vD?vE?zF?|FA~C?tB?~DApB?`M@lM?xLAv@CX?XA`@?j@E|@Gb@EXCTEd@Kj@IXIjAYhAYnA_@dA]bA[t@[jAe@hAi@rAo@BCbAm@rCeBbEiC\\SVOVORIRMTETGTITCNCRAX?Z?lC?zFDbFBV?zH?~A?jA?dDBnD?nDFt@@xBHtBBp@B^?`CDd@E^@b@Bb@Ht@Nr@TZHTFXBXCXGb@SZQNGREPENCJARC\\?`@?n@Bv@?^@fABdCCZIJRlEAP[h@jA~@tApBnCPZFFz@jA`AvA~@pAbAvAfBoDDIBIvCyFp@wA",
+              "transit_route": "E Line",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749039673000,
+              "end_time": 1749039960000,
+              "start_location": {
+                "lat": 47.614299810652774,
+                "lon": -122.34426904142312,
+                "stop": "3rd Ave & Bell St"
+              },
+              "end_location": {
+                "lat": 47.60825350912772,
+                "lon": -122.33654796552776,
+                "stop": "3rd Ave & Union St"
+              },
+              "route_shape": "utraHfjviVpAiCxCgGfCeFP[~AaDPa@JUNWJUJOFIFIHGbB_Bf@a@j@k@xCkCfEsD",
+              "transit_route": "2",
+              "transit_agency": "Metro Transit"
+            }
+          }
+        ]
+      },
+      {
+        "start_location": {
+          "lat": 47.659063,
+          "lon": -122.354245
+        },
+        "end_location": {
+          "lat": 47.607194,
+          "lon": -122.338257
+        },
+        "start_time": 1749038400000,
+        "end_time": 1749040308000,
+        "legs": [
+          {
+            "transit": {
               "start_time": 1749038848000,
               "end_time": 1749039540000,
               "start_location": {

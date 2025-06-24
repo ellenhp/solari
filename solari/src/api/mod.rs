@@ -152,6 +152,6 @@ impl PartialEq for SolariItinerary {
                 return false;
             }
         }
-        false
+        true
     }
 }

@@ -28,210 +28,61 @@
           "lon": -122.322326
         },
         "start_time": 1749060000000,
-        "end_time": 1749066579000,
+        "end_time": 1749063838000,
         "legs": [
           {
             "transit": {
               "start_time": 1749060960000,
-              "end_time": 1749061120000,
+              "end_time": 1749062460000,
               "start_location": {
                 "lat": 47.690208373189265,
                 "lon": -122.3978419879454,
                 "stop": "Loyal Way NW & NW 85th St"
               },
               "end_location": {
-                "lat": 47.69051739696823,
-                "lon": -122.38401803776978,
-                "stop": "NW 85th St & 22nd Ave NW"
+                "lat": 47.67575073620123,
+                "lon": -122.31667299889672,
+                "stop": "Roosevelt Station - Bay 1"
               },
-              "route_shape": "onabH`z`jVa@n@ILAF?Dc@??iG?I?M?aA?uB?S?Q?mG?S?Q?[?sE?sE?aA?sC?mB?G?aB?_E?I?K?aE?_@A}E?sEAwE",
+              "route_shape": "onabH`z`jVa@n@ILAF?Dc@??iG?I?M?aA?uB?S?Q?mG?S?Q?[?sE?sE?aA?sC?mB?G?aB?_E?I?K?aE?_@A}E?sEAwE?aA?qC?_F?{@?k@?mBCuE?sE?yE?uE?kAA_E?qG?iGAiGAoE?iA?gCAmE?qEA{F@kB@kL@wO@iA@iM?aA?kE?iG@iA@gE?kG?{FB}G?{@?wE?gG@qN?[?W?iE@uE@kB?aA?i@@uB?k@?s@?sB@gB@sE?U?a@A{B?qB@_@D?bA?|GEb@?jCA|C?D?J@DDHFJHRXRNbDDP?P?Ny@To@HSHOV]Z_@JK|B}BfCgCRUTUXWT[R]T]Nc@Pe@Lc@H_@@EHe@Fm@Fs@Be@@i@Ag@Ac@Cc@Ce@Eo@A]?YAW@k@@_@Di@Bg@Fc@He@Hc@Li@J_@JSL[Na@R[Vg@r@sAlAyBXi@Ta@LSNWPQLMROTQRMRMNENGTERCV?ZQTGTOhCeBr@m@bEoD`@a@dHsG@_B?y@?s@@Y?W@eA?o@?C?Q?k@?M?eC@gC@iC?aC",
               "transit_route": "45",
               "transit_agency": "Metro Transit"
             }
           },
           {
-            "transit": {
-              "start_time": 1749061757000,
-              "end_time": 1749061860000,
+            "transfer": {
+              "start_time": 1749062460000,
+              "end_time": 1749062514000,
               "start_location": {
-                "lat": 47.69051739696823,
-                "lon": -122.38401803776978,
-                "stop": "NW 85th St & 22nd Ave NW"
+                "lat": 47.67575073620123,
+                "lon": -122.31667299889672,
+                "stop": "Roosevelt Station - Bay 1"
               },
               "end_location": {
-                "lat": 47.69095612442407,
-                "lon": -122.37670902157096,
-                "stop": "15th Ave NW & NW 85th St"
+                "lat": 47.676106969138054,
+                "lon": -122.31604100130684,
+                "stop": "Roosevelt"
               },
-              "route_shape": "eqabHbc~iV?qC?_F?{@?k@?mBCuE?sE?yE?uE",
-              "transit_route": "40",
-              "transit_agency": "Metro Transit"
+              "route_shape": "kt~aHrxpiV?@?AA?M?L?]@NAS@B?C??CA?"
             }
           },
           {
             "transit": {
-              "start_time": 1749061980000,
-              "end_time": 1749062280000,
+              "start_time": 1749062520000,
+              "end_time": 1749063030000,
               "start_location": {
-                "lat": 47.69095612442407,
-                "lon": -122.37670902157096,
-                "stop": "15th Ave NW & NW 85th St"
+                "lat": 47.676106969138054,
+                "lon": -122.31604100130684,
+                "stop": "Roosevelt"
               },
               "end_location": {
-                "lat": 47.702621513672874,
-                "lon": -122.36347201886194,
-                "stop": "NW 100th Pl & 7th Ave NW"
+                "lat": 47.61955998803569,
+                "lon": -122.32038900504264,
+                "stop": "Capitol Hill"
               },
-              "route_shape": "osabH`v|iVcF?_@Cc@EY?_@G]EYIi@OQG[Mc@QYQ[O_@W]Wc@_@YYg@g@MQQUQUQWMQMSMWOUO[MYGK]{@Ow@qA{Cs@eBW[iAuCWo@oB}E[s@Uk@Oa@qA{CkKkWQi@QRGDC@G?gD@CBCBAB?FAv@AFADEJQTs@_BwBuE",
-              "transit_route": "D Line",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749062280000,
-              "end_time": 1749064020000,
-              "start_location": {
-                "lat": 47.702621513672874,
-                "lon": -122.36347201886194,
-                "stop": "NW 100th Pl & 7th Ave NW"
-              },
-              "end_location": {
-                "lat": 47.62406162488492,
-                "lon": -122.35681196407536,
-                "stop": "Queen Anne Ave N & W Mercer St"
-              },
-              "route_shape": "w|cbHbcziVWm@wByEEMCGEOAKAM?QBqEz@CzC?pC`HfCjGpBzEPh@jKjWpAzCN`@Tj@Zr@nB|EVn@hAtCHj@LZtBbF^h@\\z@FJLXNZNTLVLRLPPVPT^f@f@f@B@TVb@^\\V^VZNXPb@PZLPFh@NXH\\D^FX?b@D^BhH?xA?zG?@?pJCvB?rF?nJAl@?vH?H?H?fJCfC?r@?zC?F?J?dF?T?XITIRMVM\\[FCZQLERCh@?pC?pC?rC?`C?L?pC?pC?pC?nC?jB?n@?zC?pC?nC?pC?rB\\N?bC?bCAL?F?~ABh@?pCA@?r@Gb@G\\MD?H?bA?bA?j@?fB?dB?d@?f@?f@?rC?lA?L?tH?L?lB?n@?ZB^Ch@?b@?t@?`@?t@?tBBdA?nDLxCMfA^jC^hC^d@FdE?pA?T?zAY~@Gp@MfA_@lAIjCMF?x@CX?b@?J?T?xH?F?T?Z?bAAfA?rB@fDAbB?tH?bB?zACjA?n@?`A?rC?fFAzA?vC?JAF?P@d@?`@G\\Gh@Sb@W\\WT[BELOn@y@~AuBxEsGJM|EyGdBcCT[`ByBr@cAPWb@o@bBiC\\m@p@aABcAl@cC|@sCnAoERs@^uAPe@FWFILQr@}@^e@LODKBI@MBS@mA?aC?cC?_C?_B?c@?aC?cC?_C@aC@aC?gC",
-              "transit_route": "D Line",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749064800000,
-              "end_time": 1749065647000,
-              "start_location": {
-                "lat": 47.62406162488492,
-                "lon": -122.35681196407536,
-                "stop": "Queen Anne Ave N & W Mercer St"
-              },
-              "end_location": {
-                "lat": 47.61912919089607,
-                "lon": -122.32488300245627,
-                "stop": "E Olive Way & Summit Ave E"
-              },
-              "route_shape": "kqtaHlxxiVzC?hFBv@?pD?hF@dB@fCB?_C@sC?sB?eC?aC?g@AyAAq@?mD?w@@}E@sC?eC?mC?aA?s@?o@?sA?aC@cC?u@?iA?cC@iB?a@Aw@@C?a@?}B?[?oE@iH@cB?qD?S?_@?mA?eC?mD?sA@oBAc@?qB?s@?gCBm@?uA?qB?]?iD@cA?Y?g@HiA@m@BaAAmAMuH?wA?iC?yEoAeA",
-              "transit_route": "8",
-              "transit_agency": "Metro Transit"
-            }
-          }
-        ]
-      },
-      {
-        "start_location": {
-          "lat": 47.691405,
-          "lon": -122.40248999999999
-        },
-        "end_location": {
-          "lat": 47.622951,
-          "lon": -122.322326
-        },
-        "start_time": 1749060000000,
-        "end_time": 1749066504000,
-        "legs": [
-          {
-            "transit": {
-              "start_time": 1749060960000,
-              "end_time": 1749061120000,
-              "start_location": {
-                "lat": 47.690208373189265,
-                "lon": -122.3978419879454,
-                "stop": "Loyal Way NW & NW 85th St"
-              },
-              "end_location": {
-                "lat": 47.69051739696823,
-                "lon": -122.38401803776978,
-                "stop": "NW 85th St & 22nd Ave NW"
-              },
-              "route_shape": "onabH`z`jVa@n@ILAF?Dc@??iG?I?M?aA?uB?S?Q?mG?S?Q?[?sE?sE?aA?sC?mB?G?aB?_E?I?K?aE?_@A}E?sEAwE",
-              "transit_route": "45",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749061757000,
-              "end_time": 1749061860000,
-              "start_location": {
-                "lat": 47.69051739696823,
-                "lon": -122.38401803776978,
-                "stop": "NW 85th St & 22nd Ave NW"
-              },
-              "end_location": {
-                "lat": 47.69095612442407,
-                "lon": -122.37670902157096,
-                "stop": "15th Ave NW & NW 85th St"
-              },
-              "route_shape": "eqabHbc~iV?qC?_F?{@?k@?mBCuE?sE?yE?uE",
-              "transit_route": "40",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749061980000,
-              "end_time": 1749062280000,
-              "start_location": {
-                "lat": 47.69095612442407,
-                "lon": -122.37670902157096,
-                "stop": "15th Ave NW & NW 85th St"
-              },
-              "end_location": {
-                "lat": 47.702621513672874,
-                "lon": -122.36347201886194,
-                "stop": "NW 100th Pl & 7th Ave NW"
-              },
-              "route_shape": "osabH`v|iVcF?_@Cc@EY?_@G]EYIi@OQG[Mc@QYQ[O_@W]Wc@_@YYg@g@MQQUQUQWMQMSMWOUO[MYGK]{@Ow@qA{Cs@eBW[iAuCWo@oB}E[s@Uk@Oa@qA{CkKkWQi@QRGDC@G?gD@CBCBAB?FAv@AFADEJQTs@_BwBuE",
-              "transit_route": "D Line",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749062280000,
-              "end_time": 1749064020000,
-              "start_location": {
-                "lat": 47.702621513672874,
-                "lon": -122.36347201886194,
-                "stop": "NW 100th Pl & 7th Ave NW"
-              },
-              "end_location": {
-                "lat": 47.62406162488492,
-                "lon": -122.35681196407536,
-                "stop": "Queen Anne Ave N & W Mercer St"
-              },
-              "route_shape": "w|cbHbcziVWm@wByEEMCGEOAKAM?QBqEz@CzC?pC`HfCjGpBzEPh@jKjWpAzCN`@Tj@Zr@nB|EVn@hAtCHj@LZtBbF^h@\\z@FJLXNZNTLVLRLPPVPT^f@f@f@B@TVb@^\\V^VZNXPb@PZLPFh@NXH\\D^FX?b@D^BhH?xA?zG?@?pJCvB?rF?nJAl@?vH?H?H?fJCfC?r@?zC?F?J?dF?T?XITIRMVM\\[FCZQLERCh@?pC?pC?rC?`C?L?pC?pC?pC?nC?jB?n@?zC?pC?nC?pC?rB\\N?bC?bCAL?F?~ABh@?pCA@?r@Gb@G\\MD?H?bA?bA?j@?fB?dB?d@?f@?f@?rC?lA?L?tH?L?lB?n@?ZB^Ch@?b@?t@?`@?t@?tBBdA?nDLxCMfA^jC^hC^d@FdE?pA?T?zAY~@Gp@MfA_@lAIjCMF?x@CX?b@?J?T?xH?F?T?Z?bAAfA?rB@fDAbB?tH?bB?zACjA?n@?`A?rC?fFAzA?vC?JAF?P@d@?`@G\\Gh@Sb@W\\WT[BELOn@y@~AuBxEsGJM|EyGdBcCT[`ByBr@cAPWb@o@bBiC\\m@p@aABcAl@cC|@sCnAoERs@^uAPe@FWFILQr@}@^e@LODKBI@MBS@mA?aC?cC?_C?_B?c@?aC?cC?_C@aC@aC?gC",
-              "transit_route": "D Line",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749064800000,
-              "end_time": 1749065760000,
-              "start_location": {
-                "lat": 47.62406162488492,
-                "lon": -122.35681196407536,
-                "stop": "Queen Anne Ave N & W Mercer St"
-              },
-              "end_location": {
-                "lat": 47.61984627934867,
-                "lon": -122.32047299362776,
-                "stop": "E John St & Broadway  E - Bay 1"
-              },
-              "route_shape": "kqtaHlxxiVzC?hFBv@?pD?hF@dB@fCB?_C@sC?sB?eC?aC?g@AyAAq@?mD?w@@}E@sC?eC?mC?aA?s@?o@?sA?aC@cC?u@?iA?cC@iB?a@Aw@@C?a@?}B?[?oE@iH@cB?qD?S?_@?mA?eC?mD?sA@oBAc@?qB?s@?gCBm@?uA?qB?]?iD@cA?Y?g@HiA@m@BaAAmAMuH?wA?iC?yEoAeAw@cASWSc@MWYu@Qq@Ou@Ks@KoAC}@AoBAcC?cC",
-              "transit_route": "8",
-              "transit_agency": "Metro Transit"
+              "route_shape": "uv~aHlzpiVhBAnAEf@Chy@yHvBQ~AI~AG~AG~AC~AC~A?bPLXAVAVCVGVGVIVKTMTORQTSRSPUPWPYNYN]L[L]J_@J_@Ha@Fa@Fe@Fm@fAoNH_AHq@Hq@Jo@Jm@Lo@Nk@Nm@Pi@Pk@Rg@Tg@Tg@Te@Xc@Va@X_@Z_@Z]Z[\\Y\\Y\\U^U\\Q`@Q^O`@K^K`@I`@Ej@Gr@CxSQjJIfB?hA@hABjABhAHjAHhAJhALhANhAPhAThATfAVhAZfAZfA^fA^dAb@fAb@dAd@dAh@bAh@dAl@bAl@bAn@`Ap@nA`A~vA`gAdAt@l@\\l@\\l@Xn@Vn@Tn@Pn@Np@Lp@Jn@HjAFbA@bBA",
+              "transit_route": "1 Line",
+              "transit_agency": "Sound Transit"
             }
           }
         ]
@@ -283,77 +134,6 @@
               },
               "route_shape": "airaHnvuiVP[~AaDPa@JUNWJUJOFIFIHGbB_Bf@a@j@k@xCkCfEsDzAuAhB_BlCcClC_CGSQi@Qo@]eAKWESa@qAKYo@qBm@mB[aAQk@Oi@]cAIYCIK]EKEMIWWRSLMHQFUJYFg@JW{@a@wAIUm@oBo@sBWw@eAcD{A}EUs@AGKWOa@i@gBm@kBm@oBY{@Us@m@mBWw@Uw@Sk@EIEGMKUQMKIGEGCGCGEKAEAKAMAY?uBB]@i@@e@",
               "transit_route": "2",
-              "transit_agency": "Metro Transit"
-            }
-          }
-        ]
-      },
-      {
-        "start_location": {
-          "lat": 47.691405,
-          "lon": -122.40248999999999
-        },
-        "end_location": {
-          "lat": 47.622951,
-          "lon": -122.322326
-        },
-        "start_time": 1749060000000,
-        "end_time": 1749067253000,
-        "legs": [
-          {
-            "transit": {
-              "start_time": 1749062685000,
-              "end_time": 1749063240000,
-              "start_location": {
-                "lat": 47.69065089523853,
-                "lon": -122.38472003197641,
-                "stop": "NW 85th St & 22nd Ave NW"
-              },
-              "end_location": {
-                "lat": 47.668605821525084,
-                "lon": -122.38534497619705,
-                "stop": "NW Market St & Ballard Ave NW"
-              },
-              "route_shape": "eqabHng~iV@lC?rE@|En@?hG@|@Ar@?dI?l@?pCAlD?n@?rHEf@?rH?Z?hJCz@?jH?pI?L?f@Jb@At@?pC?pC?nC?h@?hB?nC?pC?pC?j@?dB?zC??sF",
-              "transit_route": "40",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749063480000,
-              "end_time": 1749065040000,
-              "start_location": {
-                "lat": 47.668605821525084,
-                "lon": -122.38534497619705,
-                "stop": "NW Market St & Ballard Ave NW"
-              },
-              "end_location": {
-                "lat": 47.66120531075092,
-                "lon": -122.31347696379893,
-                "stop": "U District Station - Bay 3"
-              },
-              "route_shape": "gh}aHlk~iV?yB?o@?e@@mF?eE?mA?yA?yD?gH?eG?]?aF?M?iABqL?U?OCeF@yH?_A?oJAeN?_C?yA?wEAqC?o@AU@e@?]@_@?QDMDIDMFKJGHIfBuAXSb@[dA{@LGHGr@e@`@Sv@_@rBgAhB}@RM^[b@_@BCZ_@t@y@X_@lC_D`@i@DERULOZe@\\m@~@qBRa@N]Vu@DMBMDSBQDUB]@M@S@a@?{@?aD?cA?sD?yF?aH?{A?kA?UJk@B]D]?WBe@?k@?q@Gg@?[@U?{@@kA?]CSAM?SEq@Cs@Ag@?}D?MBMFQJYl@yARa@N_@Pe@Ri@BqDAW?iA?gE?{G?M@_BAW@mDAaA@yD?[AW?uC?u@@O?QA{F@kF@mF?aA?kD?oF@mC?iE@sD?a@?sE?wE?qD@u@?aA?]?m@@o@?c@@yD@cCAkA@i@?sB@i@?gA?{C?cA?_@?i@?eABoB?qB?uB?qB@uB",
-              "transit_route": "44",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749066000000,
-              "end_time": 1749067056000,
-              "start_location": {
-                "lat": 47.66120531075092,
-                "lon": -122.31347696379893,
-                "stop": "U District Station - Bay 3"
-              },
-              "end_location": {
-                "lat": 47.62289426634341,
-                "lon": -122.3210140100828,
-                "stop": "Broadway  E & E Republican St"
-              },
-              "route_shape": "}y{aHfjpiV?eA@qB?wBz@?fC?bBDpA@rEBjHFjA@j@??|EANAfF?tB?`AAn@?`FAdD@^@TBNBRDPFTFPLJHFJDJ?L?@?TER?N?HBH@F@NBHDj@d@fBlAFDHFf@\\NL`@XTPx@j@RNDD`@V~@r@HDlBrAFD`Ar@PHTP\\VVRzDpCb@?p@?|A?tD?vA?xA?|A@dA?N?N?rF?`F?bGA?{B?}BAgC@Ul@?Z?B?H?L?R?P?B?J?T?zD?f@?`I?dFBdF@j@?xE?D?nD@pC@n@AhAYZEbB?ZDt@Xj@RZ@\\?fI?lI?Z?pJBjF@P@JBLLLJZl@`@r@LHlC@bFE",
-              "transit_route": "49",
               "transit_agency": "Metro Transit"
             }
           }

@@ -32,77 +32,56 @@
         "legs": [
           {
             "transit": {
-              "start_time": 1749052980000,
-              "end_time": 1749053520000,
+              "start_time": 1749053280000,
+              "end_time": 1749055020000,
               "start_location": {
                 "lat": 47.68181988119028,
                 "lon": -122.26376296931525,
                 "stop": "Sand Point Way NE & NE 74th St"
               },
               "end_location": {
-                "lat": 47.662742604117796,
-                "lon": -122.28520199728476,
-                "stop": "Sand Point Way NE & 40th Ave NE"
+                "lat": 47.661220577682705,
+                "lon": -122.34226198309645,
+                "stop": "Stone Way N & N 45th St"
               },
-              "route_shape": "kz_bH|rfiV??jNIt@?|@CdLE|CEZ?^DPHTHDDPNNNTr@xCvEnBxCRZHLvCtEbBhC\\h@jAhB\\h@bBjC~@zAx@jAfBrC~ExHXl@Xv@JXRv@??Jt@Hj@Fx@@^Bd@?bAE|@E`AEjAI~BA|@?t@@`AFvAJlAPfAPt@Z`A??\\r@^p@l@n@h@j@VX|@~@n@p@bAbAbAdAVZpAtAFHzAxAj@p@?@b@^`BjBh@f@dBlB@?p@\\",
-              "transit_route": "75",
+              "route_shape": "kz_bH|rfiV??jNIt@?|@CdLE|CEZ??bA?@?xC?vCA~E?|A@nD?x@AjC?D?xA?V?P?N?lA?p@AP?V?nA?~B?z@?jA?F@RBTLhAf@dE@JHn@JXRPb@LPLNZBN?T?x@AZCVOTIHMDq@?G@MDQHm@b@?pA???~B?zAArB?x@?n@?|A?xB?fE?dA?dA?dE?p@?p@?fD?x@?rE?vD?F?D?L?tA?hB?J?H?|@?x@?rA???j@?^?`@?`A?j@?~A?N?nB?h@?bC?~A?rB?xC?x@?L?jC?x@?vC@x@?n@?bC?\\?rD?^?b@?nC?^?xD?V?hB?rA?R?V?dA@lBAtE?vE?r@?bA?jB?`@?F?z@?hA?\\?jBGZ?vA?jB?fB@lB@z@?n@BhB?hBAhB@jBAlB?X?|A?tBArA?d@AxB?nBAvC?~@ArG?`CAhCAfC?dC?x@?P?B?n@AdA?V??AX?r@?x@cJhIe@`@_ErDk@j@RL^XRNZXXVJLLTXh@d@dANZFVh@vCD\\BTHnD?XAdACl@ClBAr@A|@C`A?N@N@NBHBLFLDHFHFBFDTFjFnAPDFBFDHJp@t@jAxAfCbDNNR\\TXJJHDvA?xB@^?tB?rABH?FCHAJGVM@A|G{DbFqC`AvE?@?`@?~BrCHl@?bBBnC?lCBrC?h@?hB?nC?nA?|@?n@?dBBb@ClB?@zF?PAN?nA?zB@V?ZAxD@`AAlD?vB?L?pA?hE?pG@V",
+              "transit_route": "62",
               "transit_agency": "Metro Transit"
             }
           },
           {
-            "transit": {
-              "start_time": 1749053520000,
-              "end_time": 1749053612000,
+            "transfer": {
+              "start_time": 1749055020000,
+              "end_time": 1749055301000,
               "start_location": {
-                "lat": 47.662742604117796,
-                "lon": -122.28520199728476,
-                "stop": "Sand Point Way NE & 40th Ave NE"
+                "lat": 47.661220577682705,
+                "lon": -122.34226198309645,
+                "stop": "Stone Way N & N 45th St"
               },
               "end_location": {
-                "lat": 47.66120528727149,
-                "lon": -122.28962701313021,
-                "stop": "NE 45th St & 36th Ave NE"
+                "lat": 47.66167071426583,
+                "lon": -122.34748803271692,
+                "stop": "Aurora Ave N & N 46th St"
               },
-              "route_shape": "{b|aH~xjiVr@r@h@l@d@j@h@z@Xr@Xv@V|@Nf@PtALdAFp@Dv@BbBAn@",
-              "transit_route": "45",
-              "transit_agency": "Metro Transit"
+              "route_shape": "yz{aHpdviVR_@a@p@LQo@nA`@}@k@nAHQQb@FQaAhC?Ex@qBy@~B?G?X?Q?l@?[?b@?GAvE@oEDrFCGAEAUFf@?C?H?E?N?I?HBR??@R@FAGBPAI@H?D??@F???D??AJ??AD???`A??B?"
             }
           },
           {
             "transit": {
-              "start_time": 1749053839000,
-              "end_time": 1749055020000,
+              "start_time": 1749055560000,
+              "end_time": 1749056348000,
               "start_location": {
-                "lat": 47.66120528727149,
-                "lon": -122.28962701313021,
-                "stop": "NE 45th St & 36th Ave NE"
-              },
-              "end_location": {
-                "lat": 47.64967728684042,
-                "lon": -122.3498689909232,
-                "stop": "Fremont Ave N & N 34th St"
-              },
-              "route_shape": "ay{aHfukiVOhPAvA@lD?nI?jB?nCG^?\\?l@En@?`A@`D@nAB|@AfG?z@?fE?V?~A?j@@rBHfGCv@ElAC`@?tE?jA?`A?nB?pB?pB?pB?f@?nA?^?pB?rB?hB?vBApB?~A?PAtB?pB?tB?pBCnB?dA?h@?bBXLj@?zEDnABfEBN?jDDAdE?dE?rB?~Ah@AxG@NJFHBLFb@LfBDj@LhA@F?HB\\?LBlC?nACrAApAA|DAD?FAB?@ABA?A@GFP|A?bCAvB?xAAjF?`AAlD?lFAlFCfBAfCGtF?nE?`@hG?n@?zDDdF?h@B~F@bG@?~A?lCAlF?dA?|@AlDAdFW|CKxAARCPK`AO`BKjAUpCkAnNALAJ??iAnNJAD?TA",
-              "transit_route": "31",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749055260000,
-              "end_time": 1749056278000,
-              "start_location": {
-                "lat": 47.64967728684042,
-                "lon": -122.3498689909232,
-                "stop": "Fremont Ave N & N 34th St"
+                "lat": 47.66167071426583,
+                "lon": -122.34748803271692,
+                "stop": "Aurora Ave N & N 46th St"
               },
               "end_location": {
                 "lat": 47.61243819406331,
                 "lon": -122.34110993540487,
                 "stop": "3rd Ave & Virginia St"
               },
-              "route_shape": "oqyaH`mwiVPAf@Ap@?pB?`A?n@?~@@\\?t@?V?B?F?F?^?H?t@?dA?TEl@_Bv@oBPk@tEsOfAqCPi@Xa@`@]rAaAZ[fA}@h@e@n@e@jDkBr@a@fBaAxDsBtAs@l@WdEmBNGr@]p@ShASv@?F?xB?fGE~@?|AC`AHB?f@JZJ^Fx@Rj@Pf@NRBNB?BN@VBf@?@?^?`@?hJBH?bA?f@Cj@Mh@Qt@a@RMtBwAxAiANMPEL?bA?BWBODKDIHKlBqAjAw@XMTITETCjB?\\?pA?zDBhF@bC?bB?hFBjF@rBUZCD?hFs@p@EHL\\d@bAtA`AtA`AtA`ApA~@vAHHx@jA`AtAJLTZ`@l@`ArA",
-              "transit_route": "40",
+              "route_shape": "m|{aHf~viVj@?hC?lC?lCCfC?vD?vE?zF?|FA~C?tB?~DApB?`M@lM?xLAv@CX?XA`@?j@E|@Gb@EXCTEd@Kj@IXIjAYhAYnA_@dA]bA[t@[jAe@hAi@rAo@BCbAm@rCeBbEiC\\SVOVORIRMTETGTITCNCRAX?Z?lC?zFDbFBV?zH?~A?jA?dDBnD?nDFt@@xBHtBBp@B^?`CDd@E^@b@Bb@Ht@Nr@TZHTFXBXCXGb@SZQNGREPENCJARC\\?`@?n@Bv@?^@fABdCCZIJRlEAP[h@jA~@tApBnCPZFFz@jA`AvA~@pAbAvAfBoDDIBIvCyFp@wAR_@pAiCxCgG",
+              "transit_route": "E Line",
               "transit_agency": "Metro Transit"
             }
           },
