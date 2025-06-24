@@ -1,7 +1,7 @@
 use std::path::PathBuf;
 
 use clap::Parser;
-use tracing_subscriber::FmtSubscriber;
+use tracing_subscriber::{EnvFilter, fmt};
 
 #[derive(Parser)]
 struct Args {
@@ -11,8 +11,7 @@ struct Args {
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    tracing::subscriber::set_global_default(FmtSubscriber::new())
-        .expect("setting tracing default failed");
+    fmt().with_env_filter(EnvFilter::from_default_env()).init();
     let args = Args::parse();
 
     // Iterate through each subdirectory in tests_dir

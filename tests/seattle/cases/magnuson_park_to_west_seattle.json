@@ -28,97 +28,95 @@
           "lon": -122.386232
         },
         "start_time": 1749052800000,
-        "end_time": 1749058686000,
+        "end_time": 1749057486000,
         "legs": [
           {
             "transit": {
               "start_time": 1749053280000,
-              "end_time": 1749055020000,
+              "end_time": 1749054000000,
               "start_location": {
                 "lat": 47.68181988119028,
                 "lon": -122.26376296931525,
                 "stop": "Sand Point Way NE & NE 74th St"
               },
               "end_location": {
-                "lat": 47.661220577682705,
-                "lon": -122.34226198309645,
-                "stop": "Stone Way N & N 45th St"
+                "lat": 47.67588811345723,
+                "lon": -122.31599404922227,
+                "stop": "Roosevelt Station - Bay 2"
               },
-              "route_shape": "kz_bH|rfiV??jNIt@?|@CdLE|CEZ??bA?@?xC?vCA~E?|A@nD?x@AjC?D?xA?V?P?N?lA?p@AP?V?nA?~B?z@?jA?F@RBTLhAf@dE@JHn@JXRPb@LPLNZBN?T?x@AZCVOTIHMDq@?G@MDQHm@b@?pA???~B?zAArB?x@?n@?|A?xB?fE?dA?dA?dE?p@?p@?fD?x@?rE?vD?F?D?L?tA?hB?J?H?|@?x@?rA???j@?^?`@?`A?j@?~A?N?nB?h@?bC?~A?rB?xC?x@?L?jC?x@?vC@x@?n@?bC?\\?rD?^?b@?nC?^?xD?V?hB?rA?R?V?dA@lBAtE?vE?r@?bA?jB?`@?F?z@?hA?\\?jBGZ?vA?jB?fB@lB@z@?n@BhB?hBAhB@jBAlB?X?|A?tBArA?d@AxB?nBAvC?~@ArG?`CAhCAfC?dC?x@?P?B?n@AdA?V??AX?r@?x@cJhIe@`@_ErDk@j@RL^XRNZXXVJLLTXh@d@dANZFVh@vCD\\BTHnD?XAdACl@ClBAr@A|@C`A?N@N@NBHBLFLDHFHFBFDTFjFnAPDFBFDHJp@t@jAxAfCbDNNR\\TXJJHDvA?xB@^?tB?rABH?FCHAJGVM@A|G{DbFqC`AvE?@?`@?~BrCHl@?bBBnC?lCBrC?h@?hB?nC?nA?|@?n@?dBBb@ClB?@zF?PAN?nA?zB@V?ZAxD@`AAlD?vB?L?pA?hE?pG@V",
+              "route_shape": "kz_bH|rfiV??jNIt@?|@CdLE|CEZ??bA?@?xC?vCA~E?|A@nD?x@AjC?D?xA?V?P?N?lA?p@AP?V?nA?~B?z@?jA?F@RBTLhAf@dE@JHn@JXRPb@LPLNZBN?T?x@AZCVOTIHMDq@?G@MDQHm@b@?pA???~B?zAArB?x@?n@?|A?xB?fE?dA?dA?dE?p@?p@?fD?x@?rE?vD?F?D?L?tA?hB?J?H?|@?x@?rA???j@?^?`@?`A?j@?~A?N?nB?h@?bC?~A?rB?xC?x@?L?jC?x@?vC@x@?n@?bC?\\?rD?^?b@?nC?^?xD?V?hB?rA?R?V?dA@lBAtE?vE?r@?bA?jB?`@?F?z@?hA?\\?jBGZ?vA?jB?fB@lB@z@?n@BhB?hBAhB@jBAlB?X?|A?tBArA?d@AxB?nBAvC",
               "transit_route": "62",
               "transit_agency": "Metro Transit"
             }
           },
           {
             "transfer": {
-              "start_time": 1749055020000,
-              "end_time": 1749055301000,
+              "start_time": 1749054000000,
+              "end_time": 1749054055000,
               "start_location": {
-                "lat": 47.661220577682705,
-                "lon": -122.34226198309645,
-                "stop": "Stone Way N & N 45th St"
+                "lat": 47.67588811345723,
+                "lon": -122.31599404922227,
+                "stop": "Roosevelt Station - Bay 2"
               },
               "end_location": {
-                "lat": 47.66167071426583,
-                "lon": -122.34748803271692,
-                "stop": "Aurora Ave N & N 46th St"
+                "lat": 47.676106969138054,
+                "lon": -122.31604100130684,
+                "stop": "Roosevelt"
               },
-              "route_shape": "yz{aHpdviVR_@a@p@LQo@nA`@}@k@nAHQQb@FQaAhC?Ex@qBy@~B?G?X?Q?l@?[?b@?GAvE@oEDrFCGAEAUFf@?C?H?E?N?I?HBR??@R@FAGBPAI@H?D??@F???D??AJ??AD???`A??B?"
+              "route_shape": ""
             }
           },
           {
             "transit": {
-              "start_time": 1749055560000,
-              "end_time": 1749056348000,
+              "start_time": 1749054360000,
+              "end_time": 1749055650000,
               "start_location": {
-                "lat": 47.66167071426583,
-                "lon": -122.34748803271692,
-                "stop": "Aurora Ave N & N 46th St"
+                "lat": 47.676106969138054,
+                "lon": -122.31604100130684,
+                "stop": "Roosevelt"
               },
               "end_location": {
-                "lat": 47.61243819406331,
-                "lon": -122.34110993540487,
-                "stop": "3rd Ave & Virginia St"
+                "lat": 47.57995198063381,
+                "lon": -122.32752197392034,
+                "stop": "SODO"
               },
-              "route_shape": "m|{aHf~viVj@?hC?lC?lCCfC?vD?vE?zF?|FA~C?tB?~DApB?`M@lM?xLAv@CX?XA`@?j@E|@Gb@EXCTEd@Kj@IXIjAYhAYnA_@dA]bA[t@[jAe@hAi@rAo@BCbAm@rCeBbEiC\\SVOVORIRMTETGTITCNCRAX?Z?lC?zFDbFBV?zH?~A?jA?dDBnD?nDFt@@xBHtBBp@B^?`CDd@E^@b@Bb@Ht@Nr@TZHTFXBXCXGb@SZQNGREPENCJARC\\?`@?n@Bv@?^@fABdCCZIJRlEAP[h@jA~@tApBnCPZFFz@jA`AvA~@pAbAvAfBoDDIBIvCyFp@wAR_@pAiCxCgG",
-              "transit_route": "E Line",
-              "transit_agency": "Metro Transit"
+              "route_shape": "uv~aHlzpiVhBAnAEf@Chy@yHvBQ~AI~AG~AG~AC~AC~A?bPLXAVAVCVGVGVIVKTMTORQTSRSPUPWPYNYN]L[L]J_@J_@Ha@Fa@Fe@Fm@fAoNH_AHq@Hq@Jo@Jm@Lo@Nk@Nm@Pi@Pk@Rg@Tg@Tg@Te@Xc@Va@X_@Z_@Z]Z[\\Y\\Y\\U^U\\Q`@Q^O`@K^K`@I`@Ej@Gr@CxSQjJIfB?hA@hABjABhAHjAHhAJhALhANhAPhAThATfAVhAZfAZfA^fA^dAb@fAb@dAd@dAh@bAh@dAl@bAl@bAn@`Ap@nA`A~vA`gAdAt@l@\\l@\\l@Xn@Vn@Tn@Pn@Np@Lp@Jn@HjAFbA@~KEn@?j@Bb@Bb@F`@F`@J`@L`@L`@P^R`@R\\V^V\\Z\\ZZ\\Z^Z`@Xb@Xb@Vd@Tf@Th@Rh@Rj@Pj@Pl@Nn@Ll@Lp@Jn@Hp@Hr@Fp@Dr@Br@Br@@r@@r@Ar@Ar@Cr@Cr@Er@Gr@Ip@Gf@k@bEGd@C\\A\\?\\?^@\\@\\DZD\\F^Jd@Nh@~HzVl@tBvCjJJTJRNNLJLJPFNBP@VAVGRMXShGsFlAkAdEuDZYhA{@xSaRZYv@y@bFoEZ]Xa@hEyHR]LSLONO\\Y^SPGPG`@Gd@ClI@L?LBLDf@PJBJ@xGCt@AZCXEr@OpFwAzC{@d@Id@CfR?X@XBrBT\\B^?ft@@@?",
+              "transit_route": "1 Line",
+              "transit_agency": "Sound Transit"
+            }
+          },
+          {
+            "transfer": {
+              "start_time": 1749055650000,
+              "end_time": 1749055687000,
+              "start_location": {
+                "lat": 47.57995198063381,
+                "lon": -122.32752197392034,
+                "stop": "SODO"
+              },
+              "end_location": {
+                "lat": 47.579879812965814,
+                "lon": -122.32824707422553,
+                "stop": "S Lander St & SODO Busway"
+              },
+              "route_shape": ""
             }
           },
           {
             "transit": {
-              "start_time": 1749056400000,
-              "end_time": 1749057320000,
+              "start_time": 1749055860000,
+              "end_time": 1749057360000,
               "start_location": {
-                "lat": 47.61243819406331,
-                "lon": -122.34110993540487,
-                "stop": "3rd Ave & Virginia St"
-              },
-              "end_location": {
-                "lat": 47.56756971856532,
-                "lon": -122.36339596781572,
-                "stop": "Delridge Way SW & SW Andover St"
-              },
-              "route_shape": "airaHnvuiVP[~AaDPa@JUNWJUJOFIFIHGjCaCj@k@xCkC`CuBdA}@dEuDlCcCpBgBZWlCcCnCaCxBoBTSDRd@xAn@pBj@lBl@nBn@vBTr@Rv@t@bCFNVRBAdCuBh@Ub@YXMf@KDANENCV?hB?D?^?`A?r@?^Al@?r@A`@CdA?^?v@Ad@CxAQt@Gh@A`@?v@Hx@B`BFxB@xA?jBBt@Dn@JfBf@jA^hBXvBp@bC|@lFtBr@Vr@\\`Ab@t@`@p@d@dDzBVPTPPHXNZLXJZH\\DXF\\@RBT?Z?f@Cd@Ax@Cv@Cd@Ad@C`AAz@A`EC`DBxC?bD?|C?f@?d@?vCBxABxG@lD?bA?vD?jALbAFnA?|A?N?J?H@L?JDJ@JHLFHDHJJLJNHLFRHRDVDXDZ@b@JnCDhABr@Hz@h@|GJbA`@`HH|ABnA?hB@rBAt@?jA?`A?r@?~@?~C?jB?tF?zC@hIAvBAlE?j@?L?R?JAXMdAKn@OhAMr@Y~Ae@rCQdAGn@C\\?l@@`@D\\FXFRDLFVLPDHNVJL`@d@`@d@TZ\\LZZXVb@Vp@b@pAz@xEdDXLZ?",
-              "transit_route": "H Line",
-              "transit_agency": "Metro Transit"
-            }
-          },
-          {
-            "transit": {
-              "start_time": 1749057480000,
-              "end_time": 1749058560000,
-              "start_location": {
-                "lat": 47.56756971856532,
-                "lon": -122.36339596781572,
-                "stop": "Delridge Way SW & SW Andover St"
+                "lat": 47.579879812965814,
+                "lon": -122.32824707422553,
+                "stop": "S Lander St & SODO Busway"
               },
               "end_location": {
                 "lat": 47.58126830149501,
                 "lon": -122.38687106929379,
                 "stop": "SW Admiral Way & California Ave SW"
               },
-              "route_shape": "ipiaHraziVH?bE@jI?T?H??rE?zE?p^?x@BfF?dB@JDBf@`@X^Xx@Ln@HrA@tMpA?^?~BBdD?b@?zC@?fC?nBAfG?`G?vAA`DEh@DVBX@nEAbGAnF?X?pFEVEZ?N???tC?^?H?H?Vu@?aA?qF??sC?i@?y@HUA?M?{I?????Q?]?{HAsJ@g@?gCAuD?uE?{C?q@?qD?aC?gJ?{@CuEGcAAoACgHIQ?yJQ",
+              "route_shape": "y|kaHpfsiV?pC?N?T?bD?nK?`G?hD?LD?hB?nH?jK?`@?lF?dK?^DVBVHNLNNJNFRFVF|@FnA?zG?`CJfH@~B?pC?`E?r@DlA^tGNjD`@`HH|ABnA?hB@rBAt@?jA?`A?r@?~@?~C?jB?tF?zC@hIAvBAlE?j@?L?R?JAXMdAKn@OhAMr@Y~Ae@rCQdAGn@C\\?l@@`@D\\FXFRDLFVLPDHNVJL`@d@`@d@TZ\\LZZXVb@Vp@b@pAz@xEdDXLZ?zCBH?bE@jI?T?H??rE?zE?p^?x@BfF?dB@JDBf@`@X^Xx@Ln@HrA@tMpA?^?~BBdD?b@?zC@?fC?nBAfG?`G?vAA`DEh@DVBX@nEAbGAnF?X?pFEVEZ?N???tC?^?H?H?Vu@?aA?qF??sC?i@?y@HUA?M?{I?????Q?]?{HAsJ@g@?gCAuD?uE?{C?q@?qD?aC?gJ?{@CuEGcAAoACgHIQ?yJQ",
               "transit_route": "50",
               "transit_agency": "Metro Transit"
             }

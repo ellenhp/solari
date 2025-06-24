@@ -3,7 +3,7 @@ use std::path::PathBuf;
 
 use anyhow::{Result, bail};
 use clap::Parser;
-use tracing_subscriber::FmtSubscriber;
+use tracing_subscriber::{EnvFilter, fmt};
 
 #[derive(Parser)]
 struct Args {
@@ -13,8 +13,7 @@ struct Args {
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    tracing::subscriber::set_global_default(FmtSubscriber::new())
-        .expect("setting tracing default failed");
+    fmt().with_env_filter(EnvFilter::from_default_env()).init();
     let args = Args::parse();
 
     let mut all_ok = true;

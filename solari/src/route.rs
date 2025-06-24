@@ -88,8 +88,8 @@ impl<'a, T: Timetable<'a>> Router<'a, T> {
         target_location: LatLng,
         max_distance_meters: Option<f64>,
         max_candidate_stops_each_side: Option<usize>,
-        max_transfers: Option<usize>,
-        max_transfer_delta: Option<usize>,
+        max_steps: Option<usize>,
+        max_step_delta: Option<usize>,
     ) -> SolariResponse {
         let start_stops = self.nearest_stops(
             start_location,
@@ -120,8 +120,8 @@ impl<'a, T: Timetable<'a>> Router<'a, T> {
             marked_routes: Vec::new(),
             timetable: &self.timetable,
             targets: target_costs.clone(),
-            max_transfers,
-            max_transfer_delta,
+            max_steps,
+            max_step_delta,
             step_log: vec![InternalStep {
                 previous_step: 0usize,
                 from: InternalStepLocation::Location(LatLng::from_degrees(0.0, 0.0)),
@@ -380,11 +380,32 @@ impl<'a, T: Timetable<'a>> Router<'a, T> {
         context: &RouterContext<'a, T>,
         target_costs: &[(usize, u32)],
     ) -> Vec<InternalItinerary> {
+        let best_round_count = if let Some(round_count) = context.fewest_rounds_to_target() {
+            round_count
+        } else {
+            return Vec::new();
+        };
+
         let mut itineraries = HashSet::new();
 
         let walking_scalars = [0.5, 1.0, 2.0];
-        for round in 0..context.best_times_per_round.len() {
-            for walking_scalar in walking_scalars {
+
+        let mut best_arrival_per_scenario: Vec<Option<Time>> = vec![None; walking_scalars.len()];
+        let max_round = match (context.max_step_delta, context.max_steps) {
+            (None, None) => context.best_times_per_round.len(),
+            (None, Some(transfers)) => context.best_times_per_round.len().min(transfers),
+            (Some(delta), None) => context
+                .best_times_per_round
+                .len()
+                .min(best_round_count + delta),
+            (Some(delta), Some(transfers)) => context
+                .best_times_per_round
+                .len()
+                .min(best_round_count + delta)
+                .min(transfers),
+        };
+        for round in 0..max_round {
+            for (walking_scalar_idx, walking_scalar) in walking_scalars.iter().enumerate() {
                 if let Some((itinerary, _)) = target_costs
                     .iter()
                     .filter_map(|(target_id, cost)| {
@@ -394,11 +415,21 @@ impl<'a, T: Timetable<'a>> Router<'a, T> {
                     })
                     .filter(|(it, _)| context.step_log[it.last_step].route.is_some())
                     .min_by_key(|(it, cost)| {
-                        self.cost_scaling_final_transfer(context, *it, walking_scalar)
+                        self.cost_scaling_final_transfer(context, *it, *walking_scalar)
                             + *cost as u32
                     })
                 {
-                    itineraries.insert(itinerary.clone());
+                    if let Some(previous_best_time) =
+                        &mut best_arrival_per_scenario[walking_scalar_idx]
+                    {
+                        if &itinerary.final_time < previous_best_time {
+                            *previous_best_time = itinerary.final_time;
+                            itineraries.insert(itinerary.clone());
+                        }
+                    } else {
+                        best_arrival_per_scenario[walking_scalar_idx] = Some(itinerary.final_time);
+                        itineraries.insert(itinerary.clone());
+                    }
                 }
             }
         }
@@ -602,8 +633,8 @@ pub struct RouterContext<'a, T: Timetable<'a>> {
     marked_routes: Vec<RefCell<Vec<TripStopTime>>>,
     timetable: &'a T,
     targets: Vec<(usize, u32)>,
-    max_transfers: Option<usize>,
-    max_transfer_delta: Option<usize>,
+    max_steps: Option<usize>,
+    max_step_delta: Option<usize>,
     step_log: Vec<InternalStep<'a>>,
 }
 
@@ -756,13 +787,11 @@ where
         }
     }
 
-    async fn do_round(&mut self, round_base: u32) -> bool {
+    async fn do_round(&mut self, round: u32) -> bool {
         let mut marked_stops_total = 0usize;
 
-        // Modification from the RAPTOR paper: we use "sub-rounds" to prioritize trips that don't contain a transfer from one stop to another.
-        let max_subrounds = self.max_transfers.unwrap_or(10) as u32;
-        for round in round_base..(round_base + max_subrounds) {
-            if round as usize >= self.best_times_per_round.len() {
+        {
+            while round as usize + 1 >= self.best_times_per_round.len() {
                 self.best_times_per_round.push(
                     self.best_times_per_round
                         .last()
@@ -898,16 +927,13 @@ where
             marked_stops_total += marked_stops_count;
 
             if marked_stops_count == 0 {
-                break;
+                return false;
             }
         }
 
-        let round = round_base as usize;
-        let next_round = round_base + 1;
-
         let mut marked_transfers_count = 0usize;
         let mut total_transfers_count = 0usize;
-        let marked_stops = self.marked_stops[round].clone();
+        let marked_stops = self.marked_stops[round as usize].clone();
         for (stop_id, stop_marked) in marked_stops.iter().enumerate() {
             if *stop_marked == StopMark::Unmarked {
                 continue;
@@ -916,10 +942,11 @@ where
 
             for transfer in self.timetable.transfers_from(stop_id) {
                 let transfer_to = transfer.to(self.timetable);
-                let last_step = if let Some(last_step) = self.best_times_per_round[round][stop.id()]
-                    .as_ref()
-                    .map(|transfer| transfer.last_step)
-                    .clone()
+                let last_step = if let Some(last_step) = self.best_times_per_round[round as usize]
+                    [stop.id()]
+                .as_ref()
+                .map(|transfer| transfer.last_step)
+                .clone()
                 {
                     last_step
                 } else {
@@ -930,15 +957,16 @@ where
                 if self.step_log[last_step].route.is_none() {
                     continue;
                 }
-                let best_arrival_at_transfer_start = self.best_times_per_round[round][stop.id()]
-                    .as_ref()
-                    .unwrap()
-                    .final_time;
+                let best_arrival_at_transfer_start = self.best_times_per_round[round as usize]
+                    [stop.id()]
+                .as_ref()
+                .unwrap()
+                .final_time;
                 let arrival_at_transfer_end =
                     best_arrival_at_transfer_start.plus_seconds(transfer.time_seconds());
                 total_transfers_count += 1;
                 if self.maybe_update_arrival_time_and_route(
-                    next_round,
+                    round + 1,
                     &InternalStepLocation::Stop(stop),
                     best_arrival_at_transfer_start,
                     &InternalStepLocation::Stop(transfer_to),
@@ -1015,15 +1043,15 @@ where
         let mut round = 1; // Zero is reserved for start costs.
         let mut marked_stops = true;
         while marked_stops {
-            if let Some(max_transfers) = self.max_transfers {
-                if round > max_transfers {
+            if let Some(max_steps) = self.max_steps {
+                if round > max_steps {
                     break;
                 }
             }
-            if let (Some(max_transfer_delta), Some(best_rounds_to_target)) =
-                (self.max_transfer_delta, self.fewest_rounds_to_target())
+            if let (Some(max_step_delta), Some(best_rounds_to_target)) =
+                (self.max_step_delta, self.fewest_rounds_to_target())
             {
-                if round >= best_rounds_to_target + max_transfer_delta {
+                if round >= best_rounds_to_target + max_step_delta {
                     break;
                 }
             }

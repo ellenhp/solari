@@ -56,8 +56,8 @@ pub async fn fix_golden_test_cases(goldens_dir: PathBuf) -> Result<()> {
                             api_latlng_to_s2_latlng(&golden.to_location),
                             Some(1500f64),
                             Some(1000),
+                            Some(6),
                             Some(4),
-                            Some(2),
                         )
                         .await;
 

@@ -77,8 +77,8 @@ async fn test_golden<'a>(
             to,
             Some(1500f64),
             Some(1000),
+            Some(6),
             Some(4),
-            Some(2),
         )
         .await;
 
