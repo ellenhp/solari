@@ -3,10 +3,6 @@
 Solari is a high-performance transit routing engine built using the [RAPTOR algorithm](https://www.microsoft.com/en-us/research/wp-content/uploads/2012/01/raptor_alenex.pdf), optimized for lightweight, global-scale public transit routing. Designed to serve developers building applications requiring fast and resource-efficient transit planning (e.g., maps apps, trip-planning APIs), it avoids heavy preprocessing steps while supporting planet-scale coverage through memory-mapped timetables.
 
 ## Key Features
-- **Lightweight & Fast**:
-  - Outperforms MOTIS/Transitous by anecdotally observed 5-10x in query speed.
-  - Single-core routing across the continental U.S. completes in seconds; local routes usually resolve in <250ms.
-
 - **Planet-Scale Coverage**:
   - Memory-mapped timetable data allows a single instance to handle global networks with minimal RAM usage (via `memmap2`).
 
@@ -28,53 +24,26 @@ Solari is a high-performance transit routing engine built using the [RAPTOR algo
 
 - **GTFS Compatibility**:
   - Supports modern GTFS feeds via the `gtfs-structures` crate.
-  - No real-time (GTFS-RT) support yet; prioritized roadmap features include alerts, delays and vehicle position updates.
+  - No real-time (GTFS-RT) support yet; prioritized roadmap features include alerts and delays.
 
 ## Getting Started
 
 ### Prerequisites
-1. **Rust** (`rustc >= 1.85` tested).
+1. **Rust** (`rustc >= 1.86` tested).
 2. **OpenSSL development package**: Install via your OS's package manager (e.g., `libssl-dev` on Ubuntu).
 
-### Quickstart Commands
-#### Step 1: Build the Timetable Database
-```bash
-# For a single GTFS feed:
-cargo run --release --bin build_timetable -- \
-    --base-path /path/to/timetable \
-    --gtfs-path gtfs.zip
+### TODO: Quickstart
 
-# For multi-agency feeds (directory of .zip files):
-cargo run --release --bin build_timetable -- \
-    --base-path /path/to/timetable \
-    --gtfs-path ./gtfs_feeds/
-```
-
-#### Step 2: Run the API Server
-```bash
-cargo run --release --bin serve -- --base-path /path/to/timetable
-```
+It used to be pretty simple to get a Solari instance up and running but we added support for [pedestrian routing](https://github.com/ellenhp/solari/pull/16) during transfers which complicated setup. Awaiting new documentation.
 
 ## Architecture
 - **RAPTOR Algorithm**: Implements all pruning rules from the original paper for optimal performance.
 - **Memory Mapping**: Uses `memmap2` to load timetable data directly from disk, enabling fast access without RAM overhead.
-- **Designed for Modularity**: Decouples routing logic from geocoding/external services (e.g., uses Valhalla for transfer routes, but otherwise allows easy integration into an existing stack).
-
-## Performance Benchmarks
-| Metric                | Solari           | OpenTripPlanner/MOTIS       |
-|-----------------------|------------------|-----------------|
-| Query Latency         | 150ms - 2.5s     | ~150ms-1 minute |
-| Memory Usage          | ~1.5GB (global)  | Higher? (OTP: ~4GB+, MOTIS=?) |
-
-*Note: Benchmarks are informal and based on limited testing. Systematic comparisons pending.*
-
----
 
 ## Roadmap
 - **GTFS-RT Support** (priority order):
   1. Service alerts and closures
   2. Real-time delays
-  3. Vehicle positions
 - **Performance Quantification**: Come up with better benchmarks against MOTIS and OpenTripPlanner.
 - **rRAPTOR Implementation**: Long-term goal for multi-departure-time routing.
 - **Documentation**: Ongoing work to finalize API response formats and provide detailed guides.
