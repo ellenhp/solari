@@ -28,7 +28,7 @@
           "lon": -122.322326
         },
         "start_time": 1749025800000,
-        "end_time": 1749036799000,
+        "end_time": 1749030386000,
         "legs": [
           {
             "transit": {
@@ -50,40 +50,38 @@
             }
           },
           {
-            "transit": {
+            "transfer": {
               "start_time": 1749028560000,
-              "end_time": 1749028724000,
+              "end_time": 1749028798000,
               "start_location": {
                 "lat": 47.66095349063726,
                 "lon": -122.31781795720174,
                 "stop": "Roosevelt Way NE & NE 45th St"
               },
               "end_location": {
-                "lat": 47.654819495346146,
-                "lon": -122.31220997996716,
-                "stop": "15th Ave NE & NE 40th St"
+                "lat": 47.66120531075092,
+                "lon": -122.31347696379893,
+                "stop": "U District Station - Bay 3"
               },
-              "route_shape": "}w{aHtdqiVzEDnABfEBN?jDDzB@fB@L?t@J?eB@eC@aF@eF@uB?eA?k@?W?yABoBAK~B?",
-              "transit_route": "65",
-              "transit_agency": "Metro Transit"
+              "route_shape": "qy{aHrcqiVJFMK@BAG?B?gA?bA?wA?R?}@?h@BgACD?VB]AA???S??AQ@AA@@}A?zA?uD?xA?}A?B@CA?@??E???O??AQ@AA@B_BA|A@yD?xA?@BcBCFBG?K??AO??@I??C?AC"
             }
           },
           {
             "transit": {
-              "start_time": 1749035003000,
-              "end_time": 1749036060000,
+              "start_time": 1749029400000,
+              "end_time": 1749030189000,
               "start_location": {
-                "lat": 47.654819495346146,
-                "lon": -122.31220997996716,
-                "stop": "15th Ave NE & NE 40th St"
+                "lat": 47.66120531075092,
+                "lon": -122.31347696379893,
+                "stop": "U District Station - Bay 3"
               },
               "end_location": {
-                "lat": 47.619979917001785,
-                "lon": -122.32011406736213,
-                "stop": "E John St & Broadway  E - Bay 2"
+                "lat": 47.62289426634341,
+                "lon": -122.3210140100828,
+                "stop": "Broadway  E & E Republican St"
               },
-              "route_shape": "sqzaHrapiVJ?fCDjB@\\?NBLH??JHLJX\\bB}D`AgC@AHStCiH|@eC^gA`AaCtAeDjAoCxA_EN[Ri@NS`@@pC?z@?zG?PLHBlCJX?l@?f@El@IZOLe@FCBADAZQh@Y`@S^UJGHIBEx@sAJQXk@pBaDPUJIRENEX?rA?pC@vA?x@?pCBpA_@pAYrA]jA[j@@|BBhJDp@@@?rA?`E@fGDT?vCBX?hE@hEBj@?lCB\\BNLp@j@|@v@PL\\Dn@?n@?L?J?T?r@BjA@fA?jAB`D@rF@l@?v@B~F@h@?`EDC~E@fAAvCIr@In@[lBEp@?bF?`@?hB?hD?bC?bC?dC?bCAhB@V?dChBB?|A?|@?`D@~B?bC@bC?`C@xB@hC?bC?`C",
-              "transit_route": "43",
+              "route_shape": "}y{aHfjpiV?eA@qB?wBz@?fC?bBDpA@rEBjHFjA@j@??|EANAfF?tB?`AAn@?`FAdD@^@TBNBRDPFTFPLJHFJDJ?L?@?TER?N?HBH@F@NBHDj@d@fBlAFDHFf@\\NL`@XTPx@j@RNDD`@V~@r@HDlBrAFD`Ar@PHTP\\VVRzDpCb@?p@?|A?tD?vA?xA?|A@dA?N?N?rF?`F?bGA?{B?}BAgC@Ul@?Z?B?H?L?R?P?B?J?T?zD?f@?`I?dFBdF@j@?xE?D?nD@pC@n@AhAYZEbB?ZDt@Xj@RZ@\\?fI?lI?Z?pJBjF@P@JBLLLJZl@`@r@LHlC@bFE",
+              "transit_route": "49",
               "transit_agency": "Metro Transit"
             }
           }

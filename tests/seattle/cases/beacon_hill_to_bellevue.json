@@ -28,78 +28,78 @@
           "lon": -122.170501
         },
         "start_time": 1749060000000,
-        "end_time": 1749065460000,
+        "end_time": 1749065100000,
         "legs": [
           {
             "transit": {
-              "start_time": 1749062820000,
-              "end_time": 1749063300000,
+              "start_time": 1749062467000,
+              "end_time": 1749062829000,
               "start_location": {
-                "lat": 47.57226560250087,
-                "lon": -122.32738501268707,
-                "stop": "SODO Busway & S Spokane St"
+                "lat": 47.56663510989336,
+                "lon": -122.29669206232195,
+                "stop": "Martin L King Jr Way S & S Dakota St"
               },
               "end_location": {
-                "lat": 47.59881208855994,
-                "lon": -122.3289029750654,
-                "stop": "4th Ave S & S Jackson St"
+                "lat": 47.5811958023912,
+                "lon": -122.30020100319051,
+                "stop": "Rainier Ave S & S Bayview St"
               },
-              "route_shape": "smjaHvasiVmSFwY?gA?y@?wb@DgCAmKKc@Em@Gi@Cq@GuC?Y?k@AaB?e@@_ABq@FI?M@g@BCpH?NG?E?G?M?E?M?E?C?I?mB?{B?S?M?Q?c@?mD?W?_B?yA?I?I?M?_DC}@?W?wAC}@?",
-              "transit_route": "101",
+              "route_shape": "kjiaHzamiV??o@FYB]?q@Cg@?_CI??k@?]?_@?c@?]?]?}@@e@?sC?iAA{@Co@CuB?{@?I?U?m@?m@?s@AU?oA?u@?m@CK?gAAm@?[?K?s@Am@?k@LICC?O?a@Au@UmBrAyBxAIFcD|BmGnEeGfE",
+              "transit_route": "106",
               "transit_agency": "Metro Transit"
             }
           },
           {
             "transit": {
-              "start_time": 1749062160000,
-              "end_time": 1749063720000,
+              "start_time": 1749307344000,
+              "end_time": 1749307920000,
               "start_location": {
-                "lat": 47.59881208855994,
-                "lon": -122.3289029750654,
-                "stop": "4th Ave S & S Jackson St"
+                "lat": 47.5811958023912,
+                "lon": -122.30020100319051,
+                "stop": "Rainier Ave S & S Bayview St"
               },
               "end_location": {
-                "lat": 47.644790583151774,
-                "lon": -122.13377392314698,
-                "stop": "State Route 520 & NE 40th St"
+                "lat": 47.586959786935886,
+                "lon": -122.19059003645508,
+                "stop": "South Bellevue Station Bus Plaza - Bay 2"
               },
-              "route_shape": "qsoaHfksiVmA?yACmA?eDBeC?Y?C@[FIDQLUN]X}@x@wApAe@b@KLIFcA~@cAv@kC`CoCbCsBlBYTmC~BmC`CoCbCeEvDgErDa@^iB~Ao@l@GDKHgD|COVk@gBm@kBIWMa@kAuDm@kBo@sBm@oB_@oAM]{A}EsAgEGS}A_Fo@iBo@oBCKQg@I[Qi@Oe@Yy@OSSSaAY_@Em@AqDM}@C??w@A[CeA?sKI}BVM?_D?aB?qCBM?K?M?mBCM?k@?M?Q?cAB}@?q@?oBCy@Gw@Im@Mq@Oq@U_A]c@Uw@c@aAs@aCcCaBcBuFyFk@g@k@e@kAi@kGuBWIk@QyAa@mCi@gBW}ASQCkAEiCG}FE{ASmAC}ESoAGWEWEUGWMi@]MKGE_@g@[g@[w@Uw@Ku@CGSmBAMCUOyBS_DMsAGcAOqBUyE?EIyAEuAAUEu@Aw@CeBImMAiC?CCiBE{BAMCYAYAIEs@Is@K{@cA_I]gCOiAKiAUmCK}@cAgQGsAG_CGaA?k@u@yLK}B?AMsCI}CEeGBoC@mA^aORmG\\sMHyEb@kQHaDJwCPoCXcD`@cElAqK~@uI`AaLj@yHf@yFr@yH~Ck`@vJ}jAbC{Yz@aKv@oIb@sD`@_Df@gDVgDf@{D~AkLJy@p@oGRyBr@aJf@eHr@uFF{A@oBA{BCcBGaBI}@KqAYqB[gB]gB_@sAg@{Ak@}Au@{Ay@yAiAeBmBwC}@{AaAkAs@yAg@oAc@mAc@wAYcAMm@Mk@ACkFqVgBeIm@aE_A_Ee@aCUaBMuAM_BKkBCqC@mBFqCLoCVgEVsDZsD^}Cd@_DP}@h@_Cp@eC`AwC~@cCz@kBhAmBjAeBxDkFvAoBRYbB}Bh@u@T[xAkBV]Z[b@e@l@g@~@w@d@[hAs@|@e@t@c@|A_At@a@n@c@h@a@d@i@b@i@\\e@`@k@Xi@Zo@Re@Vm@Vs@ZaARcATiANeARiCH{ABmBAuEGsECcE@qDFoBHeCF{@J}@PkBP{AZqBr@_DzAmIRaARgAfA_G`@_C`@yCPuBJmC?eCGkCAOKqDSiFCiACy@WiICmAAqA@yA@c@@]B_ADcAR{DtAqYHsB@m@?G@{DCuBCmAEiAIgBEo@CW?AAQG}@KaAOmAYmBOcA[cB_@eBa@_B]gAu@{Bo@_Bo@sAi@kAgCkFkAaCcDwGeBsDwA{CkByD}AeDaC}EeCiFeBqDmAaCaAyA_AgA_AgAkAiA_Au@y@i@_Ai@kAo@aAs@e@Y}@]}@WcAYu@KqASe@Oe@KeAOs@Ew@E}@?cADG?",
-              "transit_route": "545",
-              "transit_agency": "Sound Transit"
+              "route_shape": "gelaHxwmiVOLqHfFkAx@cBnAq@d@yB~AeEpCk@`@cBhAURs@f@u@f@??ID_BbAcAz@gCbBa@XYJo@PYDUCKEUIWOQYQa@Mi@?A?AEc@I{GGmDAqAAeACaCA}I?wGAgD?]A_EIyB?gABmK@uE?ABoE???sD@cG@mCAcA?eA?wA@qD?mBAuA?qCPwVHoNZgc@NuVJaNJePPcXLaSFgH@_DAoAAq@Ci@EcAKeAKmAMmAUsAYmAc@mBs@qBw@uBQc@iBmE]_AOg@[eA_@sAU_AOu@Kw@Gw@Gy@Au@Ck@?o@As@Aq@@_@?e@@c@Bc@@c@Ba@??JgAFm@PkATiAVgAb@eB^eA`@cAn@sAtCiGz@mBRa@d@kAn@gBn@uBbBwGTcAr@qC|@wDdAiEDUBIVaAT}@d@uATw@b@oAp@sBbEmLzBqGbBaF~E{OpA{D~@uCr@qBb@kAl@sAv@uAzAeCdBmCtA{BdBiDj@yAf@gBb@cB^wBb@eDLoA|@wLlAaP?AN}DF{CAuBE_CI{AOaBQyAYcB}CwQgAgGy@sFQqAOoBGqB?kBDcBH_BLkDf@cEP_BL}AH{AAiACy@KiAMcA[cAYw@k@y@g@e@k@_@c@Sg@Qg@Mm@Ia@GcAGc@?e@@e@HYBY?m@ReA`@s@h@uApAGJsDvDsBrB{AzAg@f@[V]V_@Na@N[J_APIBwAVEaACk@?QBMDI\\Y",
+              "transit_route": "Trailhead Direct Issaquah Alps",
+              "transit_agency": "Metro Transit"
             }
           },
           {
             "transfer": {
-              "start_time": 1749063720000,
-              "end_time": 1749063753000,
+              "start_time": 1749307920000,
+              "end_time": 1749307933000,
               "start_location": {
-                "lat": 47.644790583151774,
-                "lon": -122.13377392314698,
-                "stop": "State Route 520 & NE 40th St"
+                "lat": 47.586959786935886,
+                "lon": -122.19059003645508,
+                "stop": "South Bellevue Station Bus Plaza - Bay 2"
               },
               "end_location": {
-                "lat": 47.64442400192446,
-                "lon": -122.1335560348702,
-                "stop": "Redmond Technology"
+                "lat": 47.586932026424044,
+                "lon": -122.1906040185623,
+                "stop": "South Bellevue"
               },
               "route_shape": ""
             }
           },
           {
             "transit": {
-              "start_time": 1749063960000,
-              "end_time": 1749064350000,
+              "start_time": 1749063120000,
+              "end_time": 1749063870000,
               "start_location": {
-                "lat": 47.64442400192446,
-                "lon": -122.1335560348702,
-                "stop": "Redmond Technology"
+                "lat": 47.586932026424044,
+                "lon": -122.1906040185623,
+                "stop": "South Bellevue"
               },
               "end_location": {
-                "lat": 47.6244989765798,
-                "lon": -122.16636398533969,
+                "lat": 47.62440000711185,
+                "lon": -122.16522395203192,
                 "stop": "BelRed"
               },
-              "route_shape": "qpxaH~emhVnBUxB@rBb@pBf@rBf@pBh@lBt@fB|@bBfA|AlAtAtApAxAjA~AdAbBbAbBdAbBbAdBdAbBbAbBdAbBbAdBbAdB~@dB|@hBx@jBt@jBv@lBv@jBt@jBv@lBv@jBt@jBv@lBv@jBv@jBr@lBn@nBj@pBf@rB`@tBZtBXtBTvBNxBJvBLxBNxBb@rB~@dB~AhAjBz@hBx@hBz@jBz@hBx@`BfA`AdBb@rBJxBAxB?xBAxB?xBAxBAxB?xBAxB?xB?x@",
+              "route_shape": "mimaHbjxhVwAz@cBdAkBx@oBj@qBl@gB~@cBdAcBdAaBdAcBfAcBdAiBx@uB`@yB?sB_@oBo@oBo@oBq@cBeAuAuAmA}AmA}AyAqAiB}@sBa@yBGyBAyB?yBAyBAyBAyB?yB@wBDyBFyBDyBDyBDyBDyBHaBbAw@hBc@tBq@lB}AjAwBHyBAyBGyBGyB?yBDwB?_AaB?yB?yB?yB@yB?yB?yB?yB@yB?yB@yBCyBOwBc@sBy@kBoA{AeB_AwBUyBKyBKwBIwBYqBi@qBi@qBi@sBk@oBk@}AkA{@iB_@uBOyBOwBMyBOwBMyBOwBOyBMwBOyBMwBGyB?yB@yB?yB?yBEyBGyBEyBGyBEwBCyBAyB@yB?yB@yB?}A",
               "transit_route": "2 Line",
               "transit_agency": "Sound Transit"
             }

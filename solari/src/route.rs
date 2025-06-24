@@ -783,9 +783,10 @@ where
                 for (stop_id, stop_marked) in
                     self.marked_stops[round as usize - 1].iter().enumerate()
                 {
-                    if *stop_marked == StopMark::Unmarked {
+                    if *stop_marked != StopMark::Marked {
                         continue;
                     }
+                    // *stop_marked = StopMark::MarkedForTransfersOnly;
                     Self::explore_routes_for_marked_stop(
                         self.timetable,
                         &mut *marked_routes,
@@ -899,9 +900,12 @@ where
             }
         }
 
+        let round = round_base as usize;
+        let next_round = round_base + 1;
+
         let mut marked_transfers_count = 0usize;
         let mut total_transfers_count = 0usize;
-        let marked_stops = self.marked_stops[round_base as usize - 1].clone();
+        let marked_stops = self.marked_stops[round].clone();
         for (stop_id, stop_marked) in marked_stops.iter().enumerate() {
             if *stop_marked == StopMark::Unmarked {
                 continue;
@@ -910,11 +914,10 @@ where
 
             for transfer in self.timetable.transfers_from(stop_id) {
                 let transfer_to = transfer.to(self.timetable);
-                let last_step = if let Some(last_step) = self.best_times_per_round
-                    [round_base as usize - 1][stop.id()]
-                .as_ref()
-                .map(|transfer| transfer.last_step)
-                .clone()
+                let last_step = if let Some(last_step) = self.best_times_per_round[round][stop.id()]
+                    .as_ref()
+                    .map(|transfer| transfer.last_step)
+                    .clone()
                 {
                     last_step
                 } else {
@@ -925,16 +928,15 @@ where
                 if self.step_log[last_step].route.is_none() {
                     continue;
                 }
-                let best_arrival_at_transfer_start = self.best_times_per_round
-                    [round_base as usize - 1][stop.id()]
-                .as_ref()
-                .unwrap()
-                .final_time;
+                let best_arrival_at_transfer_start = self.best_times_per_round[round][stop.id()]
+                    .as_ref()
+                    .unwrap()
+                    .final_time;
                 let arrival_at_transfer_end =
                     best_arrival_at_transfer_start.plus_seconds(transfer.time_seconds());
                 total_transfers_count += 1;
                 if self.maybe_update_arrival_time_and_route(
-                    round_base,
+                    next_round,
                     &InternalStepLocation::Stop(stop),
                     best_arrival_at_transfer_start,
                     &InternalStepLocation::Stop(transfer_to),

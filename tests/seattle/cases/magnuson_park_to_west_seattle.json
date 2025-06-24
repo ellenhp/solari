@@ -135,6 +135,94 @@
           "lon": -122.386232
         },
         "start_time": 1749052800000,
+        "end_time": 1749059516000,
+        "legs": [
+          {
+            "transit": {
+              "start_time": 1749053280000,
+              "end_time": 1749056567000,
+              "start_location": {
+                "lat": 47.68181988119028,
+                "lon": -122.26376296931525,
+                "stop": "Sand Point Way NE & NE 74th St"
+              },
+              "end_location": {
+                "lat": 47.61243819406331,
+                "lon": -122.34110993540487,
+                "stop": "3rd Ave & Virginia St"
+              },
+              "route_shape": "kz_bH|rfiV??jNIt@?|@CdLE|CEZ??bA?@?xC?vCA~E?|A@nD?x@AjC?D?xA?V?P?N?lA?p@AP?V?nA?~B?z@?jA?F@RBTLhAf@dE@JHn@JXRPb@LPLNZBN?T?x@AZCVOTIHMDq@?G@MDQHm@b@?pA???~B?zAArB?x@?n@?|A?xB?fE?dA?dA?dE?p@?p@?fD?x@?rE?vD?F?D?L?tA?hB?J?H?|@?x@?rA???j@?^?`@?`A?j@?~A?N?nB?h@?bC?~A?rB?xC?x@?L?jC?x@?vC@x@?n@?bC?\\?rD?^?b@?nC?^?xD?V?hB?rA?R?V?dA@lBAtE?vE?r@?bA?jB?`@?F?z@?hA?\\?jBGZ?vA?jB?fB@lB@z@?n@BhB?hBAhB@jBAlB?X?|A?tBArA?d@AxB?nBAvC?~@ArG?`CAhCAfC?dC?x@?P?B?n@AdA?V??AX?r@?x@cJhIe@`@_ErDk@j@RL^XRNZXXVJLLTXh@d@dANZFVh@vCD\\BTHnD?XAdACl@ClBAr@A|@C`A?N@N@NBHBLFLDHFHFBFDTFjFnAPDFBFDHJp@t@jAxAfCbDNNR\\TXJJHDvA?xB@^?tB?rABH?FCHAJGVM@A|G{DbFqC`AvE?@?`@?~BrCHl@?bBBnC?lCBrC?h@?hB?nC?nA?|@?n@?dBBb@ClB?@zF?PAN?nA?zB@V?ZAxD@`AAlD?vB?L?pA?hE?pG@V`@?hBDnCFxCFl@@fBDrABhFHh@@nCDjBDn@@~ADhBDzGLx@@vJP~EJCPK`AO`BKjAUpCkAnNALAJ??iAnNJAD?TA~BKPAf@Ap@?pB?`A?n@?~@@\\?t@?V?B?F?F?^?H?t@?dA?TEf@QNKJITYRWPUPWz@aBr@kBbByFTm@Vm@b@k@^_@??dEgDn@g@NIJERCvFa@VCTI|A[^KtBe@|D{@ZKZIVITKz@c@f@Wl@WpCuAdCkA^OREFApC?dE?lB?rA?V?rB?bA?lB?dD@jD?nNDR?nD@jD?n@?jC@??tFB~@?n@?xB?hF@hFB|C?jA@n@?V?VGXS\\_@tAwCxCaG`@}@vBeE`AtA`AtA`ApA~@vAHHx@jA`AtAJLTZ`@l@`ArA",
+              "transit_route": "62",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749056835000,
+              "end_time": 1749058522000,
+              "start_location": {
+                "lat": 47.61243819406331,
+                "lon": -122.34110993540487,
+                "stop": "3rd Ave & Virginia St"
+              },
+              "end_location": {
+                "lat": 47.54486470251592,
+                "lon": -122.38767996938523,
+                "stop": "Fauntleroy Way SW & California Ave SW"
+              },
+              "route_shape": "airaHnvuiVP[~AaDPa@JUNWJUJOFIFIHGjCaCj@k@hC}BNMfEsDdEuDlCcCpBgBZWlCcCnCaCxBoBTSDRd@xAn@pBj@lBl@nBn@vBTr@Rv@t@bCFNVRBAdCuBh@Ub@YXMf@KDANENCV?hB?D?^?`A?r@?^Al@?r@A`@CdA?^?v@Ad@CxAQt@Gh@A`@?v@Hx@B`BFxB@xA?jBBt@Dn@JfBf@jA^hBXvBp@bC|@lFtBr@Vr@\\`Ab@t@`@p@d@dDzBVPTPPHXNZLXJZH\\DXF\\@RBT?Z?f@Cd@Ax@Cv@Cd@Ad@C`AAz@A`EC`DBxC?bD?|C?f@?d@?vCBxABxG@lD?bA?vD?jALbAFnA?|A?N?J?H@L?JDJ@JHLFHDHJJLJNHLFRHRDVDXDZ@b@JnCDhABr@Hz@h@|GJbA`@`HH|ABnA?hB@rBAt@?jA?`A?r@?~@?~C?jB?tF?zC@hIAvBAlE?j@?L?R?JAXEvAEz@G~@IbAQfBK`AI|@?@Iz@KtBCt@Al@?v@?tA?pA?xA?pQEt@Ez@IzB?\\?l@?fB?XAdA?bAA|@AxGC~EL?HAL?J?@?D?nC?b@@f@?f@?x@?|BD@?hADzA@J?pC?fQ`JDBf@`@X^Xx@Ln@HrA@tMpA?^?~BBdD?b@?zC@?vFAfG?`G?vAA`DEh@DVBX@nEAbGAhG?pFEVEZ?N???jA?hA?^?R?VdJHBmG??tJJfEDtCBjJHbJHbA@dHFfJJjJH`C?jCBpA?H?@P",
+              "transit_route": "C Line",
+              "transit_agency": "Metro Transit"
+            }
+          },
+          {
+            "transfer": {
+              "start_time": 1749058522000,
+              "end_time": 1749058571000,
+              "start_location": {
+                "lat": 47.54486470251592,
+                "lon": -122.38767996938523,
+                "stop": "Fauntleroy Way SW & California Ave SW"
+              },
+              "end_location": {
+                "lat": 47.54531097600096,
+                "lon": -122.3871079659365,
+                "stop": "California Ave SW & Fauntleroy Way SW"
+              },
+              "route_shape": "cceaH`x~iV@?@@@@"
+            }
+          },
+          {
+            "transit": {
+              "start_time": 1749058655000,
+              "end_time": 1749059393000,
+              "start_location": {
+                "lat": 47.54531097600096,
+                "lon": -122.3871079659365,
+                "stop": "California Ave SW & Fauntleroy Way SW"
+              },
+              "end_location": {
+                "lat": 47.58143229750331,
+                "lon": -122.38643603012778,
+                "stop": "California Ave SW & SW Admiral Way"
+              },
+              "route_shape": "eeeaHbw~iVC?kCCaC?kJIq@CuHGiJIs@?oHIkJIo@AeBAgEEuJKcJIEZ?N???tC?^?H?H?Vu@?aA?qF??sC?i@?y@HUA?M?{I?????Q?]?{HAsJ@g@?gCAuD?uE?{C?q@?qD?aC?gJ?{@CuEGcAAoACgHIQ?yJQ",
+              "transit_route": "128",
+              "transit_agency": "Metro Transit"
+            }
+          }
+        ]
+      },
+      {
+        "start_location": {
+          "lat": 47.682088,
+          "lon": -122.263268
+        },
+        "end_location": {
+          "lat": 47.580894,
+          "lon": -122.386232
+        },
+        "start_time": 1749052800000,
         "end_time": 1749059886000,
         "legs": [
           {
