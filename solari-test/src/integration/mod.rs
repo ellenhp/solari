@@ -11,6 +11,7 @@ use std::fs::File;
 use std::io::{BufReader, Write};
 use std::path::{Path, PathBuf};
 use time::UtcDateTime;
+use tokio::time::Instant;
 use tracing::{debug, error, info};
 
 use tempdir::TempDir;
@@ -112,13 +113,16 @@ pub async fn run_test_suite(goldens_dir: PathBuf) -> anyhow::Result<()> {
             let reader = BufReader::new(file);
             let golden: Golden = serde_json::from_reader(reader)?;
 
-            match test_golden(&router, &golden, &path).await {
+            let start = Instant::now();
+            let result = test_golden(&router, &golden, &path).await;
+            let elapsed = Instant::now().duration_since(start);
+            match result {
                 Ok(_) => {
-                    info!("Passed: {:?}", path)
+                    info!("Passed in {:?}: {:?}", elapsed, path)
                 }
                 Err(err) => {
                     all_ok = false;
-                    error!("Failed: {:?}", err)
+                    error!("Failed in {:?}: {:?}", elapsed, err)
                 }
             }
         }

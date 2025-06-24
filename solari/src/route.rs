@@ -540,6 +540,12 @@ struct InternalItinerary {
     final_time: Time,
 }
 
+#[derive(Debug, Clone, PartialEq, Eq)]
+enum StopMark {
+    Unmarked,
+    Marked,
+}
+
 #[derive(Debug, Clone, Serialize)]
 pub struct BeginStep {
     pub begin_latlng: [f64; 2],
@@ -591,7 +597,7 @@ pub enum Step {
 
 pub struct RouterContext<'a, T: Timetable<'a>> {
     best_times_per_round: Vec<Vec<Option<InternalItinerary>>>,
-    marked_stops: Vec<Vec<bool>>,
+    marked_stops: Vec<Vec<StopMark>>,
     marked_routes: Vec<RefCell<Vec<TripStopTime>>>,
     timetable: &'a T,
     targets: Vec<(usize, u32)>,
@@ -686,7 +692,7 @@ where
                         last_step: step_log_idx.expect("Logic error: Step log index not updated"),
                     });
 
-                    self.marked_stops[round as usize][stop.id()] = true;
+                    self.marked_stops[round as usize][stop.id()] = StopMark::Marked;
 
                     marked = true
                 }
@@ -699,7 +705,7 @@ where
         self.best_times_per_round
             .push(vec![None; self.timetable.stop_count()]);
         self.marked_stops
-            .push(vec![false; self.timetable.stop_count()]);
+            .push(vec![StopMark::Unmarked; self.timetable.stop_count()]);
         self.marked_routes.push(RefCell::new(vec![
             TripStopTime::marked();
             self.timetable.routes().len()
@@ -762,7 +768,7 @@ where
                         .expect("Logic error, best_times_per_round is empty."),
                 );
                 self.marked_stops
-                    .push(vec![false; self.timetable.stop_count()]);
+                    .push(vec![StopMark::Unmarked; self.timetable.stop_count()]);
                 self.marked_routes.push(RefCell::new(vec![
                     TripStopTime::marked();
                     self.timetable.routes().len()
@@ -777,7 +783,7 @@ where
                 for (stop_id, stop_marked) in
                     self.marked_stops[round as usize - 1].iter().enumerate()
                 {
-                    if !*stop_marked {
+                    if *stop_marked == StopMark::Unmarked {
                         continue;
                     }
                     Self::explore_routes_for_marked_stop(
@@ -897,7 +903,7 @@ where
         let mut total_transfers_count = 0usize;
         let marked_stops = self.marked_stops[round_base as usize - 1].clone();
         for (stop_id, stop_marked) in marked_stops.iter().enumerate() {
-            if !stop_marked {
+            if *stop_marked == StopMark::Unmarked {
                 continue;
             }
             let stop = self.timetable.stop(stop_id);
