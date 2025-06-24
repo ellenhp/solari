@@ -544,6 +544,7 @@ struct InternalItinerary {
 enum StopMark {
     Unmarked,
     Marked,
+    MarkedForTransfersOnly,
 }
 
 #[derive(Debug, Clone, Serialize)]
@@ -647,8 +648,8 @@ where
     ) -> bool {
         let mut marked = false;
         let mut step_log_idx = None;
-        for best_times in &mut self.best_times_per_round[round as usize..] {
-            if let InternalStepLocation::Stop(stop) = to {
+        if let InternalStepLocation::Stop(stop) = to {
+            for best_times in &mut self.best_times_per_round.iter_mut().skip(round as usize) {
                 let is_best = if let Some(previous_best) = &best_times[stop.id()] {
                     let fastest = &arrival_time < &previous_best.final_time;
                     let equal_and_shorter = {
@@ -692,10 +693,11 @@ where
                         last_step: step_log_idx.expect("Logic error: Step log index not updated"),
                     });
 
-                    self.marked_stops[round as usize][stop.id()] = StopMark::Marked;
-
                     marked = true
                 }
+            }
+            if marked {
+                self.marked_stops[round as usize][stop.id()] = StopMark::Marked;
             }
         }
         marked
@@ -776,22 +778,22 @@ where
             }
             // Mark routes based on stops that were marked in the previous round.
             {
-                let mut marked_routes = self.marked_routes[round as usize].borrow_mut();
-                for val in &mut (*marked_routes) {
+                let mut new_marked_routes = self.marked_routes[round as usize].borrow_mut();
+                for val in &mut (*new_marked_routes) {
                     *val = TripStopTime::marked();
                 }
                 for (stop_id, stop_marked) in
-                    self.marked_stops[round as usize - 1].iter().enumerate()
+                    self.marked_stops[round as usize - 1].iter_mut().enumerate()
                 {
                     if *stop_marked != StopMark::Marked {
                         continue;
                     }
-                    // *stop_marked = StopMark::MarkedForTransfersOnly;
+                    *stop_marked = StopMark::MarkedForTransfersOnly;
                     Self::explore_routes_for_marked_stop(
                         self.timetable,
-                        &mut *marked_routes,
+                        &mut *new_marked_routes,
                         self.timetable.stop(stop_id),
-                        &self.best_times_per_round[round as usize][stop_id]
+                        &self.best_times_per_round[round as usize - 1][stop_id]
                             .as_ref()
                             .unwrap()
                             .final_time,
